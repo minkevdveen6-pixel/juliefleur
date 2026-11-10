@@ -1,0 +1,1491 @@
+{
+  "status": "voorbereiding, geen live catalogus",
+  "source": "Volledige briefing Fleur, aangeleverd 03-11-2026",
+  "currency": "EUR",
+  "priceUnit": "eurocent",
+  "categories": [
+    {
+      "slug": "bagcharms",
+      "name": "Bagcharms",
+      "subtitle": "",
+      "description": "Bagcharms met naam of tekst.",
+      "index": "01",
+      "tone": "pink",
+      "status": "preview"
+    },
+    {
+      "slug": "sieraden-graveren",
+      "name": "Sieraden & graveren",
+      "subtitle": "",
+      "description": "Sieraden en gegraveerde armbanden.",
+      "index": "02",
+      "tone": "cream",
+      "status": "preview"
+    },
+    {
+      "slug": "punniken",
+      "name": "Punniken",
+      "subtitle": "",
+      "description": "Punniknamen, slingers, ringen, fotolijsten, tasjes en manden.",
+      "index": "03",
+      "tone": "olive",
+      "status": "preview"
+    },
+    {
+      "slug": "borduren",
+      "name": "Borduren",
+      "subtitle": "",
+      "description": "Deze collectie is in voorbereiding.",
+      "index": "04",
+      "tone": "cream",
+      "status": "pending"
+    },
+    {
+      "slug": "vilten-kroon",
+      "name": "Vilten kroon",
+      "subtitle": "",
+      "description": "Deze collectie is in voorbereiding.",
+      "index": "05",
+      "tone": "pink",
+      "status": "pending"
+    }
+  ],
+  "products": [
+    {
+      "slug": "persoonlijke-bagcharm",
+      "name": "Persoonlijke bagcharm",
+      "category": "bagcharms",
+      "price": 1750,
+      "fromPrice": true,
+      "priceByOption": "rope",
+      "featured": true,
+      "description": "Bagcharm met één of twee touwen, naam of tekst en een bedel.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "rope",
+          "label": "Uitvoering",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "single",
+              "label": "Enkel touw · maximaal 7 letters",
+              "price": 1750
+            },
+            {
+              "value": "double",
+              "label": "Dubbel touw · maximaal 7 letters per touw",
+              "price": 1950
+            }
+          ]
+        },
+        {
+          "key": "text1",
+          "label": "Naam of tekst op het eerste touw",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt.",
+          "maxLength": 7
+        },
+        {
+          "key": "text2",
+          "label": "Naam of tekst op het tweede touw",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt.",
+          "maxLength": 7,
+          "when": {
+            "key": "rope",
+            "value": "double"
+          }
+        },
+        {
+          "key": "ropeColor",
+          "label": "Touwkleur",
+          "type": "pending",
+          "help": "26 touwkleuren.",
+          "required": true
+        },
+        {
+          "key": "charm",
+          "label": "Bedel",
+          "type": "select",
+          "choices": [
+            {
+              "value": "silver-heart",
+              "label": "Zilver hart"
+            },
+            {
+              "value": "gold-heart",
+              "label": "Goud hart"
+            },
+            {
+              "value": "balloon-dog",
+              "label": "Ballonhondje"
+            },
+            {
+              "value": "bear",
+              "label": "Beertje"
+            }
+          ]
+        },
+        {
+          "key": "letterColors",
+          "label": "Letterkleuren",
+          "type": "text",
+          "minItems": 3,
+          "required": true,
+          "help": "Minimaal drie kleuren."
+        },
+        {
+          "key": "excludedColors",
+          "label": "Kleuren uitsluiten",
+          "type": "text",
+          "maxItems": 2,
+          "help": "Maximaal twee kleuren."
+        }
+      ],
+      "missing": [
+        "26 touwkleuren met namen en foto’s",
+        "Letterkleuren en validatie van minimaal 3 / maximaal 2",
+        "Bedelfoto’s en eventuele toeslagen",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "losse-punniknaam",
+      "name": "Losse punniknaam",
+      "category": "punniken",
+      "price": 1500,
+      "fromPrice": true,
+      "priceByOption": "letters",
+      "featured": true,
+      "description": "Een losse punniknaam met maximaal acht letters.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "letters",
+          "label": "Aantal letters",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "1-4",
+              "label": "1–4 letters",
+              "price": 1500
+            },
+            {
+              "value": "5",
+              "label": "5 letters",
+              "price": 1600
+            },
+            {
+              "value": "6",
+              "label": "6 letters",
+              "price": 1700
+            },
+            {
+              "value": "7",
+              "label": "7 letters",
+              "price": 1800
+            },
+            {
+              "value": "8",
+              "label": "8 letters",
+              "price": 1900
+            }
+          ]
+        },
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt.",
+          "maxLength": 8
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Garenkleuren",
+        "Lettertelling en toegestane tekens bevestigen",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "punniknaam-slinger",
+      "name": "Punniknaam als slinger",
+      "category": "punniken",
+      "price": 2995,
+      "description": "Een punniknaam als slinger.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Maximale naamlengte",
+        "Garenkleuren",
+        "Afmetingen",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "geboortekaartjeshouder",
+      "name": "(Geboorte)kaartjeshouder",
+      "category": "punniken",
+      "price": null,
+      "description": "Een (geboorte)kaartjeshouder met punniknaam.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Prijs",
+        "Uitvoeringen en afmetingen",
+        "Naamlimiet",
+        "Foto’s",
+        "Garenkleuren",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "punniknaam-in-ring",
+      "name": "Punniknaam in ring",
+      "category": "punniken",
+      "price": 3250,
+      "fromPrice": true,
+      "priceByOption": "finish",
+      "featured": true,
+      "description": "Een punniknaam in een ring met flosjes, drie bloemen of vijf bloemen.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "finish",
+          "label": "Afwerking",
+          "type": "select",
+          "choices": [
+            {
+              "value": "tassels",
+              "label": "Flosjes",
+              "price": 3250
+            },
+            {
+              "value": "flowers3",
+              "label": "Drie bloemen",
+              "price": 3495
+            },
+            {
+              "value": "flowers5",
+              "label": "Vijf bloemen",
+              "price": 3995
+            }
+          ],
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        },
+        {
+          "key": "accentColors",
+          "label": "Kleuren voor flosjes of bloemen",
+          "type": "text",
+          "maxItems": 3,
+          "help": "Maximaal drie kleuren."
+        },
+        {
+          "key": "base",
+          "label": "Houten voetje",
+          "type": "select",
+          "when": {
+            "key": "finish",
+            "value": [
+              "flowers3",
+              "flowers5"
+            ]
+          },
+          "priceUnknown": true,
+          "help": "Alleen bij de bloemvarianten. De prijs is nog niet beschikbaar.",
+          "choices": [
+            {
+              "value": "none",
+              "label": "Geen"
+            },
+            {
+              "value": "wood",
+              "label": "Houtkleur"
+            },
+            {
+              "value": "white",
+              "label": "Wit"
+            },
+            {
+              "value": "black",
+              "label": "Zwart"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        "Prijs houten voetje",
+        "Garenkleuren",
+        "Diameter en naamlimiet",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "notes": [
+        "Voetje uitsluitend bij 3 of 5 bloemen; afhankelijkheid ook in Ecwid afdwingen."
+      ],
+      "concept": true
+    },
+    {
+      "slug": "punniknaam-fotolijst",
+      "name": "Punniknaam in fotolijst",
+      "category": "punniken",
+      "price": 2250,
+      "fromPrice": true,
+      "priceByOption": "size",
+      "description": "Een punniknaam in of op een fotolijst van 10 × 15 cm of 20 × 30 cm.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "size",
+          "label": "Formaat",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "small",
+              "label": "10 × 15 cm · maximaal 4 letters",
+              "price": 2250
+            },
+            {
+              "value": "large",
+              "label": "20 × 30 cm",
+              "price": 2750
+            }
+          ]
+        },
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "frame",
+          "label": "Lijstkleur",
+          "type": "select",
+          "choices": [
+            {
+              "value": "wood",
+              "label": "Hout"
+            },
+            {
+              "value": "white",
+              "label": "Wit"
+            },
+            {
+              "value": "black",
+              "label": "Zwart"
+            }
+          ],
+          "required": true
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Naamlimiet grote lijst",
+        "Plaatsing in/op lijst",
+        "Garenkleuren",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "punniknaam-rieten-tasje",
+      "name": "Punniknaam op rieten tasje",
+      "category": "punniken",
+      "price": 3500,
+      "description": "Een beige of bruin rieten tasje met punniknaam.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "color",
+          "label": "Tasje",
+          "type": "select",
+          "choices": [
+            {
+              "value": "beige",
+              "label": "Beige tasje A"
+            },
+            {
+              "value": "brown",
+              "label": "Bruin tasje B"
+            }
+          ],
+          "required": true
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Naamlimiet",
+        "Afmetingen",
+        "Foto’s",
+        "Garenkleuren",
+        "Levertijd"
+      ],
+      "concept": true
+    },
+    {
+      "slug": "punniknaam-mand",
+      "name": "Punniknaam op mand",
+      "category": "punniken",
+      "price": 3000,
+      "fromPrice": true,
+      "description": "Een mand met punniknaam.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "basket",
+          "label": "Mandmodel",
+          "type": "pending",
+          "help": "Modelnamen, foto’s, afmetingen en bijbehorende prijzen worden nog aangeleverd.",
+          "required": true
+        },
+        {
+          "key": "name",
+          "label": "Naam of tekst",
+          "type": "text",
+          "required": true,
+          "help": "Controleer je tekst goed voordat je bestelt."
+        },
+        {
+          "key": "yarn",
+          "label": "Garenkleur",
+          "type": "pending",
+          "help": "45 gewone garenkleuren en 7 teddygarenkleuren."
+        }
+      ],
+      "missing": [
+        "Mandmodellen en prijzen per model",
+        "Naamlimiet",
+        "Garenkleuren",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "notes": [
+        "Gebruik visuele keuzetegels per mandmodel. Geen verzonnen modellen."
+      ],
+      "concept": true
+    },
+    {
+      "slug": "bar-bracelet-engraved",
+      "name": "Bar Bracelet engraved",
+      "category": "sieraden-graveren",
+      "price": 1995,
+      "featured": true,
+      "description": "Een armband met een gegraveerde bar.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "bar",
+          "label": "Kleur van de bar",
+          "type": "select",
+          "choices": [
+            {
+              "value": "silver",
+              "label": "Zilver"
+            },
+            {
+              "value": "gold",
+              "label": "Goud"
+            },
+            {
+              "value": "black",
+              "label": "Zwart"
+            }
+          ]
+        },
+        {
+          "key": "band",
+          "label": "Touw of bandje",
+          "type": "pending",
+          "help": "14 touwkleuren of een goudkleurig of zilverkleurig paperclipbandje.",
+          "required": true
+        },
+        {
+          "key": "font",
+          "label": "Lettertype",
+          "type": "pending",
+          "help": "Lettertype 1 t/m 5, met originele voorbeelden.",
+          "required": true
+        },
+        {
+          "key": "engraving",
+          "label": "Graveertekst",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "missing": [
+        "Originele kleurkaarten en vijf lettertypevoorbeelden",
+        "Graveerlimiet en toegestane tekens",
+        "Maat en originele productfoto",
+        "Definitieve productietijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating.",
+        "Zwarte bar: stainless steel."
+      ]
+    },
+    {
+      "slug": "poppy-necklace",
+      "name": "Poppy necklace",
+      "category": "sieraden-graveren",
+      "price": 2195,
+      "fromPrice": true,
+      "priceByOption": "letters",
+      "featured": true,
+      "description": "Een ketting met één tot negen letters, optioneel een geboortesteentje en een hartje.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "letters",
+          "label": "Aantal letters",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "1",
+              "label": "1 letter",
+              "price": 2195
+            },
+            {
+              "value": "2",
+              "label": "2 letters",
+              "price": 2495
+            },
+            {
+              "value": "3",
+              "label": "3 letters",
+              "price": 2795
+            },
+            {
+              "value": "4",
+              "label": "4 letters",
+              "price": 3095
+            },
+            {
+              "value": "5",
+              "label": "5 letters",
+              "price": 3395
+            },
+            {
+              "value": "6",
+              "label": "6 letters",
+              "price": 3695
+            },
+            {
+              "value": "7",
+              "label": "7 letters",
+              "price": 3995
+            },
+            {
+              "value": "8",
+              "label": "8 letters",
+              "price": 4295
+            },
+            {
+              "value": "9",
+              "label": "9 letters",
+              "price": 4595
+            }
+          ]
+        },
+        {
+          "key": "color",
+          "label": "Kleur ketting en letters",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "gold",
+              "label": "Goudkleurig"
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig"
+            }
+          ]
+        },
+        {
+          "key": "initials",
+          "label": "Letters of naam, in volgorde",
+          "type": "text",
+          "required": true,
+          "maxLength": 9
+        },
+        {
+          "key": "birthstone",
+          "label": "Geboortesteentje",
+          "type": "select",
+          "choices": [
+            {
+              "value": "none",
+              "label": "Geen",
+              "price": 0
+            },
+            {
+              "value": "1-gold",
+              "label": "Januari · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "1-silver",
+              "label": "Januari · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "2-gold",
+              "label": "Februari · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "2-silver",
+              "label": "Februari · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "3-gold",
+              "label": "Maart · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "3-silver",
+              "label": "Maart · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "4-gold",
+              "label": "April · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "4-silver",
+              "label": "April · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "5-gold",
+              "label": "Mei · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "5-silver",
+              "label": "Mei · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "6-gold",
+              "label": "Juni · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "6-silver",
+              "label": "Juni · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "7-gold",
+              "label": "Juli · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "7-silver",
+              "label": "Juli · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "8-gold",
+              "label": "Augustus · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "8-silver",
+              "label": "Augustus · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "9-gold",
+              "label": "September · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "9-silver",
+              "label": "September · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "10-gold",
+              "label": "Oktober · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "10-silver",
+              "label": "Oktober · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "11-gold",
+              "label": "November · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "11-silver",
+              "label": "November · zilverkleurig",
+              "price": 495
+            },
+            {
+              "value": "12-gold",
+              "label": "December · goudkleurig",
+              "price": 495
+            },
+            {
+              "value": "12-silver",
+              "label": "December · zilverkleurig",
+              "price": 495
+            }
+          ]
+        },
+        {
+          "key": "heart",
+          "label": "Hartje",
+          "type": "select",
+          "choices": [
+            {
+              "value": "none",
+              "label": "Geen",
+              "price": 0
+            },
+            {
+              "value": "gold",
+              "label": "Goudkleurig",
+              "price": 395
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig",
+              "price": 395
+            }
+          ]
+        },
+        {
+          "key": "composition",
+          "label": "Persoonlijke samenstelling",
+          "type": "textarea",
+          "required": true,
+          "help": "Vul je gewenste initialen of naam in en geef aan op welke plek je eventuele bedeltjes wilt toevoegen."
+        }
+      ],
+      "missing": [
+        "Originele afbeeldingen van geboortesteentjes en hartjes",
+        "Definitieve productietijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ],
+      "details": [
+        "Lengte: 40 cm met een verlengstuk van 5 cm.",
+        "Elke ketting wordt met de hand samengesteld en op basis van jouw keuzes gemaakt. Omdat de onderdelen kleine verschillen kunnen vertonen, kunnen kleur en vorm per sieraad iets variëren."
+      ]
+    },
+    {
+      "slug": "paracord-initial-bracelet",
+      "name": "Paracord Initial bracelet",
+      "category": "sieraden-graveren",
+      "price": 1095,
+      "fromPrice": true,
+      "priceByOption": "size",
+      "description": "Een paracord armband in Kids-uitvoering, met een kleine letter of een grote letter.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "size",
+          "label": "Uitvoering",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "kids",
+              "label": "Kids",
+              "price": 1095
+            },
+            {
+              "value": "small",
+              "label": "Kleine letter",
+              "price": 1395
+            },
+            {
+              "value": "large",
+              "label": "Grote letter",
+              "price": 1595
+            }
+          ]
+        },
+        {
+          "key": "color",
+          "label": "Touwkleur",
+          "type": "pending",
+          "help": "26 touwkleuren.",
+          "required": true
+        },
+        {
+          "key": "metal",
+          "label": "Kleur van het metaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "gold",
+              "label": "Goudkleurig"
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig"
+            }
+          ]
+        },
+        {
+          "key": "extra",
+          "label": "Extra kleine letters",
+          "type": "select",
+          "when": {
+            "key": "size",
+            "value": "small"
+          },
+          "choices": [
+            {
+              "value": "0",
+              "label": "Geen",
+              "price": 0
+            },
+            {
+              "value": "1",
+              "label": "1 extra letter",
+              "price": 350
+            },
+            {
+              "value": "2",
+              "label": "2 extra letters",
+              "price": 700
+            },
+            {
+              "value": "3",
+              "label": "3 extra letters",
+              "price": 1150
+            }
+          ]
+        },
+        {
+          "key": "initial",
+          "label": "Letter(s) en volgorde",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "missing": [
+        "Originele kleurkaart",
+        "Maten en originele productfoto",
+        "Definitieve productietijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    },
+    {
+      "slug": "birthstone-bracelet",
+      "name": "Birthstone bracelet",
+      "category": "sieraden-graveren",
+      "price": 1295,
+      "description": "Een armband met een geboortesteentje.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "ropeColor",
+          "label": "Touwkleur",
+          "type": "pending",
+          "help": "Keuze uit de aangeleverde touwkleuren.",
+          "required": true
+        },
+        {
+          "key": "metal",
+          "label": "Kleur van het metaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "gold",
+              "label": "Goudkleurig"
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig"
+            }
+          ]
+        },
+        {
+          "key": "stone",
+          "label": "Geboortesteentje",
+          "type": "select",
+          "choices": [
+            {
+              "label": "Januari",
+              "value": "1"
+            },
+            {
+              "label": "Februari",
+              "value": "2"
+            },
+            {
+              "label": "Maart",
+              "value": "3"
+            },
+            {
+              "label": "April",
+              "value": "4"
+            },
+            {
+              "label": "Mei",
+              "value": "5"
+            },
+            {
+              "label": "Juni",
+              "value": "6"
+            },
+            {
+              "label": "Juli",
+              "value": "7"
+            },
+            {
+              "label": "Augustus",
+              "value": "8"
+            },
+            {
+              "label": "September",
+              "value": "9"
+            },
+            {
+              "label": "Oktober",
+              "value": "10"
+            },
+            {
+              "label": "November",
+              "value": "11"
+            },
+            {
+              "label": "December",
+              "value": "12"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        "Steentjes",
+        "Kleuren en maten",
+        "Materiaal",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    },
+    {
+      "slug": "sailor-bracelet",
+      "name": "Sailor bracelet",
+      "category": "sieraden-graveren",
+      "price": 1495,
+      "description": "Een paracord armband met goudkleurige of zilverkleurige onderdelen.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "ropeColor",
+          "label": "Touwkleur",
+          "type": "pending",
+          "help": "Keuze uit de aangeleverde touwkleuren.",
+          "required": true
+        },
+        {
+          "key": "metal",
+          "label": "Kleur van het metaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "gold",
+              "label": "Goudkleurig"
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        "Kleuren en maten",
+        "Materiaal",
+        "Foto’s",
+        "Levertijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    },
+    {
+      "slug": "paracord-initial-necklace",
+      "name": "Paracord initial necklace",
+      "category": "sieraden-graveren",
+      "price": 1795,
+      "fromPrice": true,
+      "priceByOption": "letterSize",
+      "description": "Een paracord ketting met een grote of kleine letter.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "letterSize",
+          "label": "Lettergrootte",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "large",
+              "label": "Grote letter",
+              "price": 1795
+            },
+            {
+              "value": "small",
+              "label": "Kleine letter",
+              "price": 1995
+            }
+          ]
+        },
+        {
+          "key": "color",
+          "label": "Touwkleur",
+          "type": "pending",
+          "help": "9 touwkleuren.",
+          "required": true
+        },
+        {
+          "key": "metal",
+          "label": "Kleur van het metaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "gold",
+              "label": "Goudkleurig"
+            },
+            {
+              "value": "silver",
+              "label": "Zilverkleurig"
+            }
+          ]
+        },
+        {
+          "key": "extra",
+          "label": "Extra kleine letters",
+          "type": "select",
+          "when": {
+            "key": "letterSize",
+            "value": "small"
+          },
+          "choices": [
+            {
+              "value": "0",
+              "label": "Geen",
+              "price": 0
+            },
+            {
+              "value": "1",
+              "label": "1 extra letter",
+              "price": 350
+            },
+            {
+              "value": "2",
+              "label": "2 extra letters",
+              "price": 700
+            },
+            {
+              "value": "3",
+              "label": "3 extra letters",
+              "price": 1150
+            }
+          ]
+        },
+        {
+          "key": "initial",
+          "label": "Letter(s) en volgorde",
+          "type": "text",
+          "required": true
+        }
+      ],
+      "missing": [
+        "Originele kleurkaart",
+        "Maten en originele productfoto",
+        "Definitieve productietijd"
+      ],
+      "concept": true,
+      "materials": [
+        "Zilverkleurig: stainless steel.",
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    },
+    {
+      "slug": "chunky-initial-bracelet",
+      "name": "Chunky Initial bracelet",
+      "category": "sieraden-graveren",
+      "price": 1995,
+      "description": "Een goudkleurige armband met een initiaal.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "initial",
+          "label": "Initiaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "A",
+              "label": "A"
+            },
+            {
+              "value": "B",
+              "label": "B"
+            },
+            {
+              "value": "C",
+              "label": "C"
+            },
+            {
+              "value": "D",
+              "label": "D"
+            },
+            {
+              "value": "E",
+              "label": "E"
+            },
+            {
+              "value": "G",
+              "label": "G"
+            },
+            {
+              "value": "H",
+              "label": "H"
+            },
+            {
+              "value": "I",
+              "label": "I"
+            },
+            {
+              "value": "J",
+              "label": "J"
+            },
+            {
+              "value": "K",
+              "label": "K"
+            },
+            {
+              "value": "L",
+              "label": "L"
+            },
+            {
+              "value": "M",
+              "label": "M"
+            },
+            {
+              "value": "N",
+              "label": "N"
+            },
+            {
+              "value": "O",
+              "label": "O"
+            },
+            {
+              "value": "P",
+              "label": "P"
+            },
+            {
+              "value": "Q",
+              "label": "Q"
+            },
+            {
+              "value": "R",
+              "label": "R"
+            },
+            {
+              "value": "S",
+              "label": "S"
+            },
+            {
+              "value": "T",
+              "label": "T"
+            },
+            {
+              "value": "U",
+              "label": "U"
+            },
+            {
+              "value": "V",
+              "label": "V"
+            },
+            {
+              "value": "W",
+              "label": "W"
+            },
+            {
+              "value": "X",
+              "label": "X"
+            },
+            {
+              "value": "Y",
+              "label": "Y"
+            },
+            {
+              "value": "Z",
+              "label": "Z"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        "Beschikbaarheid letter F laten bevestigen",
+        "Maat en originele productfoto",
+        "Voorraad en verzendtermijn"
+      ],
+      "concept": true,
+      "materials": [
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    },
+    {
+      "slug": "mermaid-initial-bracelet",
+      "name": "Mermaid Initial Bracelet",
+      "category": "sieraden-graveren",
+      "price": 1795,
+      "description": "Een goudkleurige armband met een initiaal.",
+      "image": null,
+      "ecwidId": null,
+      "options": [
+        {
+          "key": "initial",
+          "label": "Initiaal",
+          "type": "select",
+          "required": true,
+          "choices": [
+            {
+              "value": "A",
+              "label": "A"
+            },
+            {
+              "value": "B",
+              "label": "B"
+            },
+            {
+              "value": "C",
+              "label": "C"
+            },
+            {
+              "value": "D",
+              "label": "D"
+            },
+            {
+              "value": "E",
+              "label": "E"
+            },
+            {
+              "value": "G",
+              "label": "G"
+            },
+            {
+              "value": "H",
+              "label": "H"
+            },
+            {
+              "value": "I",
+              "label": "I"
+            },
+            {
+              "value": "J",
+              "label": "J"
+            },
+            {
+              "value": "K",
+              "label": "K"
+            },
+            {
+              "value": "L",
+              "label": "L"
+            },
+            {
+              "value": "M",
+              "label": "M"
+            },
+            {
+              "value": "N",
+              "label": "N"
+            },
+            {
+              "value": "O",
+              "label": "O"
+            },
+            {
+              "value": "P",
+              "label": "P"
+            },
+            {
+              "value": "Q",
+              "label": "Q"
+            },
+            {
+              "value": "R",
+              "label": "R"
+            },
+            {
+              "value": "S",
+              "label": "S"
+            },
+            {
+              "value": "T",
+              "label": "T"
+            },
+            {
+              "value": "U",
+              "label": "U"
+            },
+            {
+              "value": "V",
+              "label": "V"
+            },
+            {
+              "value": "W",
+              "label": "W"
+            },
+            {
+              "value": "X",
+              "label": "X"
+            },
+            {
+              "value": "Y",
+              "label": "Y"
+            },
+            {
+              "value": "Z",
+              "label": "Z"
+            }
+          ]
+        }
+      ],
+      "missing": [
+        "Beschikbaarheid letter F laten bevestigen",
+        "Maat en originele productfoto",
+        "Voorraad en verzendtermijn"
+      ],
+      "concept": true,
+      "materials": [
+        "Goudkleurig: stainless steel met een 18K PVD-coating."
+      ]
+    }
+  ]
+}

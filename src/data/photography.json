@@ -1,0 +1,202 @@
+{
+  "expectedOriginals": [
+    "letterkettingen-jim-joe.png",
+    "punnikmand-neeke.png",
+    "losse-punniknaam-lenne.png",
+    "rieten-tasje-olivia.png",
+    "bagcharm-smile-love.png",
+    "sieraden-blauwe-kralen-initiaal.png",
+    "sieraden-kralen-kleuren.png",
+    "rieten-tas-groene-punniknaam.png",
+    "fleur-portret-huisstijl-2026-11-04.png",
+    "vilten-verjaardagskroon-roze-lila-2026-11-04.jpg",
+    "gegraveerde-armbandjes-namen-2026-11-04.jpg",
+    "geborduurde-mutsen-namen-2026-11-04.jpg",
+    "gouden-initiaalketting-f-2026-11-04.jpg",
+    "bagcharms-beige-bruin-2026-11-04.jpg",
+    "gegraveerd-armbandje-fleur-2026-11-04.jpg",
+    "bagcharms-roze-lila-hartjes-2026-11-04.jpg",
+    "punniknaam-groen-2026-11-04.jpg",
+    "gepersonaliseerde-kettingen-jim-joe-2026-11-04.jpg"
+  ],
+  "slots": {
+    "hero": "rieten-tasje-olivia.png",
+    "category:bagcharms": "bagcharms-roze-lila-hartjes-2026-11-04.jpg",
+    "category:sieraden-graveren": "gouden-initiaalketting-f-2026-11-04.jpg",
+    "category:punniken": "punniknaam-groen-2026-11-04.jpg",
+    "category:borduren": "geborduurde-mutsen-namen-2026-11-04.jpg",
+    "category:vilten-kroon": "vilten-verjaardagskroon-roze-lila-2026-11-04.jpg",
+    "personal": null,
+    "jewelry:initial": "sieraden-blauwe-kralen-initiaal.png",
+    "jewelry:colors": "sieraden-kralen-kleuren.png",
+    "portrait:fleur": "fleur-portret-huisstijl-2026-11-04.png",
+    "gallery:bar-bracelet-engraved": "gegraveerd-armbandje-fleur-2026-11-04.jpg",
+    "gallery:persoonlijke-bagcharm": "bagcharms-roze-lila-hartjes-2026-11-04.jpg"
+  },
+  "products": {
+    "persoonlijke-bagcharm": "bagcharms-beige-bruin-2026-11-04.jpg",
+    "losse-punniknaam": "punniknaam-groen-2026-11-04.jpg",
+    "punniknaam-rieten-tasje": "rieten-tasje-olivia.png",
+    "punniknaam-mand": "punnikmand-neeke.png",
+    "poppy-necklace": "gepersonaliseerde-kettingen-jim-joe-2026-11-04.jpg",
+    "bar-bracelet-engraved": "gegraveerde-armbandjes-namen-2026-11-04.jpg"
+  },
+  "approvedImages": {
+    "letterkettingen-jim-joe.png": {
+      "alt": "Twee goudkleurige letterkettingen met JIM en JOE op een roze en bordeaux gestreept shirt.",
+      "fit": "contain"
+    },
+    "punnikmand-neeke.png": {
+      "alt": "Rieten mand met de roze punniknaam Neeke en een kleurrijke rand.",
+      "fit": "contain"
+    },
+    "losse-punniknaam-lenne.png": {
+      "alt": "Verpakte roze punniknaam Lenne op een lichte achtergrond.",
+      "fit": "contain"
+    },
+    "rieten-tasje-olivia.png": {
+      "alt": "Rieten tasje met de lila punniknaam Olivia en een witte kanten strik.",
+      "fit": "contain"
+    },
+    "bagcharm-smile-love.png": {
+      "alt": "Roze bagcharm met kleurrijke letters SMILE en LOVE en een beertjesbedel.",
+      "fit": "contain"
+    },
+    "sieraden-blauwe-kralen-initiaal.png": {
+      "alt": "Blauwe kralenketting naast een goudkleurige ketting met de letter F.",
+      "fit": "contain"
+    },
+    "sieraden-kralen-kleuren.png": {
+      "alt": "Kralenkettingen in wit, lichtblauw, groen en bordeaux in een hand.",
+      "fit": "contain"
+    },
+    "rieten-tas-groene-punniknaam.png": {
+      "alt": "Grote rieten tas met een groene punniknaam, vastgehouden aan de onderkant.",
+      "fit": "contain"
+    },
+    "fleur-portret-huisstijl-2026-11-04.png": {
+      "alt": "Fleur, lachend op een stoel, voor de roze Julie Fleur-achtergrond.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "vilten-verjaardagskroon-roze-lila-2026-11-04.jpg": {
+      "alt": "Roze vilten verjaardagskroon met paarse versieringen en verwisselbare cijfers.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "gegraveerde-armbandjes-namen-2026-11-04.jpg": {
+      "alt": "Vier goudkleurige gegraveerde naamarmbandjes met gekleurd koord op een zwarte sieradenrol.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "geborduurde-mutsen-namen-2026-11-04.jpg": {
+      "alt": "Mutsen in verschillende kleuren, geborduurd met namen.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "gouden-initiaalketting-f-2026-11-04.jpg": {
+      "alt": "Goudkleurige ketting met de letter F op een blauw-wit gestreept shirt.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "bagcharms-beige-bruin-2026-11-04.jpg": {
+      "alt": "Beige en bruine bagcharms met de namen Jason en Dean en een hondjesbedel.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "gegraveerd-armbandje-fleur-2026-11-04.jpg": {
+      "alt": "Goudkleurig naamarmbandje Fleur met lichtblauw koord, gedragen naast een horloge.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "bagcharms-roze-lila-hartjes-2026-11-04.jpg": {
+      "alt": "Roze en lila bagcharms met de namen San en Ella en zilverkleurige hartjes.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "punniknaam-groen-2026-11-04.jpg": {
+      "alt": "Groene gepunnikte naam, vastgehouden boven een lichte broek.",
+      "fit": "contain",
+      "position": "50% 50%"
+    },
+    "gepersonaliseerde-kettingen-jim-joe-2026-11-04.jpg": {
+      "alt": "Twee goudkleurige naamkettingen Jim en Joe, gedragen op een roze-bordeaux gestreept shirt.",
+      "fit": "contain",
+      "position": "50% 50%"
+    }
+  },
+  "sources": [
+    {
+      "file": "letterkettingen-jim-joe.png",
+      "attachment": "codex-clipboard-e5159b78-025a-4a18-aa4a-40a4e87e8a66.png"
+    },
+    {
+      "file": "punnikmand-neeke.png",
+      "attachment": "codex-clipboard-498aa813-0454-46ea-9326-f131c43856f5.png"
+    },
+    {
+      "file": "losse-punniknaam-lenne.png",
+      "attachment": "codex-clipboard-fb173efa-16ec-4915-a798-a6c2f87ee7ff.png"
+    },
+    {
+      "file": "rieten-tasje-olivia.png",
+      "attachment": "codex-clipboard-47cc3610-1f57-4987-b954-c8791a376163.png"
+    },
+    {
+      "file": "bagcharm-smile-love.png",
+      "attachment": "codex-clipboard-2313869b-9b48-4aec-a730-f2a659b3c4aa.png"
+    },
+    {
+      "file": "sieraden-blauwe-kralen-initiaal.png",
+      "attachment": "codex-clipboard-2e005078-4d77-488b-920c-adb1b71780d0.png"
+    },
+    {
+      "file": "sieraden-kralen-kleuren.png",
+      "attachment": "codex-clipboard-cb6fdcbf-27fd-458d-bd0a-d199e68c7ea5.png"
+    },
+    {
+      "file": "rieten-tas-groene-punniknaam.png",
+      "attachment": "codex-clipboard-6a4db200-6685-47d7-b766-24aedaa87255.png"
+    },
+    {
+      "file": "fleur-portret-huisstijl-2026-11-04.png",
+      "attachment": "codex-clipboard-3ddd1cac-43ba-4d5b-8043-bbabbc14bd33.png"
+    },
+    {
+      "file": "vilten-verjaardagskroon-roze-lila-2026-11-04.jpg",
+      "attachment": "21284142-9895-448a-ba96-bd1d2ed217d5.JPG"
+    },
+    {
+      "file": "gegraveerde-armbandjes-namen-2026-11-04.jpg",
+      "attachment": "826386c8-af30-4f45-a690-30aa967f737b.JPG"
+    },
+    {
+      "file": "geborduurde-mutsen-namen-2026-11-04.jpg",
+      "attachment": "25b3b2ea-93aa-4082-aa8e-513e5c26eb8e.JPG"
+    },
+    {
+      "file": "gouden-initiaalketting-f-2026-11-04.jpg",
+      "attachment": "24adc8f9-bb67-499a-a7de-6c1ae20704cb.JPG"
+    },
+    {
+      "file": "bagcharms-beige-bruin-2026-11-04.jpg",
+      "attachment": "8539fbbf-a6f5-4d3f-bd3f-5b2ee46e9a07.JPG"
+    },
+    {
+      "file": "gegraveerd-armbandje-fleur-2026-11-04.jpg",
+      "attachment": "7059111f-cd3d-4dea-a55a-552f9b0d6a23.JPG"
+    },
+    {
+      "file": "bagcharms-roze-lila-hartjes-2026-11-04.jpg",
+      "attachment": "a6e7a058-726f-48fc-a0f6-3d86869cb386.JPG"
+    },
+    {
+      "file": "punniknaam-groen-2026-11-04.jpg",
+      "attachment": "b37b19a4-3264-4103-83ac-bdf425398d79.JPG"
+    },
+    {
+      "file": "gepersonaliseerde-kettingen-jim-joe-2026-11-04.jpg",
+      "attachment": "c79e7eba-b8e7-4337-b77c-0d98b9c45c47.JPG"
+    }
+  ]
+}

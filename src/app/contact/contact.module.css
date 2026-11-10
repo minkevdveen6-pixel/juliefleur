@@ -1,0 +1,25 @@
+.page{max-width:1080px}
+.page>header p{font-size:15px;line-height:1.7;max-width:52ch}
+.layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:28px;align-items:start;margin-top:32px}
+.details{background:var(--pink);padding:28px;display:grid;gap:36px}
+.details h2{font-size:18px;font-weight:500;letter-spacing:-.015em;margin-bottom:14px}
+.email{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px;font-size:16px;overflow-wrap:anywhere}
+.email:hover,.instagram:hover{text-decoration:underline;text-underline-offset:4px}
+.email svg{color:var(--olive)}
+.instagram{display:inline-flex;align-items:center;gap:10px;font-size:14px;min-height:44px}
+.address p{font-size:14px;line-height:1.75}
+.address p+p{margin-top:16px}
+.address :global(.text-link){font-size:13px;margin-top:8px;gap:8px}
+.panel{min-width:0;padding:28px 32px;background:#fffdfb;border:1px solid var(--line)}
+.panel :global(.contact-form h2){font-size:23px;line-height:1.35}
+.panel :global(.form-required-note){color:var(--muted);font-size:13px;margin-top:8px}
+.panel :global(.form-availability){background:#f2f0e7;border:0;padding:12px 16px;margin-block:22px;font-size:13px}
+.panel :global(.contact-field>label){font-size:14px;margin-bottom:8px}
+.panel :global(.contact-field>input),.panel :global(.contact-field>textarea){background:var(--ivory);border-color:#873e5145;transition:border-color .15s ease}
+.panel :global(.contact-field>input:focus),.panel :global(.contact-field>textarea:focus){border-color:var(--olive);outline:2px solid var(--olive);outline-offset:2px;background:#fffdfb}
+.panel :global(.contact-field [aria-invalid=true]){border-color:var(--wine)}
+.panel :global(.contact-submit){margin-top:18px}
+.panel :global(.contact-success){border:0;padding:0}
+@media(max-width:900px){.layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:20px}.details{padding:24px 20px}.panel{padding:24px}.email{font-size:14px}.panel :global(.contact-field-row){grid-template-columns:1fr;gap:0}}
+@media(max-width:700px){.layout{grid-template-columns:1fr;gap:22px;margin-top:24px}.details{grid-template-columns:1fr 1fr;gap:24px;padding:22px;grid-row:2}.address p{font-size:13px}.details h2{font-size:16px}.panel{padding:24px 20px;grid-row:1}.panel :global(.contact-form h2){font-size:21px}}
+@media(max-width:440px){.details{grid-template-columns:1fr;gap:26px}.email{justify-content:start;font-size:16px}.address p{font-size:14px}}

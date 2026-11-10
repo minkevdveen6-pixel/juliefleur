@@ -1,0 +1,534 @@
+{
+  "over-fleur": {
+    "title": "Over Fleur",
+    "eyebrow": "Over Fleur",
+    "intro": "",
+    "sections": [
+      {
+        "title": "Mijn verhaal",
+        "paragraphs": [
+          "Mijn naam is Fleur, 32 jaar, mama, vrouw van, dochter, vriendin, introvert, boekenverslinder en dol op dingen maken.",
+          "De naam Julie Fleur heeft voor mij een bijzondere betekenis. Julie was de meisjesnaam die ik altijd in gedachten had voor een dochter, maar met mijn twee prachtige zoons is het leven anders gelopen. De naam bleef me bij en zo ontstond Julie Fleur.",
+          "Het begon, zoals bij velen, als hobby. Inmiddels is het uitgegroeid tot iets waar ik ontzettend veel tijd en liefde in stop. Naast Julie Fleur werk ik ook nog in de zorg. Het is soms best een uitdaging om alles te combineren, want mijn creatieve hobby neemt inmiddels heel wat uurtjes in beslag. Maar dat laat alleen maar zien hoeveel plezier ik erin heb.",
+          "Met drie mannen in huis zoek ik soms ook een beetje naar de ‘meidendingen’ in het leven. Mooie sieraden, roze, strikjes en contact met andere vrouwen maken mij ontzettend blij! En als ik niet aan het maken ben? Dan vind je me waarschijnlijk ergens verdiept in een boek, want lezen is mijn andere grote hobby.",
+          "Ik ben graag bezig met mijn eigen ding en geniet ook enorm van tijd voor mezelf. Juist daarom past Julie Fleur zo goed bij mij: een eigen plekje waar ik mijn creativiteit kwijt kan en iets kan maken waar anderen blij van worden.",
+          "Voor nu geniet ik vooral van alles wat ik mag maken.",
+          "Liefs, Fleur"
+        ]
+      }
+    ],
+    "kind": "about"
+  },
+  "veelgestelde-vragen": {
+    "title": "Veelgestelde vragen",
+    "eyebrow": "Veelgestelde vragen",
+    "intro": "",
+    "sections": [
+      {
+        "title": "Kan ik mijn product zelf samenstellen?",
+        "paragraphs": [
+          "Bij Julie Fleur vind je handwerk, bagcharms & sieraden die je op verschillende manieren persoonlijk kunt maken. Denk bijvoorbeeld aan een initiaal, naam of gewenste kleuren. Zo creëer je een handwerk of sieraad dat bij jou past of een bijzondere betekenis heeft.",
+          "Heb je een vraag over de mogelijkheden? Stuur me gerust een berichtje, dan denk ik met je mee."
+        ]
+      },
+      {
+        "title": "Van welke materialen worden mijn producten gemaakt?",
+        "paragraphs": [
+          "Ik werk met verschillende materialen. Welke materialen voor een specifiek sieraad worden gebruikt, vind je terug op de bijbehorende productpagina. Zo weet je vooraf precies wat je bestelt."
+        ]
+      },
+      {
+        "title": "Hoe lang duurt het voordat mijn bestelling wordt verzonden?",
+        "paragraphs": [
+          "De levertijd kan per product verschillen. Op de productpagina van ieder item vind je de verwachte levertijd en eventuele aanvullende informatie.",
+          "Omdat ik mijn producten met aandacht maak en verwerk, kan de benodigde tijd per bestelling variëren.",
+          "Er zijn een aantal producten die niet gepersonaliseerd zijn en dus direct op voorraad zijn.",
+          "Dit staat duidelijk vermeld op de productpagina en hiervoor geldt dan ook een andere levertijd welke ook aangegeven staat."
+        ]
+      },
+      {
+        "title": "Kan ik mijn bestelling met spoed laten versturen?",
+        "paragraphs": [
+          "Heb je iets nodig voor een speciale gelegenheid en kun je niet zo lang wachten? Voor bepaalde producten is een spoedbestelling mogelijk.",
+          "Of dit kan, hangt af van het artikel en de lopende bestellingen. Neem daarom vooraf even contact met mij op om de mogelijkheden te bespreken. Een eventuele toeslag en de afgesproken termijn worden vooraf duidelijk gecommuniceerd."
+        ]
+      },
+      {
+        "title": "Kan ik mijn bestelling nog wijzigen of annuleren?",
+        "paragraphs": [
+          "Controleer je bestelling goed voordat je deze afrondt. Let hierbij vooral op namen, initialen en andere persoonlijke gegevens.",
+          "Bij gepersonaliseerde producten ga ik na ontvangst van je bestelling aan de slag met het maken ervan. Zodra de productie is gestart, zijn wijzigingen of annuleringen mogelijk niet meer uitvoerbaar. Neem bij twijfel zo snel mogelijk contact met me op, dan bekijk ik wat er nog mogelijk is."
+        ]
+      },
+      {
+        "title": "Kan ik een sieraad met een persoonlijke touch terugsturen?",
+        "paragraphs": [
+          "Voor producten die volgens jouw persoonlijke specificaties zijn vervaardigd of duidelijk voor een specifieke persoon bestemd zijn, geldt doorgaans een wettelijke uitzondering op het herroepingsrecht.",
+          "Een standaardkeuze voor kleur, initiaal of geboortesteen betekent niet automatisch dat het herroepingsrecht vervalt. Je wettelijke rechten bij een gebrek, schade of verkeerde levering blijven gelden.",
+          "Twijfel je over een ontwerp of wil je graag iets weten voordat je bestelt? Stuur me gerust een berichtje. Ik denk graag met je mee, zodat je met een fijn gevoel jouw keuze kunt maken."
+        ]
+      },
+      {
+        "title": "Wat kan ik doen als er iets mis is met mijn bestelling?",
+        "paragraphs": [
+          "Dat vind ik natuurlijk vervelend. Neem in dat geval zo snel mogelijk contact met me op via e-mail en voeg, indien mogelijk, een duidelijke foto toe waarop het probleem goed te zien is.",
+          "Ik bekijk je bericht persoonlijk en bespreek graag met je welke oplossing passend is."
+        ]
+      },
+      {
+        "title": "Kunnen handgemaakte producten onderling verschillen?",
+        "paragraphs": [
+          "Ja, dat kan. Mijn producten worden met de hand gemaakt en verwerkt. Hierdoor kunnen kleine verschillen in bijvoorbeeld kleur, vorm of afwerking voorkomen.",
+          "Dat hoort bij het ambachtelijke karakter van handwerk en maakt ieder product net even eigen."
+        ]
+      },
+      {
+        "title": "Hoe houd ik mijn sieraad zo lang mogelijk mooi?",
+        "paragraphs": [
+          "Met een beetje extra aandacht blijft jouw sieraad langer mooi. Probeer het daarom zoveel mogelijk droog te houden en vermijd direct contact met parfum, crèmes, chloor en schoonmaakmiddelen.",
+          "Doe je sieraden af voordat je gaat douchen, zwemmen of sporten. Bewaar ze na gebruik op een droge plek, het liefst afzonderlijk van andere sieraden. Zo help je krassen en beschadigingen te voorkomen.",
+          "Benieuwd naar meer verzorgingstips? Neem dan een kijkje op de pagina Onderhoud van sieraden."
+        ]
+      },
+      {
+        "title": "Hoe snel kan ik een reactie verwachten?",
+        "paragraphs": [
+          "Bij Julie Fleur regel ik alles zelf, van het maken van de sieraden tot het beantwoorden van je vragen. Ik streef ernaar om binnen 48 uur op je bericht te reageren.",
+          "Het kan natuurlijk voorkomen dat je iets langer moet wachten. Ik probeer je altijd zo snel mogelijk een antwoord te geven!"
+        ]
+      },
+      {
+        "title": "Staat mijn vraag er niet tussen?",
+        "paragraphs": [
+          "Geen zorgen! Heb je een vraag die je niet terugvindt bij de veelgestelde vragen? Neem dan gerust contact met me op via e-mail of stuur me een berichtje via social media. Ik denk graag met je mee!"
+        ]
+      }
+    ],
+    "kind": "faq"
+  },
+  "onderhoud-sieraden": {
+    "title": "Onderhoud sieraden",
+    "eyebrow": "Onderhoud sieraden",
+    "intro": "Een mooi sieraad verdient de juiste verzorging. Met een paar eenvoudige gewoontes kun je ervoor zorgen dat jouw favoriete items van Julie Fleur zo lang mogelijk hun mooie uitstraling behouden.\nOmdat sieraden dagelijks in aanraking kunnen komen met allerlei stoffen en invloeden, kan de kleur of glans na verloop van tijd veranderen. Hoe snel dit gebeurt, verschilt per sieraad, de manier waarop je het draagt en de omstandigheden waaraan het wordt blootgesteld.",
+    "sections": [
+      {
+        "title": "1. Doe je sieraden op tijd af",
+        "paragraphs": [
+          "Het is verstandig om je sieraden af te doen voordat je gaat douchen, zwemmen, sporten of slapen. Ook in de sauna kun je ze beter niet dragen. Vocht, warmte en wrijving kunnen de levensduur en uitstraling van je sieraden beïnvloeden."
+        ]
+      },
+      {
+        "title": "2. Wees voorzichtig met verzorgingsproducten",
+        "paragraphs": [
+          "Breng parfum, bodylotion, make-up en zonnebrandcrème aan voordat je je sieraden omdoet. Geef deze producten even de tijd om in te trekken en voorkom zo veel mogelijk rechtstreeks contact met je sieraden."
+        ]
+      },
+      {
+        "title": "3. Houd je sieraden uit de buurt van chemicaliën",
+        "paragraphs": [
+          "Schoonmaakmiddelen en andere agressieve stoffen kunnen de afwerking van sieraden beschadigen. Draag je sieraden daarom niet tijdens het schoonmaken en voorkom contact met dergelijke producten."
+        ]
+      },
+      {
+        "title": "4. Houd rekening met je huid",
+        "paragraphs": [
+          "De zuurgraad van je huid en de samenstelling van je transpiratie kunnen invloed hebben op de kleur en glans van een sieraad. Dit verschilt per persoon. Ook bij zorgvuldig gebruik kan een sieraad hierdoor na verloop van tijd veranderen."
+        ]
+      },
+      {
+        "title": "5. Geef je sieraden een veilige plek",
+        "paragraphs": [
+          "Draag je een sieraad even niet? Berg het dan op een droge plek op, bij voorkeur afzonderlijk van andere sieraden. Het meegeleverde zakje is hiervoor ideaal. Zo beperk je de kans op krassen, beschadigingen en vochtophoping."
+        ]
+      },
+      {
+        "title": "Wat kun je verwachten van je sieraden?",
+        "paragraphs": [
+          "Sieraden zijn onderhevig aan gebruik en slijtage. Vooral bij sieraden met een gekleurde of vergulde afwerking kan de uitstraling na verloop van tijd veranderen. De snelheid waarmee dit gebeurt, hangt onder andere af van het materiaal, de draagfrequentie en de verzorging.",
+          "Dit onderhoudsadvies verandert niets aan je wettelijke rechten wanneer een sieraad niet aan de overeenkomst voldoet.",
+          "Een kleine tip van Julie Fleur: behandel je sieraden met aandacht en berg ze zorgvuldig op wanneer je ze niet draagt. Zo geniet je er hopelijk extra lang van."
+        ]
+      }
+    ]
+  },
+  "productie-levertijden": {
+    "title": "Productie & levertijden",
+    "eyebrow": "Productie & levertijden",
+    "intro": "Bij Julie Fleur draait het om persoonlijke items die met zorg en aandacht worden gemaakt. Of je nu kiest voor een gepersonaliseerd sieraad, een gegraveerd ontwerp of handgemaakt werk: jouw bestelling vraagt soms wat extra tijd voordat deze klaar is om verzonden te worden.\nOmdat veel producten speciaal op bestelling worden gemaakt, verschilt de productietijd per artikel. Hieronder lees je waar je rekening mee kunt houden.",
+    "sections": [
+      {
+        "title": "Gepersonaliseerde sieraden & handwerk",
+        "paragraphs": [
+          "Producten die speciaal voor jou worden samengesteld of gemaakt, hebben een bepaalde productietijd. Denk bijvoorbeeld aan sieraden met een naam of initiaal, gegraveerde ontwerpen en gepersonaliseerde of handwerk cadeaus.",
+          "De verwachte productietijd vind je altijd terug op de productpagina van het artikel dat je wilt bestellen."
+        ]
+      },
+      {
+        "title": "Producten uit voorraad",
+        "paragraphs": [
+          "Sommige artikelen zijn al klaar en liggen op voorraad. Deze herken je aan de vermelding ‘Direct op voorraad’."
+        ]
+      },
+      {
+        "title": "Toch wat meer haast?",
+        "paragraphs": [
+          "Heb je iets nodig voor een speciale gelegenheid en kun je niet zo lang wachten? Voor bepaalde producten is een spoedbestelling mogelijk.",
+          "Of dit kan, hangt af van het artikel en de lopende bestellingen. Neem daarom vooraf even contact met mij op om de mogelijkheden te bespreken. Een eventuele toeslag en de afgesproken termijn worden vooraf duidelijk gecommuniceerd."
+        ]
+      },
+      {
+        "title": "Wanneer wordt mijn bestelling verzonden?",
+        "paragraphs": [
+          "Zodra jouw bestelling klaar is, pak ik deze zorgvuldig in en maak ik het pakket verzendklaar. Je ontvangt bericht zodra het pakket is verzonden.",
+          "Houd er rekening mee dat de productietijd en de bezorgtijd twee verschillende dingen zijn. Nadat je bestelling is verzonden, is de verdere bezorging afhankelijk van de vervoerder."
+        ]
+      },
+      {
+        "title": "Elk item met zorg gemaakt",
+        "paragraphs": [
+          "Bij Julie Fleur vind je geen anonieme massaproductie, maar items waaraan persoonlijke aandacht wordt besteed. Handgemaakte producten kunnen kleine verschillen vertonen in kleur, vorm of afwerking. Ook bij natuurlijke materialen of handwerk kunnen subtiele variaties voorkomen. Dat hoort bij het karakter van een product dat met de hand wordt gemaakt.",
+          "Mijn tip: bekijk voor je bestelt altijd even de productpagina. Daar vind je de verwachte productietijd van het artikel dat je op het oog hebt."
+        ]
+      }
+    ]
+  },
+  "retourneren-terugbetaling": {
+    "title": "Retourneren & terugbetaling",
+    "eyebrow": "Retourneren & terugbetaling",
+    "intro": "Bij Julie Fleur besteed ik veel aandacht aan het maken en samenstellen van mijn producten. Toch kan het gebeuren dat een bestelling niet helemaal aan je verwachtingen voldoet. Op deze pagina vind je alle informatie over retourneren, terugbetalingen en wat je kunt doen als er iets niet in orde is met je bestelling.",
+    "sections": [
+      {
+        "title": "1. Een product retourneren",
+        "paragraphs": [
+          "Heb je een niet-gepersonaliseerd product besteld en wil je dit toch niet houden? Dan heb je in principe het recht om je aankoop binnen 14 dagen na ontvangst te herroepen. De bedenktijd begint op de dag nadat je het product hebt ontvangen.",
+          "Je hoeft hiervoor geen reden op te geven. Wel vraag ik je om binnen deze termijn duidelijk aan te geven dat je van de aankoop wilt afzien.",
+          "Je kunt dit doen door een e-mail te sturen naar:",
+          "info@juliefleur.nl",
+          "Vermeld in je bericht je ordernummer en de producten die je wilt terugsturen.",
+          "Na je melding heb je nog 14 dagen de tijd om het product daadwerkelijk retour te sturen."
+        ]
+      },
+      {
+        "title": "2. Welke producten komen in aanmerking voor retour?",
+        "paragraphs": [
+          "Voor niet-gepersonaliseerde producten geldt het wettelijke herroepingsrecht, voor zover aan de wettelijke voorwaarden is voldaan.",
+          "Je mag een product bekijken en beoordelen zoals je dat in een fysieke winkel zou doen. Wanneer je het product uitgebreider gebruikt dan nodig is om het te beoordelen en hierdoor waardevermindering ontstaat, kan deze vermindering voor jouw rekening komen.",
+          "Ik vraag je om een retourproduct zorgvuldig te verpakken en het in een zo goed mogelijke staat terug te sturen.",
+          "Gepersonaliseerde producten",
+          "Bij Julie Fleur maak ik ook producten die speciaal op jouw wensen worden afgestemd. Denk bijvoorbeeld aan:",
+          "• Sieraden met een naam of initiaal.",
+          "• Sieraden met zelfgekozen bedeltjes of geboortestenen.",
+          "• Gegraveerde sieraden met een persoonlijke tekst.",
+          "• Handgemaakte punnikwerken met een naam of andere persoonlijke toevoeging.",
+          "• Andere producten die volgens jouw specifieke wensen worden gemaakt.",
+          "Voor producten die volgens jouw persoonlijke specificaties zijn vervaardigd of duidelijk voor een specifieke persoon bestemd zijn, geldt doorgaans een wettelijke uitzondering op het herroepingsrecht.",
+          "Dit betekent dat je deze producten niet kunt retourneren omdat je je hebt bedacht. Natuurlijk blijven je wettelijke rechten wel gelden wanneer een product bijvoorbeeld gebrekkig, beschadigd of verkeerd geleverd is.",
+          "Weet je niet zeker of jouw gekozen product gepersonaliseerd is? Neem dan gerust vooraf contact met me op. Ik help je graag verder.",
+          "Een standaardkeuze voor kleur, initiaal of geboortesteen betekent niet automatisch dat het herroepingsrecht vervalt. De uitzondering geldt voor producten die daadwerkelijk volgens persoonlijke specificaties zijn vervaardigd."
+        ]
+      },
+      {
+        "title": "3. Hoe verloopt een retourzending?",
+        "paragraphs": [
+          "Wil je een product terugsturen? Volg dan onderstaande stappen.",
+          "Stap 1 – Meld je retour aan",
+          "Stuur een e-mail naar info@juliefleur.nl met je ordernummer en een omschrijving van het product dat je wilt retourneren.",
+          "Stap 2 – Verpak je bestelling zorgvuldig",
+          "Zorg ervoor dat het product goed beschermd is tijdens het vervoer, zodat het onderweg niet beschadigd raakt.",
+          "Stap 3 – Verstuur je retour",
+          "Stuur het product uiterlijk binnen 14 dagen nadat je je retourmelding hebt gedaan terug naar onderstaand adres.",
+          "Retouradres",
+          "Julie Fleur",
+          "Van Someren-Downerlaan 32",
+          "5707KL HELMOND",
+          "Nederland",
+          "De verzendkosten voor het retourneren zijn in principe voor eigen rekening. Bewaar je verzendbewijs en eventuele track & trace-code totdat de retourzending volledig is afgehandeld."
+        ]
+      },
+      {
+        "title": "4. Wat kost retourneren?",
+        "paragraphs": [
+          "Wanneer je gebruikmaakt van je wettelijke bedenktijd, betaal je zelf de kosten voor het terugsturen van je bestelling.",
+          "Retourneer je de volledige bestelling? Dan ontvang je ook de oorspronkelijke standaardverzendkosten terug die je bij het plaatsen van de bestelling hebt betaald. Heb je gekozen voor een duurdere verzendoptie, dan worden de extra kosten boven het standaardtarief niet vergoed.",
+          "Heb je een verkeerd product ontvangen of is er sprake van een gebrek? Neem dan eerst contact met me op. In dat geval gelden mogelijk andere regels voor de kosten en afhandeling."
+        ]
+      },
+      {
+        "title": "5. Wanneer ontvang ik mijn geld terug?",
+        "paragraphs": [
+          "Zodra je retourzending is ontvangen of je hebt aangetoond dat je deze hebt verzonden, wordt de terugbetaling afgehandeld volgens de wettelijke regels.",
+          "Bij een volledige retour ontvang je het aankoopbedrag en de oorspronkelijke standaardverzendkosten terug.",
+          "De terugbetaling vindt uiterlijk binnen 14 dagen na je herroepingsmelding plaats. Ik mag hiermee wachten totdat ik het product heb ontvangen of totdat je hebt aangetoond dat je het hebt teruggestuurd, afhankelijk van wat het eerst gebeurt.",
+          "Het bedrag wordt teruggestort via dezelfde betaalmethode die je bij je bestelling hebt gebruikt, tenzij we samen iets anders afspreken."
+        ]
+      },
+      {
+        "title": "6. Is je bestelling beschadigd of niet correct geleverd?",
+        "paragraphs": [
+          "Het kan natuurlijk gebeuren dat een product tijdens het vervoer beschadigd raakt, niet aan de overeenkomst voldoet of dat je een ander product ontvangt dan je hebt besteld.",
+          "Dat is uiteraard niet de bedoeling.",
+          "Neem in dat geval eerst contact met me op via info@juliefleur.nl Vermeld je ordernummer en voeg, indien mogelijk, een duidelijke foto van het product toe.",
+          "Ik bekijk je melding persoonlijk en bespreek met je welke oplossing passend is. Je wettelijke rechten bij een product dat niet aan de overeenkomst voldoet, blijven altijd van kracht."
+        ]
+      },
+      {
+        "title": "7. Artikelen uit de sale of een actie",
+        "paragraphs": [
+          "Ook bij afgeprijsde producten geldt dat een korting niet automatisch betekent dat retourneren is uitgesloten.",
+          "Voor niet-gepersonaliseerde producten blijft het wettelijke herroepingsrecht van toepassing wanneer aan de voorwaarden wordt voldaan.",
+          "Bij gepersonaliseerde producten kan de wettelijke uitzondering op het herroepingsrecht gelden, ongeacht of je het product tegen de reguliere prijs of met korting hebt gekocht.",
+          "Zijn er voor een specifieke actie aanvullende voorwaarden? Dan worden deze bij de betreffende actie vermeld."
+        ]
+      },
+      {
+        "title": "8. Kan ik mijn bestelling omruilen?",
+        "paragraphs": [
+          "Wil je liever een andere kleur, uitvoering of een ander product? Dan kun je niet altijd rechtstreeks ruilen.",
+          "Wanneer je gebruik kunt maken van het herroepingsrecht, kun je het oorspronkelijke product retourneren en vervolgens een nieuwe bestelling plaatsen.",
+          "Voor gepersonaliseerde producten gelden de eerder genoemde uitzonderingen.",
+          "Twijfel je vooraf over bijvoorbeeld een kleur, maat, kettinglengte of combinatie van bedeltjes? Stuur me gerust een berichtje voordat je bestelt. Ik denk graag met je mee, zodat je een keuze maakt waar je blij mee bent."
+        ]
+      },
+      {
+        "title": "9. Vragen over je bestelling?",
+        "paragraphs": [
+          "Een retour omdat je van gedachten bent veranderd, is iets anders dan een melding over een product dat niet in orde is. Voor beide situaties kun je bij mij terecht.",
+          "Heb je vragen over retourneren, een terugbetaling of de kwaliteit van een product? Neem dan contact op via info@juliefleur.nl Vermeld bij voorkeur je ordernummer, zodat ik je sneller kan helpen.",
+          "Wil je weten hoe je jouw sieraden en andere producten zo lang mogelijk mooi houdt? Bekijk dan ook de pagina Onderhoud & verzorging.",
+          "Bedankt voor je bestelling bij Julie Fleur en voor het steunen van mijn kleine onderneming."
+        ]
+      }
+    ],
+    "collapsible": true
+  },
+  "verzenden-bezorgen": {
+    "title": "Verzenden & bezorgen",
+    "eyebrow": "Verzenden & bezorgen",
+    "intro": "Bij Julie Fleur wordt iedere bestelling met aandacht samengesteld en klaargemaakt voor verzending. Omdat sommige producten speciaal op aanvraag worden gemaakt, kan de tijd tot verzending per bestelling verschillen. Op deze pagina lees je hoe het bestelproces, de verzending en de bezorging verlopen.",
+    "sections": [
+      {
+        "title": "1. Hoe lang duurt het voordat mijn bestelling klaar is?",
+        "paragraphs": [
+          "De tijd die nodig is om een bestelling te maken, hangt af van het gekozen product en of het op voorraad is.",
+          "Gepersonaliseerde producten en handwerk",
+          "Veel van mijn producten worden op bestelling gemaakt of gepersonaliseerd. Denk hierbij aan sieraden met een naam of initiaal, gegraveerde items en handgemaakte producten. De verwachte productietijd vind je op de betreffende productpagina.",
+          "Producten die op voorraad zijn",
+          "Een bestelling met spoed",
+          "Voor sommige gepersonaliseerde sieraden is een versnelde verwerking mogelijk. Als deze mogelijkheid wordt aangeboden, vind je de informatie hierover bij het product.",
+          "Let op: de bezorgtijd van de vervoerder komt nog boven op de tijd die nodig is om jouw bestelling te maken en klaar te zetten."
+        ]
+      },
+      {
+        "title": "2. Waar bezorg ik?",
+        "paragraphs": [
+          "Verzending naar Nederland en België wordt ingericht. DHL is de gewenste vervoerder. De verzendkosten worden vóór het afronden van een bestelling getoond.",
+          "Afhalen kan op afspraak zodra de bestelling klaar is: Julie Fleur, Van Someren-Downerlaan 32, 5707 KL Helmond."
+        ]
+      },
+      {
+        "title": "3. Wanneer kan ik mijn bestelling verwachten?",
+        "paragraphs": [
+          "De aangegeven productietijd heeft betrekking op het maken en voorbereiden van jouw bestelling. De verzending en bezorging volgen daarna.",
+          "Ter verduidelijking:",
+          "• Een gepersonaliseerd product: eerst wordt het product gemaakt, daarna wordt het verzonden.",
+          "De verwachte productietijd op de productpagina is het uitgangspunt voor het betreffende artikel. Heb je meerdere producten besteld met verschillende productietijden? Dan kan het nodig zijn om te wachten tot alle artikelen klaar zijn voordat de bestelling als geheel wordt verzonden."
+        ]
+      },
+      {
+        "title": "4. Controleer je gegevens goed",
+        "paragraphs": [
+          "Bij het afronden van je bestelling is het belangrijk dat je jouw naam, adres en overige gegevens zorgvuldig controleert. Ik verzend het pakket naar het adres dat je bij het bestellen hebt opgegeven.",
+          "Heb je achteraf ontdekt dat er een fout in je adres staat? Neem dan zo snel mogelijk contact met mij op via info@juliefleur.nl Als het pakket nog niet is verzonden, kan ik kijken of de gegevens nog aangepast kunnen worden.",
+          "Is je bestelling al onderweg? Dan kan een wijziging helaas niet altijd meer worden doorgevoerd."
+        ]
+      },
+      {
+        "title": "5. Problemen met de bezorging",
+        "paragraphs": [
+          "Mijn pakket is vertraagd",
+          "Soms duurt de bezorging langer dan verwacht. Controleer bij een ontvangen track & trace-code eerst de meest recente verzendstatus.",
+          "Blijft de informatie langere tijd ongewijzigd of is je pakket duidelijk later dan verwacht? Laat het mij weten. Ik kijk graag met je mee en neem indien nodig contact op met de vervoerder.",
+          "Volgens de tracking is mijn pakket bezorgd, maar ik heb niets ontvangen",
+          "Controleer eerst of het pakket bij de buren is afgegeven of op een afgesproken plek is neergelegd. Heb je het daar niet gevonden? Neem dan contact met mij op via info@juliefleur.nl.",
+          "Vermeld bij je bericht je ordernummer en, indien beschikbaar, de track & trace-code. Zo kan ik de zending makkelijker terugvinden en met je meekijken naar de vervolgstappen."
+        ]
+      },
+      {
+        "title": "6. Is je bestelling beschadigd aangekomen?",
+        "paragraphs": [
+          "Het is natuurlijk vervelend als een bestelling niet in goede staat aankomt. Neem in dat geval zo snel mogelijk contact met mij op via info@juliefleur.nl.",
+          "Vermeld je ordernummer en voeg, indien mogelijk, foto's toe waarop zowel de verpakking als de beschadiging aan het product duidelijk zichtbaar zijn.",
+          "Met deze informatie kan ik de situatie beoordelen en bekijken welke oplossing passend is."
+        ]
+      },
+      {
+        "title": "7. Wat als de productie langer duurt?",
+        "paragraphs": [
+          "Omdat ik veel producten zelf maak of speciaal naar wens samenstel, kan het incidenteel voorkomen dat een bestelling meer tijd nodig heeft dan gepland.",
+          "Wanneer duidelijk wordt dat de verwachte productietijd aanzienlijk wordt overschreden, probeer ik je hierover zo tijdig mogelijk te informeren."
+        ]
+      },
+      {
+        "title": "8. Heb je nog vragen?",
+        "paragraphs": [
+          "Twijfel je over de verwachte levertijd, wil je weten of een spoedbestelling mogelijk is of heb je een andere vraag over de verzending? Stuur me gerust een berichtje voordat je bestelt. Ik help je graag verder!",
+          "Dank je wel voor je bestelling bij Julie Fleur en voor je geduld met het maken van jouw product."
+        ]
+      }
+    ],
+    "collapsible": true
+  },
+  "bedrijfsinformatie": {
+    "title": "Bedrijfsinformatie & contact",
+    "eyebrow": "Bedrijfsinformatie & contact",
+    "intro": "Welkom bij Julie Fleur. Hieronder vind je de gegevens van mijn onderneming en lees je hoe je contact met mij kunt opnemen.",
+    "sections": [
+      {
+        "title": "Gegevens van de onderneming",
+        "paragraphs": [
+          "Handelsnaam: Julie Fleur",
+          "Ondernemer: Fleur van de Vorst - Voogels",
+          "Vestigingsadres:",
+          "Van Someren-Downerlaan 32",
+          "5707 KL Helmond",
+          "E-mail: info@juliefleur.nl",
+          "Website: www.juliefleur.nl",
+          "Instagram: @juliefleur.nl",
+          "KvK-nummer: 42160670",
+          "Btw-identificatienummer: NL005545613B33"
+        ]
+      },
+      {
+        "title": "Contact en bereikbaarheid",
+        "paragraphs": [
+          "Heb je een vraag over een product, wil je meer weten over een bestelling of heb je hulp nodig bij een andere kwestie? Je kunt mij bereiken via e-mail of Instagram.",
+          "• E-mail: info@juliefleur.nl",
+          "• Instagram: @juliefleur.nl",
+          "Julie Fleur is een kleine onderneming waarbij persoonlijke aandacht centraal staat. Ik behandel vragen en berichten zelf en help je graag verder."
+        ]
+      },
+      {
+        "title": "Vragen of klachten",
+        "paragraphs": [
+          "Is er iets niet naar wens verlopen of wil je een klacht doorgeven? Stuur dan een e-mail naar info@juliefleur.nl.",
+          "Omschrijf zo duidelijk mogelijk waar je tegenaan loopt en vermeld, als het om een bestelling gaat, je ordernummer. Zo kan ik je bericht goed beoordelen en samen met jou zoeken naar een passende oplossing.",
+          "Voor aanvullende informatie over bestellingen, retourzendingen en de afhandeling van klachten kun je de pagina's Retourbeleid en Algemene voorwaarden raadplegen."
+        ]
+      },
+      {
+        "title": "Gebruik van teksten en beeldmateriaal",
+        "paragraphs": [
+          "De teksten, foto's, afbeeldingen, het logo en de eigen ontwerpen die op de website van Julie Fleur worden gepubliceerd, kunnen beschermd zijn door auteursrecht of andere intellectuele-eigendomsrechten.",
+          "Wil je materiaal van deze website overnemen of voor eigen doeleinden gebruiken? Vraag dan vooraf toestemming aan de betreffende rechthebbende, tenzij het gebruik wettelijk is toegestaan. Aan het vermelden van de bron alleen kun je niet automatisch het recht ontlenen om materiaal over te nemen."
+        ]
+      }
+    ]
+  },
+  "algemene-voorwaarden": {
+    "title": "Algemene voorwaarden",
+    "eyebrow": "Algemene voorwaarden",
+    "intro": "De webshop is in voorbereiding. Bestellen en betalen zijn nog niet mogelijk.",
+    "sections": [
+      {
+        "title": "Informatie over je aankoop",
+        "paragraphs": [
+          "Lees de informatie over producten, verzending, retourneren en terugbetaling. De verkoopvoorwaarden worden beschikbaar voordat de webshop opengaat."
+        ],
+        "links": [
+          {
+            "label": "Retourneren & terugbetaling",
+            "href": "/retourneren-terugbetaling"
+          },
+          {
+            "label": "Verzenden & bezorgen",
+            "href": "/verzenden-bezorgen"
+          },
+          {
+            "label": "Contact",
+            "href": "/contact"
+          }
+        ]
+      }
+    ]
+  },
+  "privacybeleid": {
+    "title": "Privacy",
+    "eyebrow": "Privacy",
+    "intro": "Bijgewerkt op 4 november 2026.",
+    "sections": [
+      {
+        "title": "Wie is verantwoordelijk?",
+        "paragraphs": [
+          "Julie Fleur, Fleur van de Vorst - Voogels, Van Someren-Downerlaan 32, 5707 KL Helmond. Voor vragen over persoonsgegevens: info@juliefleur.nl."
+        ]
+      },
+      {
+        "title": "De website gebruiken",
+        "paragraphs": [
+          "Deze website wordt gehost door Vercel. De hostingdienst kan technische verzoekgegevens verwerken om de website te leveren en te beveiligen. Lettertypes worden lokaal geladen. De eigen websitecode gebruikt geen advertentie- of analysetracking. De webshop is nog niet actief; er worden via deze website geen bestellingen of betalingen verwerkt."
+        ]
+      },
+      {
+        "title": "Contact",
+        "paragraphs": [
+          "Als je mailt naar info@juliefleur.nl, gebruikt Fleur de gegevens in je bericht om je vraag te beantwoorden. Deel alleen gegevens die nodig zijn voor je vraag. Het contactformulier is niet aangesloten en kan geen berichten verzenden."
+        ]
+      },
+      {
+        "title": "Externe links en je voorkeur",
+        "paragraphs": [
+          "Er zijn geen externe feeds ingeschakeld. De website laadt geen Elfsight-code of Instagram-embed. De gewone link naar Instagram opent de website van Instagram; daar geldt het privacybeleid van die dienst. Je cookievoorkeur wordt maximaal 180 dagen in je browser onthouden."
+        ],
+        "links": [
+          {
+            "label": "Cookiebeleid",
+            "href": "/cookiebeleid"
+          }
+        ]
+      },
+      {
+        "title": "Vragen over je gegevens",
+        "paragraphs": [
+          "Je kunt via info@juliefleur.nl vragen om inzage, correctie of verwijdering van je gegevens of bezwaar maken tegen de verwerking. Je kunt ook een klacht indienen bij de Autoriteit Persoonsgegevens."
+        ]
+      }
+    ]
+  },
+  "cookiebeleid": {
+    "title": "Cookies",
+    "eyebrow": "Cookies",
+    "intro": "Bijgewerkt op 4 november 2026.",
+    "sections": [
+      {
+        "title": "Noodzakelijke voorkeur",
+        "paragraphs": [
+          "We bewaren je cookievoorkeur en het keuzemoment maximaal 180 dagen in lokale browseropslag. Bestaande voorkeuren blijven bewaard; deze opslag is geen advertentieprofiel. Als browseropslag niet werkt, blijft je keuze alleen tijdens de geopende pagina actief."
+        ]
+      },
+      {
+        "title": "Geen optionele cookies of externe feeds",
+        "paragraphs": [
+          "De Instagram-feed en Elfsight-code zijn verwijderd. Er worden via deze website geen externe feeds geladen of optionele cookies geplaatst. Een gewone link naar Instagram blijft beschikbaar. Als je die opent, geldt het cookiebeleid van Instagram."
+        ]
+      },
+      {
+        "title": "Je keuze wijzigen",
+        "paragraphs": [
+          "Via Cookies of Cookievoorkeuren onderaan iedere pagina kun je je voorkeur bekijken en Alleen noodzakelijk opslaan. Eerder door externe diensten geplaatste cookies kun je zelf verwijderen in je browserinstellingen."
+        ]
+      },
+      {
+        "title": "Overige functies",
+        "paragraphs": [
+          "De eigen websitecode plaatst geen advertentie- of analysecookies. Zoekopdrachten worden niet in browseropslag bewaard. Ecwid en het contactformulier zijn niet actief. De website is openbaar toegankelijk en Vercel kan technische verzoekgegevens verwerken voor werking en beveiliging."
+        ],
+        "links": [
+          {
+            "label": "Privacy",
+            "href": "/privacybeleid"
+          }
+        ]
+      }
+    ]
+  }
+}

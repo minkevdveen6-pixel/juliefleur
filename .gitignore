@@ -1,0 +1,30 @@
+node_modules/
+.next/
+out/
+dist/
+.wrangler/
+.dev.vars*
+assets/originals/
+.env*
+*.tsbuildinfo
+.DS_Store
+artifacts/
+__pycache__/
+*.pyc
+.openai/*.tar.gz
+.openai/*.tgz
+.openai/workflow*
+
+# Hostingidentiteit en lokaal gekoppelde projecten horen niet in GitHub.
+.openai/
+.vercel/
+
+# Aanmeldgegevens, privésleutels en lokale logbestanden.
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+credentials*.json

@@ -1,0 +1,11 @@
+:root{
+  /* Mediane kleurmonsters uit de aangeleverde rasterafbeelding; zie docs/LOGO.md. */
+  --pink:#F7D0D6;
+  --wine:#873E51;
+  --olive:#536527;
+  --ivory:#FFF9F7;
+  --muted:#77545B;
+  --line:#873e5129;
+  --serif:"DM Sans",Arial,sans-serif;
+  --sans:"DM Sans",Arial,sans-serif;
+}
