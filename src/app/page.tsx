@@ -15,8 +15,6 @@ const collections = [
   { slot: "category:sieraden-graveren", href: "/collecties/sieraden-graveren", label: "Sieraden & graveren" },
   { slot: "category:bagcharms", href: "/collecties/bagcharms", label: "Bagcharms" },
   { slot: "category:punniken", href: "/collecties/punniken", label: "Punniken" },
-];
-const moreCollections = [
   { slot: "category:borduren", href: "/collecties/borduren", label: "Borduren" },
   { slot: "category:vilten-kroon", href: "/collecties/vilten-kroon", label: "Vilten kroon" },
 ];
@@ -36,7 +34,7 @@ export default function Home() {
         </div>
         <Link className={styles.heroImage} href="/collecties/bagcharms/" aria-label="Bekijk de bagcharms">
           <picture>
-            <source type="image/webp" srcSet="/images/hero/pantertas-bagcharm-480.webp 480w, /images/hero/pantertas-bagcharm-768.webp 768w, /images/hero/pantertas-bagcharm-1200.webp 1200w" sizes="(max-width: 360px) calc(100vw - 28px), (max-width: 600px) calc(100vw - 36px), (max-width: 1144px) calc(52.83vw - 34px), 571px" />
+            <source type="image/webp" srcSet="/images/hero/pantertas-bagcharm-480.webp 480w, /images/hero/pantertas-bagcharm-768.webp 768w, /images/hero/pantertas-bagcharm-1200.webp 1200w" sizes="(max-width: 600px) min(100vw - 36px, 440px), (max-width: 1010px) calc(52.83vw - 34px), 500px" />
             <img src="/images/hero/pantertas-bagcharm-1200.webp" width="1200" height="1600" alt="Tas met panterprint en een gepersonaliseerde groen-blauwe bagcharm" fetchPriority="high" decoding="async" />
           </picture>
         </Link>
@@ -50,12 +48,6 @@ export default function Home() {
           {collections.map(collection => <Link className={styles.category} href={collection.href} key={collection.slot}>
             <div className={styles.collectionImage}><PhotoSpace slot={collection.slot} kind="home-category" fit="cover" /></div>
             <div className={styles.categoryCaption}><h3>{collection.label}</h3><Icon name="arrow" width="18" height="18" /></div>
-          </Link>)}
-        </div>
-        <div className={styles.moreCollections}>
-          {moreCollections.map(collection => <Link className={styles.smallCategory} href={collection.href} key={collection.slot}>
-            <PhotoSpace slot={collection.slot} kind="home-extra" fit="contain" />
-            <div><h3>{collection.label}</h3><span>Ontdek de collectie <Icon name="arrow" width="16" height="16" /></span></div>
           </Link>)}
         </div>
       </div>

@@ -114,7 +114,9 @@ export function EcwidProvider({ children }: { children: React.ReactNode }) {
       product_details_gallery_image_position: "FIT", product_details_show_product_options: true,
       product_details_show_buy_button: true, product_details_show_qty: true,
       product_details_show_in_stock_label: true, product_details_show_product_sku: false,
-      product_details_show_share_buttons: false,
+      product_details_show_product_description: true, product_details_show_attributes: true,
+      product_details_cut_product_description_in_sidebar: false,
+      product_details_additional_images_has_shadow: false, product_details_show_share_buttons: false,
       shopping_cart_show_qty_inputs: true, shopping_cart_show_sku: false, shopping_cart_show_weight: false,
     };
     window._xnext_initialization_scripts = browser ? [{ widgetType: "ProductBrowser", id: browser.id,
