@@ -26,6 +26,13 @@
 /* Ecwid behoudt de volledige foto binnen de vierkante tegel. */
 .store :global(.grid-product__image .grid-product__bg){background-color:#f4efeb!important}
 
+.store .optionHelp{
+  margin:7px 0 0;
+  color:var(--muted);
+  font:400 14px/1.45 var(--sans);
+  overflow-wrap:anywhere;
+}
+
 /* Native Ecwid-mand en checkout, uitsluitend binnen de bestaande winkel. */
 .paymentNotice{margin:0 0 28px;padding:18px 22px;background:var(--pink);border-left:3px solid var(--olive);font-size:15px;line-height:1.6}
 .paymentNotice strong{font-weight:600}
@@ -80,3 +87,25 @@
  .store :global(.ec-cart-item__control-inner){min-width:44px;min-height:44px;margin-top:-10px;margin-right:-8px}
  .store :global(.ec-cart__body){padding:20px 18px!important}
 }
+
+.store .productInformation{
+  border-top:1px solid var(--line);
+  margin-top:20px;
+}
+.productInformation > details{border-bottom:1px solid var(--line)}
+.productInformation > details > summary{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  padding-block:13px;
+  cursor:pointer;
+  list-style:none;
+  font:500 16px/1.4 var(--sans);
+  color:var(--wine);
+}
+.productInformation > details > summary::-webkit-details-marker{display:none}
+.productInformation > details > summary::after{content:"+" / "";color:var(--olive);font-size:20px}
+.productInformation > details[open] > summary::after{content:"−" / ""}
+.productInformation > details > div{padding-bottom:16px;overflow-wrap:anywhere}
+.productInformation .shippingLink{display:inline-block;margin-top:8px;color:var(--olive);text-decoration:underline}

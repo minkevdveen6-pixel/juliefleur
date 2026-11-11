@@ -296,3 +296,22 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
  .cookie-actions{grid-template-columns:1fr}.cookie-actions button{min-height:44px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* Productpersonalisatie in de dynamisch geladen Ecwid-productpagina. */
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option {
+  --julie-field-green:#56692c;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(
+  .form-control__text, .form-control__select, .form-control__textarea,
+  .form-control__placeholder, .form-control__placeholder-inner, .form-control__arrow
+) {
+  color:var(--julie-field-green)!important;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(input,textarea)::placeholder {
+  color:var(--julie-field-green);
+  opacity:1;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(input,textarea,select):focus-visible {
+  outline:2px solid var(--julie-field-green);
+  outline-offset:-2px;
+}

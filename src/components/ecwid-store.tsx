@@ -1,14 +1,21 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ecwid } from "@/lib/site";
 import { canShowEcwidPage } from "@/lib/ecwid-integration";
 import { useEcwid } from "./ecwid-provider";
+import { observeOptionHelp } from "./ecwid-option-help";
 import { SiteLink } from "./site-link";
 import styles from "./ecwid-store.module.css";
 
 export function EcwidStore({ categoryId, featured = false, main = false, allProducts = false }: { categoryId?: number; featured?: boolean; main?: boolean; allProducts?: boolean }) {
   const { ready, error: apiError, page, quantity, containsSamples } = useEcwid();
   const [timedOut, setTimedOut] = useState(false);
+  const nativeStore = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (page.type === "PRODUCT" && nativeStore.current) {
+      return observeOptionHelp(nativeStore.current, page.productId);
+    }
+  }, [page.type, page.productId]);
   useEffect(() => {
     if (!ecwid.enabled || page.type !== "LOADING") return;
     const timeout = setTimeout(() => setTimedOut(true), 30000);
@@ -33,7 +40,7 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
       : !loaded ? <p className={styles.status} role="status">De winkel wordt geladen…</p>
       : !showNative ? <div className={styles.empty}><p>De collectie wordt binnenkort toegevoegd.</p>{!featured && <SiteLink className="text-link" href="/collecties/">Bekijk de collecties</SiteLink>}</div> : null}
     <div className={showNative ? undefined : styles.unavailable} inert={!showNative} aria-hidden={!showNative}>
-      <div id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} />
+      <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} />
     </div>
     {main && loaded && !error && <nav className={styles.serviceLinks} aria-label="Je bestelling"><SiteLink href="/winkel/#!/~/account">Mijn account &amp; bestellingen</SiteLink><SiteLink href="/contact/">Hulp nodig?</SiteLink></nav>}
     <noscript>Voor de winkel is JavaScript nodig. Je kunt Fleur bereiken via de contactpagina.</noscript>
