@@ -300,6 +300,24 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 /* Productpersonalisatie in de dynamisch geladen Ecwid-productpagina. */
 [data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option {
   --julie-field-green:#56692c;
+  margin-bottom:18px;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option__title {
+  margin-bottom:5px;
+  color:var(--wine);
+  overflow-wrap:break-word;
+  word-break:normal;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option .form-control--flexible {
+  width:100%;
+  min-width:0;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(.form-control__text, .form-control__select) {
+  min-height:44px;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option .form-control__arrow {
+  height:100%;
+  inset-inline-end:0;
 }
 [data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(
   .form-control__text, .form-control__select, .form-control__textarea,
@@ -314,4 +332,20 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 [data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-option :is(input,textarea,select):focus-visible {
   outline:2px solid var(--julie-field-green);
   outline-offset:-2px;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-purchase__add-to-bag .form-control__button {
+  width:100%;
+  min-height:48px!important;
+  background-color:var(--olive);
+  color:var(--ivory)!important;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-purchase__add-to-bag .form-control__button-text {
+  color:var(--ivory)!important;
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-purchase__add-to-bag .form-control__button:hover {
+  filter:brightness(.92);
+}
+[data-ecwid-page="PRODUCT"] .ec-size .ec-store .details-product-purchase__add-to-bag .form-control__button:focus-visible {
+  outline:2px solid var(--olive);
+  outline-offset:3px;
 }

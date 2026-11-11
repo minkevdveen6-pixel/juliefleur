@@ -26,10 +26,11 @@
 /* Ecwid behoudt de volledige foto binnen de vierkante tegel. */
 .store :global(.grid-product__image .grid-product__bg){background-color:#f4efeb!important}
 
-.store .optionHelp{
-  margin:7px 0 0;
+.store :global(.ec-size .ec-store) .optionHelp{
+  margin:6px 0 0;
   color:var(--muted);
-  font:400 14px/1.45 var(--sans);
+  font:400 13px/1.5 var(--sans);
+  word-break:normal;
   overflow-wrap:anywhere;
 }
 
@@ -88,25 +89,45 @@
  .store :global(.ec-cart__body){padding:20px 18px!important}
 }
 
-.store .productInformation{
-  border-top:1px solid var(--line);
-  margin-top:20px;
+.store :global(.product-details__general-info:has(> .product-details-module__content > [data-julie-accordion]) > :is(.product-details-module__title, .product-details-module__btn-more)){
+  display:none;
 }
-.productInformation > details{border-bottom:1px solid var(--line)}
-.productInformation > details > summary{
-  display:flex;
-  justify-content:space-between;
+
+.store :global(.ec-size .ec-store) .productInformation{
+  border-top:1px solid var(--line);
+  margin-top:12px;
+}
+.store :global(.ec-size .ec-store) .productInformation > details{
+  margin:0;
+  border-bottom:1px solid var(--line);
+}
+.store :global(.ec-size .ec-store) .productInformation > details > summary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 10px;
   align-items:center;
   gap:16px;
-  padding-block:13px;
+  min-height:46px;
+  padding:11px 4px 11px 0;
+  margin:0;
   cursor:pointer;
   list-style:none;
-  font:500 16px/1.4 var(--sans);
+  text-align:left;
+  font:500 16px/1.4 var(--sans)!important;
   color:var(--wine);
 }
-.productInformation > details > summary::-webkit-details-marker{display:none}
-.productInformation > details > summary::after{content:"+" / "";color:var(--olive);font-size:20px}
-.productInformation > details[open] > summary::after{content:"−" / ""}
+.store .productInformation > details > summary::-webkit-details-marker{display:none}
+.store :global(.ec-size .ec-store) .productInformation > details > summary::after{
+  content:"";
+  width:7px;
+  height:7px;
+  justify-self:end;
+  border-right:1px solid var(--olive);
+  border-bottom:1px solid var(--olive);
+  transform:translateY(-2px) rotate(45deg);
+}
+.store :global(.ec-size .ec-store) .productInformation > details[open] > summary::after{
+  transform:translateY(2px) rotate(225deg);
+}
 .productInformation > details > div{padding-bottom:16px;overflow-wrap:anywhere}
 .productInformation .shippingLink{display:inline-block;margin-top:8px;color:var(--olive);text-decoration:underline}
 .store[data-ecwid-page="PRODUCT"] .informationSource{display:none!important}

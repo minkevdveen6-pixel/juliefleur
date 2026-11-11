@@ -110,6 +110,7 @@ export function EcwidProvider({ children }: { children: React.ReactNode }) {
       product_list_buybutton_behavior: "HIDE", product_list_show_frame: false,
       product_details_layout: "TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT",
       product_details_gallery_layout: "IMAGE_SINGLE_THUMBNAILS_HORIZONTAL",
+      product_details_thumbnails_aspect_ratio: "SQUARE_1",
       product_details_gallery_image_position: "FIT", product_details_show_product_options: true,
       product_details_show_buy_button: true, product_details_show_qty: true,
       product_details_show_in_stock_label: true, product_details_show_product_sku: false,
