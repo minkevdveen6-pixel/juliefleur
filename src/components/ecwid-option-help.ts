@@ -70,8 +70,8 @@ export function observeOptionHelp(store: HTMLElement, productId: number | undefi
   const refresh = () => {
     observer.disconnect();
     restore();
-    arrangeProductInformation(store);
     restore = placeOptionHelp(store, productId);
+    arrangeProductInformation(store);
     observer.observe(store, { childList: true, subtree: true, characterData: true });
   };
   const observer = new MutationObserver(refresh);

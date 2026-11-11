@@ -13,7 +13,13 @@ function sectionFor(node: Element): Section | undefined {
 
 export function arrangeProductInformation(store: HTMLElement) {
   const description = store.querySelector<HTMLElement>(".product-details__product-description");
-  if (!description || description.dataset.julieAccordion) return;
+  if (!description) return;
+  const previous = store.querySelector<HTMLElement>("[data-julie-accordion]");
+  const attributes = store.querySelector<HTMLElement>(".product-details__product-attributes");
+  const source = description.innerHTML + (attributes?.innerHTML ?? "");
+  if (previous?.previousElementSibling === description && previous.dataset.source === source) return;
+  const opened = new Set(Array.from(previous?.querySelectorAll("details[open] > summary") ?? [], (item) => item.textContent));
+  previous?.remove();
 
   const sections = new Map<Section, Node[]>(titles.map((title) => [title, []]));
   let section: Section = titles[0];
@@ -21,20 +27,21 @@ export function arrangeProductInformation(store: HTMLElement) {
     const title = node instanceof Element ? sectionFor(node) : undefined;
     section = title ?? section;
     if (title && node.textContent?.trim().toLowerCase() === title.toLowerCase()) {
-      node.parentNode?.removeChild(node);
       continue;
     }
-    sections.get(section)?.push(node);
+    if (!(node instanceof HTMLElement && node.hidden)) sections.get(section)?.push(node.cloneNode(true));
   }
 
-  const attributes = store.querySelector(".product-details__product-attributes");
-  if (attributes?.textContent?.trim() && !description.contains(attributes)) sections.get(titles[1])?.push(attributes);
+  if (attributes?.textContent?.trim() && !description.contains(attributes)) sections.get(titles[1])?.push(attributes.cloneNode(true));
 
-  description.dataset.julieAccordion = "true";
-  description.classList.add(styles.productInformation);
+  const accordion = document.createElement("div");
+  accordion.dataset.julieAccordion = "true";
+  accordion.dataset.source = source;
+  accordion.className = styles.productInformation;
   for (const [title, nodes] of sections) {
     if (!nodes.some((node) => node.textContent?.trim() || (node instanceof Element && node.matches("img, video, iframe")))) continue;
     const disclosure = document.createElement("details");
+    disclosure.open = opened.has(title);
     const summary = document.createElement("summary");
     summary.textContent = title;
     const body = document.createElement("div");
@@ -47,6 +54,11 @@ export function arrangeProductInformation(store: HTMLElement) {
       body.append(shipping);
     }
     disclosure.append(summary, body);
-    description.append(disclosure);
+    accordion.append(disclosure);
+  }
+  if (accordion.childElementCount) {
+    description.classList.add(styles.informationSource);
+    attributes?.classList.add(styles.informationSource);
+    description.after(accordion);
   }
 }

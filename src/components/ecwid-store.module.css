@@ -109,3 +109,4 @@
 .productInformation > details[open] > summary::after{content:"−" / ""}
 .productInformation > details > div{padding-bottom:16px;overflow-wrap:anywhere}
 .productInformation .shippingLink{display:inline-block;margin-top:8px;color:var(--olive);text-decoration:underline}
+.store[data-ecwid-page="PRODUCT"] .informationSource{display:none!important}
