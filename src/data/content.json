@@ -40,10 +40,8 @@
       {
         "title": "Hoe lang duurt het voordat mijn bestelling wordt verzonden?",
         "paragraphs": [
-          "De levertijd kan per product verschillen. Op de productpagina van ieder item vind je de verwachte levertijd en eventuele aanvullende informatie.",
-          "Omdat ik mijn producten met aandacht maak en verwerk, kan de benodigde tijd per bestelling variëren.",
-          "Er zijn een aantal producten die niet gepersonaliseerd zijn en dus direct op voorraad zijn.",
-          "Dit staat duidelijk vermeld op de productpagina en hiervoor geldt dan ook een andere levertijd welke ook aangegeven staat."
+          "De verwerkingstijd is de tijd die ik nodig heb om je bestelling te maken, te personaliseren en in te pakken. Die tijd verschilt per artikel.",
+          "Na verzending begint de bezorgtijd. Die hangt af van de vervoerder en de gekozen verzendmethode."
         ]
       },
       {
@@ -154,13 +152,13 @@
   "productie-levertijden": {
     "title": "Productie & levertijden",
     "eyebrow": "Productie & levertijden",
-    "intro": "Bij Julie Fleur draait het om persoonlijke items die met zorg en aandacht worden gemaakt. Of je nu kiest voor een gepersonaliseerd sieraad, een gegraveerd ontwerp of handgemaakt werk: jouw bestelling vraagt soms wat extra tijd voordat deze klaar is om verzonden te worden.\nOmdat veel producten speciaal op bestelling worden gemaakt, verschilt de productietijd per artikel. Hieronder lees je waar je rekening mee kunt houden.",
+    "intro": "De verwerkingstijd is de tijd die ik nodig heb om je bestelling te maken en in te pakken. De bezorgtijd begint zodra ik je bestelling aan de vervoerder heb meegegeven.",
     "sections": [
       {
         "title": "Gepersonaliseerde sieraden & handwerk",
         "paragraphs": [
           "Producten die speciaal voor jou worden samengesteld of gemaakt, hebben een bepaalde productietijd. Denk bijvoorbeeld aan sieraden met een naam of initiaal, gegraveerde ontwerpen en gepersonaliseerde of handwerk cadeaus.",
-          "De verwachte productietijd vind je altijd terug op de productpagina van het artikel dat je wilt bestellen."
+          "Als er een verwachte verwerkingstijd bekend is, staat die bij het artikel."
         ]
       },
       {
@@ -180,14 +178,14 @@
         "title": "Wanneer wordt mijn bestelling verzonden?",
         "paragraphs": [
           "Zodra jouw bestelling klaar is, pak ik deze zorgvuldig in en maak ik het pakket verzendklaar. Je ontvangt bericht zodra het pakket is verzonden.",
-          "Houd er rekening mee dat de productietijd en de bezorgtijd twee verschillende dingen zijn. Nadat je bestelling is verzonden, is de verdere bezorging afhankelijk van de vervoerder."
+          "Vanaf dat moment hangt de bezorgtijd af van de vervoerder en de gekozen verzendmethode."
         ]
       },
       {
         "title": "Elk item met zorg gemaakt",
         "paragraphs": [
           "Bij Julie Fleur vind je geen anonieme massaproductie, maar items waaraan persoonlijke aandacht wordt besteed. Handgemaakte producten kunnen kleine verschillen vertonen in kleur, vorm of afwerking. Ook bij natuurlijke materialen of handwerk kunnen subtiele variaties voorkomen. Dat hoort bij het karakter van een product dat met de hand wordt gemaakt.",
-          "Mijn tip: bekijk voor je bestelt altijd even de productpagina. Daar vind je de verwachte productietijd van het artikel dat je op het oog hebt."
+          "Heb je je bestelling voor een bepaalde datum nodig? Neem dan vooraf contact met me op."
         ]
       }
     ]
@@ -309,29 +307,22 @@
       {
         "title": "1. Hoe lang duurt het voordat mijn bestelling klaar is?",
         "paragraphs": [
-          "De tijd die nodig is om een bestelling te maken, hangt af van het gekozen product en of het op voorraad is.",
-          "Gepersonaliseerde producten en handwerk",
-          "Veel van mijn producten worden op bestelling gemaakt of gepersonaliseerd. Denk hierbij aan sieraden met een naam of initiaal, gegraveerde items en handgemaakte producten. De verwachte productietijd vind je op de betreffende productpagina.",
-          "Producten die op voorraad zijn",
-          "Een bestelling met spoed",
-          "Voor sommige gepersonaliseerde sieraden is een versnelde verwerking mogelijk. Als deze mogelijkheid wordt aangeboden, vind je de informatie hierover bij het product.",
-          "Let op: de bezorgtijd van de vervoerder komt nog boven op de tijd die nodig is om jouw bestelling te maken en klaar te zetten."
+          "Tijdens de verwerking maak, personaliseer en verpak ik je bestelling. De verwerkingstijd hangt af van het artikel en de voorraad.",
+          "Heb je je bestelling snel nodig? Neem vooraf contact met me op om te bespreken wat mogelijk is."
         ]
       },
       {
         "title": "2. Waar bezorg ik?",
         "paragraphs": [
-          "Verzending naar Nederland en België wordt ingericht. DHL is de gewenste vervoerder. De verzendkosten worden vóór het afronden van een bestelling getoond.",
+          "We versturen pakketten binnen Nederland. Je ziet de actuele verzendkosten in je winkelmandje en bij het afrekenen.",
           "Afhalen kan op afspraak zodra de bestelling klaar is: Julie Fleur, Van Someren-Downerlaan 32, 5707 KL Helmond."
         ]
       },
       {
         "title": "3. Wanneer kan ik mijn bestelling verwachten?",
         "paragraphs": [
-          "De aangegeven productietijd heeft betrekking op het maken en voorbereiden van jouw bestelling. De verzending en bezorging volgen daarna.",
-          "Ter verduidelijking:",
-          "• Een gepersonaliseerd product: eerst wordt het product gemaakt, daarna wordt het verzonden.",
-          "De verwachte productietijd op de productpagina is het uitgangspunt voor het betreffende artikel. Heb je meerdere producten besteld met verschillende productietijden? Dan kan het nodig zijn om te wachten tot alle artikelen klaar zijn voordat de bestelling als geheel wordt verzonden."
+          "De bezorgtijd begint zodra ik je bestelling aan de vervoerder heb meegegeven. Die tijd hangt af van de vervoerder en de gekozen verzendmethode.",
+          "Bij een bestelling met meerdere artikelen kan het nodig zijn om te wachten tot alle artikelen klaar zijn, zodat ik ze samen kan versturen."
         ]
       },
       {

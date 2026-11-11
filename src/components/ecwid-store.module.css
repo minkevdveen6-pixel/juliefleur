@@ -23,6 +23,9 @@
 .store [data-julie-ecwid-browser]{min-height:0!important}
 .store :global(.ec-cart-option),.store :global(.ec-text-muted){color:var(--wine)!important}
 
+/* Ecwid behoudt de volledige foto binnen de vierkante tegel. */
+.store :global(.grid-product__image .grid-product__bg){background-color:#f4efeb!important}
+
 /* Native Ecwid-mand en checkout, uitsluitend binnen de bestaande winkel. */
 .paymentNotice{margin:0 0 28px;padding:18px 22px;background:var(--pink);border-left:3px solid var(--olive);font-size:15px;line-height:1.6}
 .paymentNotice strong{font-weight:600}

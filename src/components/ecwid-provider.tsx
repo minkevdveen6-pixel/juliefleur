@@ -102,7 +102,7 @@ export function EcwidProvider({ children }: { children: React.ReactNode }) {
       hide_category_block_show_all_enabled_products: browser?.dataset.allProducts === "true",
       show_breadcrumbs: false, product_details_show_breadcrumbs: false,
       product_list_show_sort_viewas_options: true,
-      product_list_image_size: "MEDIUM", product_list_image_aspect_ratio: "SQUARE",
+      product_list_image_size: "MEDIUM", product_list_image_aspect_ratio: "SQUARE_1",
       product_list_image_position: "FIT", product_list_image_has_shadow: false,
       product_list_product_info_layout: "LEFT", productListCardSpacingType: "medium",
       product_list_title_behavior: "SHOW", product_list_price_behavior: "SHOW",
