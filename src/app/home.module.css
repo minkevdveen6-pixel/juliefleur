@@ -9,9 +9,9 @@
 .heroCopy h1{font-size:38px;line-height:1.18;letter-spacing:-.035em;font-weight:500}
 .heroCopy p{font-size:15px;line-height:1.7;max-width:35ch;margin-top:18px}
 .heroCopy .editorialLink{margin-top:16px}
-.heroImage{display:block;min-width:0}
-.heroImage :global(.photo-space){height:100%;min-height:350px;aspect-ratio:auto;background:transparent}
-.heroImage :global(.photo-space img){object-position:50% 46%!important}
+.heroImage{display:block;min-width:0;aspect-ratio:1}
+.heroImage picture{display:block;width:100%;height:100%}
+.heroImage img{width:100%;height:100%;object-fit:cover;object-position:50% 33%}
 .collections{padding-block:48px 44px}
 .collections .sectionTitle{margin-bottom:24px}
 .collectionGrid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:24px;align-items:start}
@@ -50,7 +50,7 @@
 @media(max-width:900px){
  .heroCopy{padding-right:32px}
  .heroCopy h1{font-size:32px}
- .heroInner,.heroImage :global(.photo-space){min-height:330px}
+ .heroInner{min-height:330px}
  .collectionGrid{gap:20px}
  .smallCategory{grid-template-columns:90px minmax(0,1fr);gap:16px}
  .moreCollections{padding:20px;gap:24px}
@@ -66,7 +66,7 @@
  .heroCopy h1{font-size:28px;line-height:1.25;max-width:20ch}
  .heroCopy p{font-size:14px;line-height:1.65;max-width:44ch;margin-top:12px}
  .heroCopy .editorialLink{margin-top:4px}
- .heroImage :global(.photo-space){height:160px;min-height:0}
+ .heroImage{aspect-ratio:4/5}
  .collections{padding-block:30px}
  .collections .sectionTitle{margin-bottom:18px}
  .collectionGrid{gap:12px}

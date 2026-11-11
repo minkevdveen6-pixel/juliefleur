@@ -31,11 +31,14 @@ export default function Home() {
       <div className={styles.heroInner}>
         <div className={styles.heroCopy}>
           <h1 id="home-heading">Persoonlijk &amp; handgemaakt.</h1>
-          <p>Sieraden, bagcharms en handgemaakte items. Met aandacht gemaakt door Fleur.</p>
+          <p>Gepersonaliseerde sieraden, bagcharms, punnik- &amp; borduurwerk</p>
           <Link className={styles.editorialLink} href="/collecties">Ontdek de collecties <Icon name="arrow" width="18" height="18" /></Link>
         </div>
-        <Link className={styles.heroImage} href={ecwid.enabled ? "/collecties/sieraden-graveren/" : "/producten/bar-bracelet-engraved"} aria-label="Bekijk de gegraveerde armband">
-          <PhotoSpace slot="product:bar-bracelet-engraved" kind="home-hero" fit="cover" priority />
+        <Link className={styles.heroImage} href="/collecties/bagcharms/" aria-label="Bekijk de bagcharms">
+          <picture>
+            <source type="image/webp" srcSet="/images/hero/pantertas-bagcharm-480.webp 480w, /images/hero/pantertas-bagcharm-768.webp 768w, /images/hero/pantertas-bagcharm-1200.webp 1200w" sizes="(max-width: 360px) calc(100vw - 28px), (max-width: 600px) calc(100vw - 36px), (max-width: 1144px) calc(52.83vw - 34px), 571px" />
+            <img src="/images/hero/pantertas-bagcharm-1200.webp" width="1200" height="1600" alt="Tas met panterprint en een gepersonaliseerde groen-blauwe bagcharm" fetchPriority="high" decoding="async" />
+          </picture>
         </Link>
       </div>
     </section>
