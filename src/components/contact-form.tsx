@@ -29,7 +29,13 @@ export function ContactForm() {
     event.preventDefault();if(sending)return;
     const validated=validateContact(fields);setErrors(validated.errors);setFailure("");
     if(Object.keys(validated.errors).length){requestAnimationFrame(()=>errorSummary.current?.focus());return;}
-    if(availability!=="ready"){setFailure("Het formulier is nog niet aangesloten. Mail rechtstreeks naar info@juliefleur.nl.");return;}
+    if(availability==="checking")return;
+    if(availability==="unavailable"){
+      const { name, email, subject, message } = validated.fields;
+      const body = [message, "", name, email].join("\r\n");
+      window.location.href = `mailto:info@juliefleur.nl?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      return;
+    }
     const signature=JSON.stringify(validated.fields);
     if(attempt.current?.signature!==signature)attempt.current={signature,id:crypto.randomUUID()};
     setSending(true);
@@ -50,14 +56,14 @@ export function ContactForm() {
   return <form className="contact-form" onSubmit={submit} noValidate aria-label="Contactformulier">
     <h2>Stuur Fleur een bericht</h2>
     <p className="form-required-note">Alle velden zijn verplicht.</p>
-    <div className={`form-availability ${availability==="ready"?"form-available":""}`} id="contact-availability" role="status">{availability==="checking"?"We controleren of je bericht verstuurd kan worden…":availability==="ready"?"Je bericht gaat rechtstreeks naar info@juliefleur.nl.":<>Het formulier wordt nog aangesloten. Je kunt ons alvast rechtstreeks mailen via <a href="mailto:info@juliefleur.nl">info@juliefleur.nl</a>.</>}</div>
+    <div className={`form-availability ${availability==="ready"?"form-available":""}`} id="contact-availability" role="status">{availability==="checking"?"We controleren of je bericht verstuurd kan worden…":availability==="ready"?"Je bericht gaat rechtstreeks naar info@juliefleur.nl.":<>Open je bericht in je mailprogramma of mail rechtstreeks naar <a href="mailto:info@juliefleur.nl">info@juliefleur.nl</a>.</>}</div>
     {(failure||Object.values(errors).some(Boolean))&&<div className="form-error-summary" role="alert" ref={errorSummary} tabIndex={-1}><p>{failure||"Controleer de volgende velden:"}</p>{Object.entries(errors).filter(([,value])=>value).map(([key,value])=><a key={key} href={`#contact-${key}`}>{value}</a>)}</div>}
     <div className="contact-field-row">{([['name','Naam','text','name'],['email','E-mailadres','email','email']] as const).map(([key,label,type,autoComplete])=><div className="contact-field" key={key}><label htmlFor={`contact-${key}`}>{label}</label><input id={`contact-${key}`} name={key} type={type} autoComplete={autoComplete} required maxLength={contactLimits[key]} value={fields[key]} onChange={e=>update(key,e.target.value)} aria-invalid={Boolean(errors[key])} aria-describedby={errors[key]?`contact-${key}-error`:undefined} disabled={sending} />{errors[key]&&<small className="field-error" id={`contact-${key}-error`}>{errors[key]}</small>}</div>)}</div>
     <div className="contact-field"><label htmlFor="contact-subject">Onderwerp</label><input id="contact-subject" name="subject" required maxLength={contactLimits.subject} value={fields.subject} onChange={e=>update("subject",e.target.value)} aria-invalid={Boolean(errors.subject)} aria-describedby={errors.subject?"contact-subject-error":undefined} disabled={sending} />{errors.subject&&<small className="field-error" id="contact-subject-error">{errors.subject}</small>}</div>
     <div className="contact-field"><label htmlFor="contact-message">Bericht</label><textarea id="contact-message" name="message" rows={7} required maxLength={contactLimits.message} value={fields.message} onChange={e=>update("message",e.target.value)} aria-invalid={Boolean(errors.message)} aria-describedby={errors.message?"contact-message-error":"contact-message-help"} disabled={sending} /><div className="message-help"><small id="contact-message-help">Deel alleen de gegevens die nodig zijn voor je vraag.</small><small>{fields.message.length}/{contactLimits.message}</small></div>{errors.message&&<small className="field-error" id="contact-message-error">{errors.message}</small>}</div>
     <div className="contact-honeypot" aria-hidden="true"><label htmlFor="contact-website">Website — laat dit veld leeg</label><input ref={website} id="contact-website" name="website" tabIndex={-1} autoComplete="off" maxLength={200} /></div>
     <p className="contact-privacy">We gebruiken je gegevens om je bericht te beantwoorden. <Link href="/privacybeleid">Lees de privacy-informatie</Link>.</p>
-    <button type="submit" className="button contact-submit" disabled={sending||availability!=="ready"} aria-describedby="contact-availability">{sending?"Je bericht wordt verstuurd…":"Verstuur je bericht"}<Icon name="arrow" /></button>
+    <button type="submit" className="button contact-submit" disabled={sending||availability==="checking"} aria-describedby="contact-availability">{sending?"Je bericht wordt verstuurd…":availability==="unavailable"?"Open in je mailprogramma":"Verstuur je bericht"}<Icon name="arrow" /></button>
     <noscript><p>Voor het formulier is JavaScript nodig. Je kunt rechtstreeks mailen naar info@juliefleur.nl.</p></noscript>
   </form>;
 }

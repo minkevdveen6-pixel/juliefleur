@@ -349,3 +349,8 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
   outline:2px solid var(--olive);
   outline-offset:3px;
 }
+
+/* Meldingen over een eerder winkelmandje horen bij de winkelwagen. */
+.ec-notice[data-julie-cart-notice] {
+  display: none !important;
+}

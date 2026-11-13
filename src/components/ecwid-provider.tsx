@@ -37,6 +37,35 @@ export function EcwidProvider({ children }: { children: React.ReactNode }) {
   const started = useRef(false);
   const apiResolved = useRef(false);
   const cleanup = useRef<() => void>(() => {});
+  useEffect(() => {
+    if (!ecwid.enabled || page.type === "CART" || page.type.startsWith("CHECKOUT_")) return;
+
+    const notices = ".ec-notices--fixed .ec-notice";
+    const markCartNotices = () => {
+      for (const notice of document.querySelectorAll<HTMLElement>(notices)) {
+        const text = notice.querySelector(".ec-notice__message")?.textContent?.trim() ?? "";
+        const cartNotice = /niet alle vereiste productopties zijn ingevuld|artikelen in uw mandje zijn verwijderd|not all required product options|items in your cart (?:were|have been) removed/i.test(text);
+        notice.toggleAttribute("data-julie-cart-notice", cartNotice);
+      }
+    };
+
+    const observer = new MutationObserver(records => {
+      if (records.some(record => {
+        const target = record.target instanceof Element ? record.target : record.target.parentElement;
+        return target?.closest(".ec-notices--fixed") || Array.from(record.addedNodes).some(
+          node => node instanceof Element && (node.matches(notices) || node.querySelector(notices)),
+        );
+      })) markCartNotices();
+    });
+    observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+    markCartNotices();
+    return () => {
+      observer.disconnect();
+      for (const notice of document.querySelectorAll("[data-julie-cart-notice]")) {
+        notice.removeAttribute("data-julie-cart-notice");
+      }
+    };
+  }, [page.type]);
   const initialize = useCallback(() => {
     if (started.current) return;
     const api = window.Ecwid;
