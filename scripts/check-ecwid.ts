@@ -13,7 +13,6 @@ const preview = reviewEnvironment({ ...supplied, VERCEL_ENV: "preview" });
 assert.equal(preview.NEXT_PUBLIC_ECWID_STORE_ID, "145090752");
 assert.equal(preview.NEXT_PUBLIC_ECWID_PREVIEW, "true");
 assert.equal(preview.NEXT_PUBLIC_SITE_LAUNCHED, "false");
-assert.equal(preview.CONTACT_ENABLED, "false");
 assert.equal(reviewEnvironment({ ...supplied, ECWID_CATALOG_READY: "false", VERCEL_ENV: "preview" }).NEXT_PUBLIC_ECWID_CATALOG_READY, "false");
 for (const VERCEL_ENV of ["production", "development"]) {
   const result = reviewEnvironment({ ...supplied, VERCEL_ENV });

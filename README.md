@@ -14,7 +14,6 @@ NEXT_PUBLIC_SITE_LAUNCHED=false
 NEXT_PUBLIC_ECWID_STORE_ID=
 NEXT_PUBLIC_ECWID_ENABLED=false
 NEXT_PUBLIC_ECWID_LAUNCH_APPROVED=false
-CONTACT_ENABLED=false
 ```
 
 Pagina’s hebben noindex, robots blokkeert crawlen, de sitemap is leeg en Vercel voegt `X-Robots-Tag: noindex, nofollow, noarchive` toe. De website is wel openbaar toegankelijk. Dit is geen toegangsbeveiliging. De melding ‘De webshop is in voorbereiding’ blijft zichtbaar; bestellen, betalen en de Ecwid-storefront blijven uit.
@@ -54,7 +53,7 @@ Maak geen nieuw project aan en importeer niet via New Project. Verbind GitHub vi
 
 ## Contactformulier
 
-De bestaande UI en volledige Cloudflare-logica in `worker/` zijn behouden. De zelfstandige Vercel Function `api/contact.ts` houdt verzending hard uit: GET geeft `{ "ready": false }`, POST geeft bij een verzoek vanaf dezelfde origin HTTP 503. Het toevoegen van runtime-secrets of `CONTACT_ENABLED=true` activeert dit endpoint niet.
+Het contactformulier opent een conceptbericht via mailto. De bezoeker verstuurt het zelf.
 
 De bezoeker krijgt de bestaande eerlijke melding en kan rechtstreeks mailen naar `info@juliefleur.nl`. Voor latere activering zijn aparte goedkeuring, veilige hostingadaptatie, geverifieerde Resend-afzender, Upstash-inrichting en een geslaagde echte ontvangsttest nodig. De Cloudflare-versie blijft desgewenst te bouwen met `npm run build:cloudflare`. Zie [CONTACT-INSTELLEN.md](docs/CONTACT-INSTELLEN.md).
 

@@ -17,6 +17,5 @@ export function reviewEnvironment(environment) {
     NEXT_PUBLIC_ECWID_CATEGORY_IDS: active ? environment.NEXT_PUBLIC_ECWID_CATEGORY_IDS || "{}" : "{}",
     NEXT_PUBLIC_ECWID_ENABLED: "false",
     NEXT_PUBLIC_ECWID_LAUNCH_APPROVED: "false",
-    CONTACT_ENABLED: "false",
   };
 }
