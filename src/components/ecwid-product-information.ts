@@ -4,7 +4,7 @@ const sections = [
   ["Productspecificaties", /^(productspecificaties|materiaal|afmetingen|kleur|lengte ketting)$/i],
   ["Personalisatie", /^(personalisatie|personaliseren|zo stel je .+|stel .+ samen)$/i],
   ["Productie- en verwerkingstijd", /^(productie- en verwerkingstijd|verwerkingstijd|productietijd)$/i],
-  ["Levertijd & verzending", /^(levertijd & verzending|levertijd en verzending|productie en verzending|levertijd|verzending)$/i],
+  ["Levertijd & verzending", /^(levertijd & verzending|levertijd en verzending|productie en verzending|productie-? (?:&|en) levertijd|levertijd|verzending)$/i],
   ["Onderhoud", /^(onderhoud|onderhoudsinstructies)$/i],
 ] as const;
 

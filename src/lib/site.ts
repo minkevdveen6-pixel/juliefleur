@@ -21,7 +21,7 @@ export const ecwid = {
     (process.env.NEXT_PUBLIC_ECWID_PREVIEW === "true" || process.env.NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED === "true" || (site.launched &&
       process.env.NEXT_PUBLIC_ECWID_ENABLED === "true" &&
       process.env.NEXT_PUBLIC_ECWID_LAUNCH_APPROVED === "true")),
-  categoryIds: { ...parseEcwidCategories(JSON.stringify(ecwidCategories)), ...parseEcwidCategories(process.env.NEXT_PUBLIC_ECWID_CATEGORY_IDS || "{}") },
+  categoryIds: { ...parseEcwidCategories(process.env.NEXT_PUBLIC_ECWID_CATEGORY_IDS || "{}"), ...parseEcwidCategories(JSON.stringify(ecwidCategories)) },
 };
 
 export function pageMetadata(title: string, path: string, description = site.description) {

@@ -30,7 +30,7 @@ export default function Home() {
         <div className={styles.heroCopy}>
           <h1 id="home-heading">Persoonlijk &amp; handgemaakt.</h1>
           <p>Gepersonaliseerde sieraden, bagcharms, punnik- &amp; borduurwerk</p>
-          <Link className={styles.editorialLink} href="/collecties">Ontdek de collecties <Icon name="arrow" width="18" height="18" /></Link>
+          <Link className={styles.editorialLink} href="#collections-heading">Ontdek de collecties <Icon name="arrow" width="18" height="18" /></Link>
         </div>
         <Link className={styles.heroImage} href="/collecties/bagcharms/" aria-label="Bekijk de bagcharms">
           <picture>
@@ -53,12 +53,12 @@ export default function Home() {
       </div>
     </section>
 
-    <section className={styles.bestsellers} aria-labelledby="bestsellers-heading">
+    {(!ecwid.enabled || ecwid.categoryIds.bestsellers) && <section className={styles.bestsellers} aria-labelledby="bestsellers-heading">
       <div className={styles.container}>
-        <div className={styles.sectionHeader}><h2 id="bestsellers-heading" className={styles.sectionTitle}>Bestsellers</h2><Link className={styles.editorialLink} href="/collecties">Bekijk alle producten <Icon name="arrow" width="17" height="17" /></Link></div>
-        <div className={styles.bestsellerGrid}>{ecwid.enabled ? <div style={{gridColumn:"1 / -1"}}><EcwidStore featured /></div> : bestsellers.map(product => <ProductCard key={product.slug} product={product} />)}</div>
+        <div className={styles.sectionHeader}><h2 id="bestsellers-heading" className={styles.sectionTitle}>Bestsellers</h2><Link className={styles.editorialLink} href={ecwid.enabled ? "/bestsellers/" : "/collecties/"}>{ecwid.enabled ? "Bekijk alle bestsellers" : "Bekijk alle producten"} <Icon name="arrow" width="17" height="17" /></Link></div>
+        <div className={styles.bestsellerGrid}>{ecwid.enabled ? <div style={{gridColumn:"1 / -1"}}><EcwidStore categoryId={ecwid.categoryIds.bestsellers} featured /></div> : bestsellers.map(product => <ProductCard key={product.slug} product={product} />)}</div>
       </div>
-    </section>
+    </section>}
 
     <section className={styles.about} aria-labelledby="home-fleur-heading">
       <div className={styles.aboutInner}>
