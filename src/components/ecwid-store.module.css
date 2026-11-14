@@ -28,10 +28,15 @@
   aspect-ratio:1;
 }
 .store :global(.ec-size .ec-store .grid-product__image .grid-product__bg){
-  background-color:#f5f3ef!important;
+  background-color:transparent!important;
 }
 .store :global(.ec-size .ec-store .grid-product__image .grid-product__picture){
   object-fit:contain;
+}
+.store :global(.ec-size .ec-store .grid-product__title){
+  color:var(--wine);
+  line-height:1.45;
+  overflow-wrap:anywhere;
 }
 .store :global(.ec-size .ec-store :is(.grid-product__price, .grid-product__price-amount, .details-product-price__value, .details-product-price__value .ec-price-item)){
   font-size:15px!important;
@@ -101,7 +106,7 @@
 .store :global(.ec-cart .form-control:not(.form-control--button)){background:var(--ivory)}
 .store :global(.ec-cart .form-control__text){min-height:46px!important;font:400 16px/1.5 var(--sans)!important;border-radius:0!important;background:transparent!important;border-color:var(--line)!important;color:var(--wine)!important}
 .store :global(.ec-cart .form-control__placeholder),.store :global(.ec-cart .form-control__placeholder-inner){color:var(--muted)!important}
-.store :global(.ec-cart .form-control__text:focus){border-color:var(--olive)!important;outline:2px solid #53652730;outline-offset:2px}
+.store :global(.ec-cart .form-control__text:focus){border-color:var(--olive)!important;outline:2px solid color-mix(in srgb,var(--olive) 19%,transparent);outline-offset:2px}
 .store :global(.ec-cart-item__count-inner){min-width:62px}
 .store :global(.ec-cart-summary__cell){padding-block:9px!important;line-height:1.5!important;font-size:15px!important}
 .store :global(.ec-cart-summary__row--total .ec-cart-summary__cell){padding:14px 12px!important;border-top:1px solid var(--line);background:var(--pink);font-size:19px!important;font-weight:600}
@@ -142,7 +147,7 @@
 .productDescription > :last-child{margin-bottom:0}
 .store :global(.ec-size .ec-store) .productInformation{
   border-top:1px solid var(--line);
-  margin-top:12px;
+  margin-top:20px;
 }
 .store :global(.ec-size .ec-store) .productInformation > details{
   margin:0;

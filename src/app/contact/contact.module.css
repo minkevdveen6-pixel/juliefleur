@@ -9,11 +9,11 @@
 .instagram{display:inline-flex;align-items:center;gap:10px;font-size:14px;min-height:44px}
 .address p{font-size:14px;line-height:1.75}
 .address p+p{margin-top:16px}
-.address :global(.text-link){font-size:13px;margin-top:8px;gap:8px}
+.address :global(.text-link){color:var(--wine);font-size:13px;margin-top:8px;gap:8px}
 .panel{min-width:0;padding:28px 32px;background:#fffdfb;border:1px solid var(--line)}
 .panel :global(.contact-form h2){font-size:23px;line-height:1.35}
 .panel :global(.form-required-note){color:var(--muted);font-size:13px;margin-top:8px}
-.panel :global(.form-availability){background:#f2f0e7;border:0;padding:12px 16px;margin-block:22px;font-size:13px}
+.panel :global(.form-availability){background:var(--cream);border:0;padding:12px 16px;margin-block:22px;font-size:13px}
 .panel :global(.contact-field>label){font-size:14px;margin-bottom:8px}
 .panel :global(.contact-field>input),.panel :global(.contact-field>textarea){background:var(--ivory);border-color:#873e5145;transition:border-color .15s ease}
 .panel :global(.contact-field>input:focus),.panel :global(.contact-field>textarea:focus){border-color:var(--olive);outline:2px solid var(--olive);outline-offset:2px;background:#fffdfb}
