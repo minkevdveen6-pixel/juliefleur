@@ -29,8 +29,8 @@
 .about{background:var(--pink);padding-block:30px 0;overflow:clip}
 .aboutInner{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto auto;gap:12px 70px;width:min(1030px,calc(100% - 64px));margin-inline:auto;padding-block:0 32px}
 .portrait{grid-column:1;grid-row:1/4;height:410px;align-self:end;min-width:0;transform:translateY(32px)}
-.portrait picture{display:block;height:100%;width:100%}
-.portrait img{height:100%;width:100%;object-fit:contain;object-position:center bottom}
+.portrait picture{display:flex;align-items:flex-end;justify-content:center;height:100%;width:100%}
+.portrait img{height:100%;width:auto;max-width:none;object-fit:contain;object-position:center bottom;transform:scale(1.06);transform-origin:center bottom}
 .aboutHeading{grid-column:2;align-self:end;padding-top:12px}
 .aboutHeading .wordmark{width:170px;justify-self:start;margin-bottom:18px}
 .aboutHeading h2{font-size:24px;font-weight:500}
@@ -71,7 +71,8 @@
  .bestsellerGrid :global(.product-price){font-size:13px}
  .about{padding-top:22px}
  .aboutInner{width:calc(100% - 36px);grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 20px;padding-bottom:24px}
- .portrait{grid-row:1/4;grid-column:1;height:225px;align-self:end;transform:translateY(24px)}
+ .portrait{grid-row:1/4;grid-column:1;height:255px;align-self:end;transform:translateY(24px)}
+ .portrait img{transform:none}
  .aboutHeading{grid-column:2;align-self:center;padding-top:0}
  .aboutHeading .wordmark{width:min(140px,100%);margin-bottom:14px}
  .aboutHeading h2{font-size:22px}
