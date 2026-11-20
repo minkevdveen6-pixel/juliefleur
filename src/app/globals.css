@@ -131,7 +131,7 @@ summary svg{margin-top:3px}
 details[open]>summary svg{transform:rotate(45deg)}
 .details-content{padding:0 0 24px}
 .about-page .content-container{max-width:960px}
-.about-story{display:grid;grid-template-columns:220px minmax(0,1fr);gap:42px;align-items:start}
+.about-story{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);gap:48px;align-items:start}
 .about-story .photo-portrait{aspect-ratio:var(--photo-ratio)}
 .about-story .prose-section h2{font-size:20px;margin-bottom:16px}
 .about-story p:last-child{margin-top:22px}
@@ -276,7 +276,7 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
  .home-fleur h2{font-size:20px}
  .home-fleur>p,.home-fleur>.button{grid-column:1/-1}
  .home-fleur p{font-size:14px;line-height:1.65}
- .content-container{max-width:none}.about-story{grid-template-columns:1fr;gap:24px}.about-story .photo-portrait{width:180px}
+ .content-container{max-width:none}.about-story{grid-template-columns:1fr;gap:24px}.about-story .photo-portrait{width:min(100%,380px);margin-inline:auto}
  .prose-section+.prose-section{margin-top:24px}.prose-section h2{font-size:19px}
  .product-detail{grid-template-columns:1fr;gap:26px;margin-top:24px}.product-gallery{max-width:330px;width:100%;margin-inline:auto}.product-info h1{font-size:26px}.detail-price{font-size:20px}
  .product-gallery .photo-detail{aspect-ratio:1}.product-availability{margin-block:18px}
@@ -350,3 +350,5 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 .ec-notice[data-julie-cart-notice] {
   display: none !important;
 }
+
+.about-page .content-container{max-width:1080px}.about-story .photo-portrait{background:var(--cream)}

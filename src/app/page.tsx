@@ -3,7 +3,6 @@ import { products } from "@/data/catalog";
 import { ProductCard } from "@/components/catalog";
 import { PhotoSpace } from "@/components/placeholder";
 import { pages } from "@/data/pages";
-import { BrandLogo } from "@/components/brand-logo";
 import { photoAt } from "@/lib/photography";
 import styles from "./home.module.css";
 import { ecwid } from "@/lib/site";
@@ -64,12 +63,13 @@ export default function Home() {
         <div className={styles.portrait}>
           <picture><source type="image/webp" srcSet="/images/portraits/fleur-cutout-400.webp 400w, /images/portraits/fleur-cutout-800.webp 800w, /images/portraits/fleur-cutout-1066.webp 1066w" sizes="(max-width: 600px) 45vw, 400px" /><img src="/images/portraits/fleur-cutout-1066.webp" width="1066" height="1600" alt="Fleur, de maker achter Julie Fleur, lachend op een stoel." loading="lazy" decoding="async" /></picture>
         </div>
-        <div className={styles.aboutHeading}><BrandLogo className={styles.wordmark} /><h2 id="home-fleur-heading">Over Fleur</h2></div>
+        <div className={styles.aboutHeading}><h2 id="home-fleur-heading">Over Fleur</h2></div>
         <p className={styles.aboutText}>{pages["over-fleur"].sections[0].paragraphs[0]}</p>
         <Link className={`${styles.editorialLink} ${styles.aboutLink}`} href="/over-fleur">Lees mijn verhaal</Link>
       </div>
     </section>
     <section className={styles.reviews} aria-labelledby="reviews-heading"><div><h2 id="reviews-heading">Lieve woorden</h2><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p></div><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></section>
+    <section className={styles.orderSteps} aria-labelledby="order-heading"><h2 id="order-heading">Zo werkt bestellen</h2><ol><li><span>01</span><h3>Kies jouw favoriet</h3><p>Ontdek de collectie en selecteer je product.</p></li><li><span>02</span><h3>Maak het persoonlijk</h3><p>Kies de beschikbare kleuren, letters of andere personalisaties.</p></li><li><span>03</span><h3>Rond je bestelling af</h3><p>Controleer je keuzes en rond je bestelling af via de beschikbare betaalmethoden.</p></li></ol></section>
     <nav className={styles.practical} aria-label="Goed om te weten"><Link href="/over-fleur/">Handgemaakt door Fleur</Link><Link href="/collecties/">Personaliseren naar jouw wens</Link><Link href="/verzenden-bezorgen/">Verzending &amp; afhalen</Link></nav>
   </div>;
 }

@@ -247,3 +247,8 @@
     outline-offset:-2px;
   }
 }
+
+/* Keep Ecwid's single native sorter in the catalog flow. */
+.store :global(.ec-size .ec-store .grid__sort){position:static!important;display:flex!important;justify-content:flex-end;float:none!important;width:100%;margin:0 0 24px!important;min-height:44px}
+.store :global(.ec-size .ec-store .grid-sort__item--sortby){position:relative;max-width:100%;min-height:44px}
+@media(max-width:600px){.store :global(.ec-size .ec-store .grid__sort){margin-bottom:16px!important;flex-wrap:wrap}}
