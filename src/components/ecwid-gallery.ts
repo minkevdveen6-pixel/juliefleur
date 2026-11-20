@@ -8,12 +8,18 @@ export function observeProductGallery(store: HTMLElement) {
   let main: HTMLImageElement | null = null;
   let selected = 0;
 
+  const imageSource = (thumb: HTMLElement) => {
+    const original = thumb.querySelector<HTMLMetaElement>('meta[itemprop="image"]')?.content;
+    const link = thumb.querySelector<HTMLElement>(".details-gallery__thumb-img");
+    const background = link?.style.backgroundImage ?? "";
+    return original ?? background.match(/url\(["']?([^"')]+)["']?\)/)?.[1];
+  };
   const thumbnails = () => Array.from(gallery?.querySelectorAll<HTMLElement>(".details-gallery__thumb") ?? [])
-    .filter(thumb => thumb.querySelector('meta[itemprop="image"][content]'));
+    .filter(thumb => imageSource(thumb));
   const select = (index: number) => {
     const items = thumbnails();
     const thumb = items[index];
-    const source = thumb?.querySelector<HTMLMetaElement>('meta[itemprop="image"]')?.content;
+    const source = thumb && imageSource(thumb);
     if (!main || !source) return;
     selected = index;
     main.src = source;
