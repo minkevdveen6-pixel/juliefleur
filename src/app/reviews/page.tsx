@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { pageMetadata } from "@/lib/site";
+export const metadata = pageMetadata("Reviews", "/reviews/");
+export default function Reviews(){return <div className="shell section-page"><div className="content-container"><header className="page-heading"><h1>Lieve woorden</h1></header><section className="prose-section"><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p><p>Vertel over je bestelling, de personalisatie of het moment waarop je het cadeau gaf. Stuur je ervaring naar Fleur. Vermeld ook of je reactie op de website gedeeld mag worden en met welke naam.</p><a className="button" href="mailto:info@juliefleur.nl?subject=Mijn%20ervaring%20met%20Julie%20Fleur">Deel je ervaring via e-mail</a><p>Je e-mailprogramma opent. Verstuur je bericht daar zelf.</p><Link className="text-link" href="/contact/">Contact met Fleur</Link></section></div></div>}
