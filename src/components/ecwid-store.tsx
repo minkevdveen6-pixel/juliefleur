@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ecwid } from "@/lib/site";
 import { canShowEcwidPage } from "@/lib/ecwid-integration";
 import { useEcwid } from "./ecwid-provider";
+import { observeProductGallery } from "./ecwid-gallery";
 import { observeOptionHelp } from "./ecwid-option-help";
 import { SiteLink } from "./site-link";
 import styles from "./ecwid-store.module.css";
@@ -13,7 +14,9 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
   const nativeStore = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (page.type === "PRODUCT" && nativeStore.current) {
-      return observeOptionHelp(nativeStore.current, page.productId);
+      const restoreHelp = observeOptionHelp(nativeStore.current, page.productId);
+      const restoreGallery = observeProductGallery(nativeStore.current);
+      return () => { restoreGallery(); restoreHelp(); };
     }
   }, [page.type, page.productId]);
   useEffect(() => {
