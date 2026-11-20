@@ -59,6 +59,11 @@ export default function Home() {
       </div>
     </section>}
 
+    <section className={styles.editorial} aria-label="Handgemaakt door Fleur">
+      <Link href="/collecties/bagcharms/" aria-label="Bekijk gepersonaliseerde bagcharms"><PhotoSpace slot="category:bagcharms" fit="contain" /></Link>
+      <Link href="/collecties/punniken/" aria-label="Bekijk punnikwerk"><PhotoSpace slot="category:punniken" fit="contain" /></Link>
+    </section>
+
     <section className={styles.about} aria-labelledby="home-fleur-heading">
       <div className={styles.aboutInner}>
         <div className={styles.portrait}>

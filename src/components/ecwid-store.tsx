@@ -28,7 +28,7 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
   useEffect(() => {
     const store = nativeStore.current;
     if (!ready || page.type !== "CATEGORY" || !store) return;
-    const refresh = () => setEmptyCollection(!store.querySelector(".grid-product"));
+    const refresh = () => setEmptyCollection(!store.querySelector(".grid-product, .grid-product__image[data-product-id]"));
     const observer = new MutationObserver(refresh);
     observer.observe(store, { childList: true, subtree: true });
     refresh();
