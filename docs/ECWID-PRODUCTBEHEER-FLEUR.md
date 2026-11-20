@@ -31,7 +31,7 @@ Klik op **Opslaan** en open de gekozen collectie op [juliefleur.nl](https://www.
 
 Open **Verzending en ophalen** voor de winkelbrede tarieven. Het afgesproken pakkettarief is € 6,95 onder € 150 en gratis vanaf € 150. Controleer altijd ook een gemengde winkelwagen en het subtotaal na korting voordat je een regel activeert.
 
-Voor brievenbuspost maak je eerst een aparte verzendmethode met het bevestigde tarief. Open daarna **Catalogus → Producten → [product] → Verzending en ophalen**. Kies bij de productgebonden verzendmethoden welke methoden voor dit product beschikbaar zijn. Sluit brievenbuspost uit voor ieder ongeschikt product. Een combinatie van geschikte en ongeschikte artikelen moet pakketverzending opleveren. Het eerdere voorstel was € 4,60; laat Fleur het definitieve tarief en de geschiktheid per product bevestigen.
+Voor brievenbuspost maak je eerst een aparte verzendmethode met het bevestigde tarief. Open daarna **Catalogus → Producten → [product] → Verzending en ophalen**. Kies bij de productgebonden verzendmethoden welke methoden voor dit product beschikbaar zijn. Sluit brievenbuspost uit voor ieder ongeschikt product. Een combinatie van geschikte en ongeschikte artikelen moet pakketverzending opleveren. Het definitieve brievenbustarief is nog niet bevestigd. Vul het bedrag pas in na bevestiging door Fleur.
 
 Voor afhalen kies je **Verzending en ophalen → Afhalen**. Gebruik het bevestigde afhaaladres en zet in de instructies dat afhalen op afspraak gebeurt. Bij **Betaling** kan een handmatige methode ‘Contant bij afhalen’ worden toegevoegd. Beperk deze onder beschikbaarheid per verzendmethode tot afhalen. De bestelling krijgt de status ‘In afwachting van betaling’. Markeer pas als betaald nadat je het geld hebt ontvangen.
 
@@ -59,3 +59,18 @@ De bannerfoto staat momenteel als vast bestand op de website. Een product- of ca
 - [Productgebonden verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5287232121116-Product-specific-shipping-methods)
 - [Betalingen beperken tot verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5325525829660-Restricting-payments-by-specific-shipping-methods)
 - [Conditionele productopties](https://support.ecwid.com/hc/en-us/articles/7286612490140-Creating-advanced-product-options)
+
+
+## Laatste technische controle, 20 november 2026
+
+De openbare storefront gebruikt winkel 145090752. De winkel-ID geeft geen toegang om producten, verzending of betaalmethoden te wijzigen. Er is geen lokale Ecwid-beheersleutel aangetroffen; de beheertab toont het inlogscherm. De precieze oorzaak van de ontbrekende sessie is niet zichtbaar.
+
+Voor de gratis Paracord-oplossing moet het Ecwid-product eerst één verplicht tekstveld voor alle letters krijgen. De uitvoering blijft het aantal letters en de prijs bepalen. Standaard Ecwid-opties controleren niet automatisch of de tekstlengte overeenkomt met een andere keuze. Alleen een controle in de browser kan worden omzeild en biedt geen volledige controle bij andere verkoopkanalen of checkout. Daarom zijn de bestaande lettervelden behouden. Een alternatief binnen Ecwid is vijf afzonderlijke producten met elk het juiste aantal verplichte letterkeuzes en een vaste prijs; dat vraagt een wijziging van de catalogusinrichting.
+
+De huidige fotoformaten, mobiele fotostrip en productinformatie gelden centraal voor nieuwe producten. De gewone omschrijving blijft zichtbaar. Alleen gevulde secties met de hierboven genoemde koppen worden uitgeklapt. Een verwerkingstijd in de verzendinstellingen verschijnt niet automatisch als tekst in een uitklapvak; vul die uitleg in de omschrijving in.
+
+Borduren en Vilten kroon leverden bij de storefrontcontrole geen zichtbare producten. Controleer bij **Catalogus → Producten** of de betreffende artikelen ingeschakeld zijn en aan de juiste categorie zijn toegewezen.
+
+Voor brievenbuspost laat je pakketverzending óók beschikbaar voor geschikte kleine producten. Sluit uitsluitend brievenbuspost uit voor ongeschikte producten. Zo houden gemengde mandjes een gezamenlijke pakketmethode. Test ook meerdere kleine artikelen samen; productgeschiktheid alleen bewijst niet dat ieder aantal samen door de brievenbus past. Gebruik daarvoor bevestigde gewichten, capaciteitsgrenzen of een aparte pakketregel.
+
+De betaalmelding wordt door de website bepaald, niet door Mollie. De bestaande beoordelingsbuild houdt deze aan totdat de betaalwerking is bevestigd. Laat een bevoegde persoon een volledige proefbestelling uitvoeren en controleer daarna de betaalstatus in **Mijn verkopen → Bestellingen** en bij Mollie.

@@ -11,6 +11,7 @@ import styles from "./ecwid-store.module.css";
 export function EcwidStore({ categoryId, featured = false, main = false, allProducts = false }: { categoryId?: number; featured?: boolean; main?: boolean; allProducts?: boolean }) {
   const { ready, error: apiError, page, quantity, containsSamples } = useEcwid();
   const [timedOut, setTimedOut] = useState(false);
+  const [emptyCollection, setEmptyCollection] = useState(false);
   const nativeStore = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (page.type === "PRODUCT" && nativeStore.current) {
@@ -24,6 +25,15 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
     const timeout = setTimeout(() => setTimedOut(true), 30000);
     return () => clearTimeout(timeout);
   }, [page.type]);
+  useEffect(() => {
+    const store = nativeStore.current;
+    if (!ready || page.type !== "CATEGORY" || !store) return;
+    const refresh = () => setEmptyCollection(!store.querySelector(".grid-product"));
+    const observer = new MutationObserver(refresh);
+    observer.observe(store, { childList: true, subtree: true });
+    refresh();
+    return () => observer.disconnect();
+  }, [ready, page.type, page.categoryId]);
   const error = apiError || (timedOut && page.type === "LOADING");
   if (!ecwid.enabled) return null;
   const cart = page.type === "CART";
@@ -42,6 +52,7 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
       : cartSamples ? <div className={styles.empty}><p>Een artikel in dit winkelmandje is nog niet beschikbaar.</p><SiteLink href="/collecties/" className="text-link">Bekijk alle producten</SiteLink></div>
       : !loaded ? <p className={styles.status} role="status">De winkel wordt geladen…</p>
       : !showNative ? <div className={styles.empty}><p>De collectie wordt binnenkort toegevoegd.</p>{!featured && <SiteLink className="text-link" href="/collecties/">Bekijk alle producten</SiteLink>}</div> : null}
+    {showNative && page.type === "CATEGORY" && emptyCollection && <p className={styles.empty} role="status">Er zijn op dit moment geen producten beschikbaar in deze collectie.</p>}
     <div className={showNative ? undefined : styles.unavailable} inert={!showNative} aria-hidden={!showNative}>
       <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} data-featured={featured ? "true" : undefined} />
     </div>
