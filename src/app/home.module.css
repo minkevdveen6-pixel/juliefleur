@@ -9,9 +9,9 @@
 .heroCopy h1{font-size:35px;line-height:1.24;letter-spacing:-.035em;font-weight:500}
 .heroCopy p{font-size:15px;line-height:1.7;max-width:35ch;margin-top:18px}
 .heroCopy :global(.button){margin-top:24px}
-.heroImage{display:block;width:min(100%,460px);min-width:0;justify-self:end;aspect-ratio:1}
+.heroImage{display:block;width:min(100%,380px);min-width:0;justify-self:end;aspect-ratio:3/4}
 .heroImage picture{display:block;width:100%;height:100%}
-.heroImage img{width:100%;height:100%;object-fit:cover;object-position:50% 24%}
+.heroImage img{width:100%;height:100%;object-fit:contain;object-position:center}
 .collections{padding-block:40px 34px}
 .collections .sectionTitle{margin-bottom:20px}
 .collectionGrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;align-items:start}
@@ -57,7 +57,7 @@
  .heroCopy h1{font-size:28px;line-height:1.25;max-width:20ch}
  .heroCopy p{font-size:14px;line-height:1.65;max-width:44ch;margin-top:12px}
  .heroCopy :global(.button){margin-top:16px}
- .heroImage{width:min(100%,440px);justify-self:center;aspect-ratio:1}
+ .heroImage{width:min(100%,320px);justify-self:center;aspect-ratio:3/4}
  .collections{padding-block:30px}
  .collections .sectionTitle{margin-bottom:18px}
  .collectionGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}

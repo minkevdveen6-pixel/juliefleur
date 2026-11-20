@@ -26,3 +26,36 @@ Wil je uitleg direct bij een keuzeveld? Gebruik onder **Omschrijving** een kop *
 ## Controleren op de website
 
 Klik op **Opslaan** en open de gekozen collectie op [juliefleur.nl](https://www.juliefleur.nl/). Vernieuw de pagina en open het artikel. Controleer de foto's, prijs, omschrijving en uitklapbare onderdelen. Kies de opties en kijk of de prijs goed wijzigt. Je kunt het artikel aan je mandje toevoegen om de keuzes te controleren en daarna weer verwijderen.
+
+## Verzending en afhalen
+
+Open **Verzending en ophalen** voor de winkelbrede tarieven. Het afgesproken pakkettarief is € 6,95 onder € 150 en gratis vanaf € 150. Controleer altijd ook een gemengde winkelwagen en het subtotaal na korting voordat je een regel activeert.
+
+Voor brievenbuspost maak je eerst een aparte verzendmethode met het bevestigde tarief. Open daarna **Catalogus → Producten → [product] → Verzending en ophalen**. Kies bij de productgebonden verzendmethoden welke methoden voor dit product beschikbaar zijn. Sluit brievenbuspost uit voor ieder ongeschikt product. Een combinatie van geschikte en ongeschikte artikelen moet pakketverzending opleveren. Het eerdere voorstel was € 4,60; laat Fleur het definitieve tarief en de geschiktheid per product bevestigen.
+
+Voor afhalen kies je **Verzending en ophalen → Afhalen**. Gebruik het bevestigde afhaaladres en zet in de instructies dat afhalen op afspraak gebeurt. Bij **Betaling** kan een handmatige methode ‘Contant bij afhalen’ worden toegevoegd. Beperk deze onder beschikbaarheid per verzendmethode tot afhalen. De bestelling krijgt de status ‘In afwachting van betaling’. Markeer pas als betaald nadat je het geld hebt ontvangen.
+
+## Spoedbestelling voor het hele mandje
+
+Dit kan op Venture via **Instellingen → Aangepaste checkoutvelden** (Engelstalig **Settings → Custom Checkout Fields**). Voeg een optioneel selectievak toe met ‘Spoedbestelling na voorafgaand overleg’. Gebruik ‘Vooraf afstemmen via DM of info@juliefleur.nl. Beschikbaarheid wordt door Fleur bevestigd.’ als uitleg en € 12,50 als vaste toeslag. Laat het standaard uit staan en toon de keuze bij de eerste checkoutstap. Laat de keuze ook in de bestelgegevens en klantmail opnemen. Controleer de totaalprijs met de keuze uit en aan voordat je publiceert. Dit veld is tijdens deze ronde nog niet opgeslagen, omdat de beheeromgeving het inlogscherm toont.
+
+## Conditionele letters
+
+De standaard productopties bieden deze onderlinge zichtbaarheid niet. Voor aparte velden Letter 1 tot en met 5 met conditionele verplichting noemt Ecwid de app **Advanced Product Options** ($ 8,49 per maand, actuele prijs in de App Market controleren). Deze is niet geïnstalleerd.
+
+Een alternatief zonder app is één verplicht tekstveld voor alle letters in volgorde, naast de bestaande keuze voor het aantal letters en de bijbehorende toeslag. Dit biedt geen automatische telling of aparte conditionele velden. Hiervoor is eerst een keuze nodig; de bestaande productconfiguratie is behouden.
+
+## Bestellingen
+
+Ga naar **Mijn verkopen → Bestellingen**. Open de bestelling om de gekozen opties, personalisatie, aantallen, toeslagen, verzendmethode en betaalstatus te bekijken. Controleer deze gegevens voordat je het product maakt. Een betaling is pas bevestigd wanneer de status en de betaalprovider dat aangeven.
+
+## Homepagefoto
+
+De bannerfoto staat momenteel als vast bestand op de website. Een product- of categorieafbeelding kan als bron worden gekoppeld, maar daarvoor moet eerst duidelijk zijn welk Ecwid-item de banner beheert. Dat is een afzonderlijke, kleine implementatie. De bestaande bannerbron is behouden.
+
+## Bronnen
+
+- [Checkoutvelden en vaste toeslagen](https://support.ecwid.com/hc/en-us/articles/4909832422044-Creating-custom-fields-at-checkout)
+- [Productgebonden verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5287232121116-Product-specific-shipping-methods)
+- [Betalingen beperken tot verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5325525829660-Restricting-payments-by-specific-shipping-methods)
+- [Conditionele productopties](https://support.ecwid.com/hc/en-us/articles/7286612490140-Creating-advanced-product-options)
