@@ -22,6 +22,7 @@
 .category:hover h3{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
 .bestsellers{background:var(--pink);padding-block:48px 52px}
 .sectionHeader{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px 20px;margin-bottom:22px}
+.bestsellers .sectionHeader{border-bottom:1px solid var(--line);padding-bottom:8px}
 .bestsellerGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;align-items:start}
 .bestsellerGrid :global(.photo-space){background:transparent}
 .bestsellerGrid :global(.product-card h3){font-size:15px;min-height:3em;margin-top:13px;line-height:1.5}

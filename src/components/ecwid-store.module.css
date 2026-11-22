@@ -48,7 +48,6 @@
   font-weight:400!important;
   line-height:1.6;
 }
-.store [data-featured] :global(.ec-pagination){display:none}
 .store :global(.ec-size .ec-store .details-gallery__wrap-inner){
   width:100%;
   max-width:520px;
@@ -81,6 +80,45 @@
   font:400 13px/1.5 var(--sans);
   word-break:normal;
   overflow-wrap:anywhere;
+}
+
+
+/* De homepage toont een selectie. Sorteren blijft beschikbaar in de winkel. */
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ecwid-productBrowser){
+  background:transparent!important;
+  padding:0;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store :is(.grid__sort,.ec-pagination)){
+  display:none!important;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .ec-grid){
+  padding-block-end:0;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid__products){
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  margin:0;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product){
+  width:auto;
+  min-width:0;
+  max-width:none;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__wrap){
+  padding:0;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__picture){
+  inset:0;
+  margin:0!important;
+}
+.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__price){
+  padding-bottom:0;
+}
+@media(max-width:600px){
+  .store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid__products){
+    grid-template-columns:1fr;
+  }
 }
 
 /* Native Ecwid-mand en checkout, uitsluitend binnen de bestaande winkel. */
