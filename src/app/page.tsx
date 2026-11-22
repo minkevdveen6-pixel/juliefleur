@@ -70,7 +70,6 @@ export default function Home() {
         <Link className={`${styles.editorialLink} ${styles.aboutLink}`} href="/over-fleur">Lees mijn verhaal</Link>
       </div>
     </section>
-    <section className={styles.orderSteps} aria-labelledby="order-heading"><h2 id="order-heading">Zo werkt bestellen</h2><ol><li><span>01</span><h3>Kies jouw favoriet</h3><p>Ontdek de collectie en selecteer je product.</p></li><li><span>02</span><h3>Maak het persoonlijk</h3><p>Kies de beschikbare kleuren, letters of andere personalisaties.</p></li><li><span>03</span><h3>Rond je bestelling af</h3><p>Controleer je keuzes en rond je bestelling af via de beschikbare betaalmethoden.</p></li></ol></section>
     <nav className={styles.practical} aria-label="Goed om te weten"><Link href="/over-fleur/">Handgemaakt door Fleur</Link><Link href="/collecties/">Personaliseren naar jouw wens</Link><Link href="/verzenden-bezorgen/">Verzending &amp; afhalen</Link></nav>
   </div>;
 }
