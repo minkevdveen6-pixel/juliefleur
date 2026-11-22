@@ -42,7 +42,7 @@ export default function Home() {
       </div>
     </section>
 
-    <section className={`${styles.container} ${styles.reviews}`} aria-labelledby="reviews-heading"><h2 id="reviews-heading">Lieve woorden</h2><div><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></div></section>
+    <section className={styles.reviewSection} aria-labelledby="reviews-heading"><div className={`${styles.container} ${styles.reviews}`}><h2 id="reviews-heading">Lieve woorden</h2><div><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></div></div></section>
     <section className={styles.about} aria-labelledby="home-fleur-heading">
       <div className={styles.aboutInner}>
         <div className={styles.portrait}>

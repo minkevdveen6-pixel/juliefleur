@@ -54,6 +54,7 @@
   .category:hover img{transform:scale(1.025)}
 }
 
+.reviewSection{background:#e4eff7}
 .reviews{
   display:grid;
   grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);
@@ -81,8 +82,9 @@
 .practical a{text-underline-offset:5px}
 .practical a:hover{text-decoration:underline}
 
-@media(min-width:1024px){
-  .collectionGrid{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media(min-width:601px) and (max-width:900px){
+  .collections .container{width:calc(100% - 48px)}
+  .collectionGrid{column-gap:18px}
 }
 
 @media(max-width:600px){
@@ -92,7 +94,8 @@
   .heroCopy p{font-size:15px;margin-top:14px}
   .heroCopy :global(.button){margin-top:17px}
   .heroImage{aspect-ratio:1.08}
-  .collectionGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+  .collections .container{width:calc(100% - 28px)}
+  .collectionGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}
   .categoryCaption{padding-block:9px}
   .reviews{grid-template-columns:1fr;gap:10px}
   .reviews p,.aboutText{font-size:14px}
