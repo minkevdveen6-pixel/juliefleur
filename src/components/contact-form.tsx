@@ -51,7 +51,6 @@ export function ContactForm() {
   return <form className="contact-form" onSubmit={submit} noValidate aria-label="Contactformulier">
     <h2>Stuur Fleur een bericht</h2>
     <p className="form-required-note">Alle velden zijn verplicht.</p>
-    <p className="form-availability" id="contact-availability">Liever rechtstreeks mailen? Gebruik <a href="mailto:info@juliefleur.nl">info@juliefleur.nl</a>.</p>
     <div hidden aria-hidden="true">
       <label htmlFor="contact-website">Website</label>
       <input id="contact-website" name="website" type="text" tabIndex={-1} autoComplete="off" />
@@ -63,7 +62,7 @@ export function ContactForm() {
     <div className="contact-field"><label htmlFor="contact-subject">Onderwerp</label><input id="contact-subject" name="subject" required maxLength={contactLimits.subject} value={fields.subject} onChange={e=>update("subject",e.target.value)} aria-invalid={Boolean(errors.subject)} aria-describedby={errors.subject?"contact-subject-error":undefined} />{errors.subject&&<small className="field-error" id="contact-subject-error">{errors.subject}</small>}</div>
     <div className="contact-field"><label htmlFor="contact-message">Bericht</label><textarea id="contact-message" name="message" rows={7} required maxLength={contactLimits.message} value={fields.message} onChange={e=>update("message",e.target.value)} aria-invalid={Boolean(errors.message)} aria-describedby={errors.message?"contact-message-error":"contact-message-help"} /><div className="message-help"><small id="contact-message-help">Deel alleen de gegevens die nodig zijn voor je vraag.</small><small>{fields.message.length}/{contactLimits.message}</small></div>{errors.message&&<small className="field-error" id="contact-message-error">{errors.message}</small>}</div>
     <p className="contact-privacy">We gebruiken je gegevens om je bericht te beantwoorden. <Link href="/privacybeleid">Lees de privacy-informatie</Link>.</p>
-    <button type="submit" className="button contact-submit" disabled={!ready||status==="sending"} aria-describedby="contact-availability">{status==="sending"?"Bezig met verzenden…":"Verstuur bericht"} <Icon name="arrow" /></button>
+    <button type="submit" className="button contact-submit" disabled={!ready||status==="sending"}>{status==="sending"?"Bezig met verzenden…":"Verstuur bericht"} <Icon name="arrow" /></button>
     <noscript><p>Voor het formulier is JavaScript nodig. Je kunt rechtstreeks mailen naar info@juliefleur.nl.</p></noscript>
   </form>;
 }
