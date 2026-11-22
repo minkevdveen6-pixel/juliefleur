@@ -15,7 +15,7 @@ export function Header() {
   const path = usePathname();
   useEffect(() => { menu.current?.close(); cart.current?.close(); }, [path]);
   return <>
-    {!site.launched && <div className="preview-bar">Een eerste kijkje bij Julie Fleur <span>·</span> {ecwid.enabled ? "Online betalen is binnenkort beschikbaar" : "De webshop is in voorbereiding"}</div>}
+    {!site.launched && <div className="preview-bar">Een eerste kijkje bij Julie Fleur <span>·</span> {ecwid.enabled ? "Persoonlijk & handgemaakt" : "De webshop is in voorbereiding"}</div>}
     <header className="site-header">
       <div className="header-top shell">
         <button className="icon-button mobile-menu" aria-label="Menu openen" onClick={() => menu.current?.showModal()}><Icon name="menu" /></button>

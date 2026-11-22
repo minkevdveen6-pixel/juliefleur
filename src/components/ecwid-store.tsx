@@ -45,7 +45,6 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
     canShowEcwidPage(page, Object.values(ecwid.categoryIds), ecwid.catalogReady);
   const loaded = ready && page.type !== "LOADING";
   return <div className={`${styles.store} ${main ? styles.mainStore : ""}`} data-ecwid-status={error ? "error" : loaded ? "ready" : "loading"} data-ecwid-api={ready ? "ready" : "loading"} data-ecwid-page={page.type} data-ecwid-store={ecwid.storeId}>
-    {main && checkout && !ecwid.paymentsAvailable && <aside className={styles.paymentNotice} aria-label="Online betalen"><strong>Online betalen is nog niet beschikbaar.</strong><p>Je kunt je winkelmandje alvast samenstellen. De betaalmogelijkheid volgt binnenkort.</p></aside>}
     {main && !showNative && <h1>{cart || !loaded ? "Winkelmandje" : "Alle producten"}</h1>}
     {error ? <div className={styles.error} role="alert"><h2>De winkel is even niet bereikbaar.</h2><p>Probeer het opnieuw of neem contact op met Fleur.</p><button className="button button-small" onClick={() => window.location.reload()}>Probeer opnieuw</button></div>
       : emptyCart ? <div className={styles.emptyCart}><p>Je winkelmandje is nog leeg.</p><SiteLink href="/collecties/" className="button button-small">Bekijk alle producten</SiteLink></div>
