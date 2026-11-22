@@ -100,3 +100,7 @@
 .orderSteps li{border-top:1px solid var(--line);padding-top:16px}
 .orderSteps span{color:var(--olive);font-size:13px}.orderSteps h3{font-size:17px;margin:8px 0}.orderSteps p{font-size:14px}
 @media(max-width:600px){.orderSteps{width:calc(100% - 36px)}.orderSteps ol{grid-template-columns:1fr;gap:18px}.reviews h2{font-size:25px}}
+
+.combine{width:min(1080px,calc(100% - 64px));margin:40px auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px}
+.combine :global(.photo-space){aspect-ratio:1;background:transparent}.combine h2{font-size:30px}.combine p{margin-top:14px}.combine a{margin-top:14px}
+@media(max-width:600px){.combine{width:calc(100% - 36px);gap:22px;grid-template-columns:1fr}.combine h2{font-size:25px}}

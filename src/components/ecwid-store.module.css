@@ -252,3 +252,8 @@
 .store :global(.ec-size .ec-store .grid__sort){position:static!important;display:flex!important;justify-content:flex-end;float:none!important;width:100%;margin:0 0 24px!important;min-height:44px}
 .store :global(.ec-size .ec-store .grid-sort__item--sortby){position:relative;max-width:100%;min-height:44px}
 @media(max-width:600px){.store :global(.ec-size .ec-store .grid__sort){margin-bottom:16px!important;flex-wrap:wrap}}
+
+/* Native Ecwid labels must inherit the light button text, including on iOS. */
+.store :global(.ec-size .ec-store .form-control--button .form-control__button){background:#56692c!important;color:#fff!important;-webkit-text-fill-color:#fff}
+.store :global(.ec-size .ec-store .form-control--button .form-control__button :is(.form-control__button-text,.form-control__button-text-inner)){color:#fff!important;-webkit-text-fill-color:#fff}
+.store :global(.ec-size .ec-store .form-control--button .form-control__button:focus-visible){outline:2px solid var(--wine);outline-offset:3px}

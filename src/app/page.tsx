@@ -53,11 +53,13 @@ export default function Home() {
 
     {(!ecwid.enabled || ecwid.categoryIds.bestsellers) && <section className={styles.bestsellers} aria-labelledby="bestsellers-heading">
       <div className={styles.container}>
-        <div className={styles.sectionHeader}><h2 id="bestsellers-heading" className={styles.sectionTitle}>Bestsellers</h2><Link className={styles.editorialLink} href={ecwid.enabled ? "/bestsellers/" : "/collecties/"}>{ecwid.enabled ? "Bekijk alle bestsellers" : "Bekijk alle producten"}</Link></div>
+        <div className={styles.sectionHeader}><h2 id="bestsellers-heading" className={styles.sectionTitle}>Julie Fleur Favourites</h2><Link className={styles.editorialLink} href={ecwid.enabled ? "/bestsellers/" : "/collecties/"}>{ecwid.enabled ? "Bekijk alle bestsellers" : "Bekijk alle producten"}</Link></div>
         <div className={styles.bestsellerGrid}>{ecwid.enabled ? <div style={{gridColumn:"1 / -1"}}><EcwidStore categoryId={ecwid.categoryIds.bestsellers} featured /></div> : bestsellers.map(product => <ProductCard key={product.slug} product={product} />)}</div>
       </div>
     </section>}
 
+    <section className={styles.combine} aria-labelledby="combine-heading"><PhotoSpace slot="jewelry:initial" fit="contain" /><div><h2 id="combine-heading">Leuk om te combineren</h2><p>Een persoonlijk detail, op jouw manier.</p><Link className={styles.editorialLink} href="/collecties/sieraden-graveren/">Ontdek de sieraden</Link></div></section>
+    <section className={styles.reviews} aria-labelledby="reviews-heading"><div><h2 id="reviews-heading">Lieve woorden</h2><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p></div><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></section>
     <section className={styles.about} aria-labelledby="home-fleur-heading">
       <div className={styles.aboutInner}>
         <div className={styles.portrait}>
@@ -68,7 +70,6 @@ export default function Home() {
         <Link className={`${styles.editorialLink} ${styles.aboutLink}`} href="/over-fleur">Lees mijn verhaal</Link>
       </div>
     </section>
-    <section className={styles.reviews} aria-labelledby="reviews-heading"><div><h2 id="reviews-heading">Lieve woorden</h2><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p></div><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></section>
     <section className={styles.orderSteps} aria-labelledby="order-heading"><h2 id="order-heading">Zo werkt bestellen</h2><ol><li><span>01</span><h3>Kies jouw favoriet</h3><p>Ontdek de collectie en selecteer je product.</p></li><li><span>02</span><h3>Maak het persoonlijk</h3><p>Kies de beschikbare kleuren, letters of andere personalisaties.</p></li><li><span>03</span><h3>Rond je bestelling af</h3><p>Controleer je keuzes en rond je bestelling af via de beschikbare betaalmethoden.</p></li></ol></section>
     <nav className={styles.practical} aria-label="Goed om te weten"><Link href="/over-fleur/">Handgemaakt door Fleur</Link><Link href="/collecties/">Personaliseren naar jouw wens</Link><Link href="/verzenden-bezorgen/">Verzending &amp; afhalen</Link></nav>
   </div>;
