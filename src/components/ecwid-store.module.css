@@ -167,20 +167,27 @@
   margin:0;
   cursor:pointer;
   list-style:none;
+  background-image:none;
   text-align:left;
   font:500 16px/1.4 var(--sans)!important;
   color:var(--wine);
 }
 .store .productInformation > details > summary::-webkit-details-marker{display:none}
+.store .productInformation > details > summary::marker{content:""}
+.store :global(.ec-size .ec-store) .productInformation > details > summary::before,
 .store :global(.ec-size .ec-store) .productInformation > details > summary::after{
-  content:"+";
-  justify-self:end;
-  font:400 22px/1 var(--sans);
+  content:none;
+}
+.disclosureIcon{
+  display:grid;
+  place-items:center;
+  width:20px;
+  height:20px;
   color:var(--olive);
+  font:400 22px/1 var(--sans);
 }
-.store :global(.ec-size .ec-store) .productInformation > details[open] > summary::after{
-  content:"−";
-}
+.disclosureIcon::before{content:"+"}
+.productInformation > details[open] > summary > .disclosureIcon::before{content:"−"}
 .productInformation > details > div{padding-bottom:16px;overflow-wrap:anywhere}
 .productInformation .shippingLink{display:inline-block;margin-top:8px;color:var(--olive);text-decoration:underline}
 .store[data-ecwid-page="PRODUCT"] .informationSource{display:none!important}

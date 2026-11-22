@@ -111,7 +111,10 @@ export function arrangeProductInformation(store: HTMLElement) {
     const disclosure = document.createElement("details");
     disclosure.open = opened.has(title);
     const summary = document.createElement("summary");
-    summary.textContent = title;
+    const icon = document.createElement("span");
+    icon.className = styles.disclosureIcon;
+    icon.setAttribute("aria-hidden", "true");
+    summary.append(title, icon);
     const body = document.createElement("div");
     body.append(...nodes);
     if (title === "Levertijd & verzending" && !body.querySelector('a[href*="verzenden-bezorgen"]')) {
