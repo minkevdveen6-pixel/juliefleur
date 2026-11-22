@@ -8,7 +8,7 @@ export function validateContact(value: unknown): { fields: ContactFields; errors
   const fields:ContactFields={name:clean("name"),email:clean("email"),subject:clean("subject"),message:clean("message")};
   const errors:ContactErrors={};
   if(fields.name.length<2||fields.name.length>contactLimits.name||lineBreaks.test(fields.name)) errors.name="Vul je naam in (2–100 tekens).";
-  if(fields.email.length>contactLimits.email||!/^[^\s@<>\u0000-\u001f]+@[^\s@<>\u0000-\u001f]+\.[^\s@<>\u0000-\u001f]+$/.test(fields.email)) errors.email="Vul een geldig e-mailadres in.";
+  if(fields.email.length>contactLimits.email||!/^[^\s@<>,;:\x22\u0000-\u001f\u007f]+@[^\s@<>,;:\x22\u0000-\u001f\u007f]+\.[^\s@<>,;:\x22\u0000-\u001f\u007f]+$/.test(fields.email)) errors.email="Vul een geldig e-mailadres in.";
   if(fields.subject.length<3||fields.subject.length>contactLimits.subject||lineBreaks.test(fields.subject)) errors.subject="Vul een onderwerp in (3–160 tekens).";
   if(fields.message.length<10||fields.message.length>contactLimits.message||/[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f]/.test(fields.message)) errors.message="Schrijf een bericht van 10–5000 tekens.";
   return {fields,errors};

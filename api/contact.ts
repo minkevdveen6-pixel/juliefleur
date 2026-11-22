@@ -1,0 +1,88 @@
+import { validateContact } from "../src/lib/contact-validation";
+
+const recipient = "info@juliefleur.nl";
+const origins = new Set(["https://juliefleur.nl", "https://www.juliefleur.nl"]);
+const maxBodyBytes = 32_768;
+const windowMs = 10 * 60 * 1000;
+const attempts = new Map<string, { count: number; expires: number }>();
+
+function reply(status: number, body: object, headers: Record<string, string> = {}) {
+  return Response.json(body, { status, headers: { "Cache-Control": "no-store", ...headers } });
+}
+
+function allowAttempt(ip: string) {
+  const now = Date.now();
+  for (const [key, entry] of attempts) {
+    if (entry.expires <= now) attempts.delete(key);
+  }
+
+  const entry = attempts.get(ip);
+  if (entry) {
+    if (entry.count >= 5) return false;
+    entry.count += 1;
+    return true;
+  }
+
+  if (attempts.size >= 2048) return false;
+  attempts.set(ip, { count: 1, expires: now + windowMs });
+  return true;
+}
+
+export default {
+  async fetch(request: Request) {
+    if (request.method !== "POST") return reply(405, { ok: false }, { Allow: "POST" });
+    if (!origins.has(request.headers.get("origin") ?? "")) return reply(403, { ok: false });
+    if (request.headers.get("content-type")?.split(";")[0] !== "application/json") {
+      return reply(415, { ok: false });
+    }
+    if (Number(request.headers.get("content-length")) > maxBodyBytes) return reply(413, { ok: false });
+
+    let input: unknown;
+    try {
+      const body = await request.text();
+      if (Buffer.byteLength(body) > maxBodyBytes) return reply(413, { ok: false });
+      input = JSON.parse(body);
+    } catch {
+      return reply(400, { ok: false });
+    }
+
+    if (!input || typeof input !== "object" || !("website" in input) || input.website !== "") {
+      return reply(400, { ok: false });
+    }
+
+    const { fields, errors } = validateContact(input);
+    if (Object.keys(errors).length) return reply(400, { ok: false });
+    const key = process.env.RESEND_API_KEY;
+    const from = process.env.CONTACT_FROM_EMAIL;
+    if (!key || !from) return reply(503, { ok: false });
+
+    // Vercel supplies this address. The limit is local to the running instance.
+    const ip = request.headers.get("x-vercel-forwarded-for")?.split(",")[0].trim() || "unknown";
+    if (!allowAttempt(ip)) return reply(429, { ok: false }, { "Retry-After": "600" });
+
+    try {
+      const response = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
+        signal: AbortSignal.timeout(8000),
+        body: JSON.stringify({
+          from,
+          to: [recipient],
+          reply_to: fields.email,
+          subject: fields.subject,
+          text: `Naam: ${fields.name}\nE-mailadres: ${fields.email}\n\n${fields.message}`,
+        }),
+      });
+      if (!response.ok) {
+        console.error("Resend rejected contact email", response.status);
+        return reply(502, { ok: false });
+      }
+      const result = await response.json();
+      if (typeof result.id !== "string" || !result.id) return reply(502, { ok: false });
+      return reply(200, { ok: true, id: result.id });
+    } catch {
+      console.error("Resend contact request failed");
+      return reply(502, { ok: false });
+    }
+  },
+};
