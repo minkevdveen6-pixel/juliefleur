@@ -1,7 +1,7 @@
 # Julie Fleur — Producten beheren in Ecwid
 
 1. Open [Ecwid-beheer](https://my.ecwid.com/store/145090752). Ga naar **Catalogus → Producten**. Kies **Nieuw product toevoegen** of open een bestaand artikel.
-2. Vul onder **Algemeen** de naam, prijs, voorraad en **Omschrijving** in. Upload de foto's bovenaan. Sleep ze in de gewenste volgorde en zet je beste overzichtsfoto eerst. Je kunt hier ook foto's vervangen.
+2. Vul onder **Algemeen** de naam, prijs, voorraad en **Omschrijving** in. Upload de foto's bovenaan. Sleep ze in de gewenste volgorde en zet je beste overzichtsfoto eerst. In het overzicht wordt de foto vierkant en gecentreerd weergegeven. Laat daarom wat ruimte rond het product. Op de productpagina blijft de hoofdafbeelding volledig zichtbaar.
 3. Vink bij **Categorieën** de juiste collectie aan. Kies uit **Bagcharms**, **Sieraden & graveren**, **Punniken**, **Borduren** en **Vilten kroon**. Zet het product op **Ingeschakeld** wanneer het klaar is. Voor **Bestsellers** gebruik je de aparte Ecwid-categorie **Bestsellers**. Voeg een product aan die categorie toe naast de gewone collectie. Verwijder de toewijzing wanneer het uit de selectie mag. De homepage toont maximaal vier artikelen uit deze selectie. [Ecwid-handleiding voor productgegevens](https://support.ecwid.com/hc/nl/articles/360000009240)
 4. Ga naar **Opties** om keuzes of invoervelden toe te voegen, bijvoorbeeld voor kleur of een naam. Maak een veld verplicht als je die invoer altijd nodig hebt. Bij een keuzewaarde kun je een prijswijziging toevoegen. Vul daar alleen de toeslag of korting in. [Ecwid-handleiding voor productopties](https://support.ecwid.com/hc/nl/articles/207099959)
 
@@ -37,13 +37,13 @@ Voor afhalen kies je **Verzending en ophalen → Afhalen**. Gebruik het bevestig
 
 ## Spoedbestelling voor het hele mandje
 
-Dit kan op Venture via **Instellingen → Aangepaste checkoutvelden** (Engelstalig **Settings → Custom Checkout Fields**). Voeg een optioneel selectievak toe met ‘Spoedbestelling na voorafgaand overleg’. Gebruik ‘Vooraf afstemmen via DM of info@juliefleur.nl. Beschikbaarheid wordt door Fleur bevestigd.’ als uitleg en € 12,50 als vaste toeslag. Laat het standaard uit staan en toon de keuze bij de eerste checkoutstap. Laat de keuze ook in de bestelgegevens en klantmail opnemen. Controleer de totaalprijs met de keuze uit en aan voordat je publiceert. Dit veld is tijdens deze ronde nog niet opgeslagen, omdat de beheeromgeving het inlogscherm toont.
+Dit kan op Venture via **Instellingen → Aangepaste checkoutvelden** (Engelstalig **Settings → Custom Checkout Fields**). Voeg een optioneel selectievak toe met ‘Spoedbestelling na voorafgaand overleg’. Gebruik ‘Vooraf afstemmen via DM of info@juliefleur.nl. Beschikbaarheid wordt door Fleur bevestigd.’ als uitleg en € 12,50 als vaste toeslag. Laat het standaard uit staan en toon de keuze bij de eerste checkoutstap. Laat de keuze ook in de bestelgegevens en klantmail opnemen. Controleer de totaalprijs met de keuze uit en aan voordat je publiceert.
 
 ## Conditionele letters
 
-De standaard productopties bieden deze onderlinge zichtbaarheid niet. Voor aparte velden Letter 1 tot en met 5 met conditionele verplichting noemt Ecwid de app **Advanced Product Options** ($ 8,49 per maand, actuele prijs in de App Market controleren). Deze is niet geïnstalleerd.
+De standaard productopties bieden deze onderlinge zichtbaarheid niet. Voor aparte velden Letter 1 tot en met 5 met conditionele verplichting verwijst Ecwid naar de app **Advanced Product Options**.
 
-Een alternatief zonder app is één verplicht tekstveld voor alle letters in volgorde, naast de bestaande keuze voor het aantal letters en de bijbehorende toeslag. Dit biedt geen automatische telling of aparte conditionele velden. Hiervoor is eerst een keuze nodig; de bestaande productconfiguratie is behouden.
+Een alternatief zonder app is één verplicht tekstveld voor alle letters in volgorde, naast de bestaande keuze voor het aantal letters en de bijbehorende toeslag. Ecwid controleert dan niet automatisch of de ingevulde tekst overeenkomt met het gekozen aantal letters.
 
 ## Bestellingen
 
@@ -59,18 +59,3 @@ De bannerfoto staat momenteel als vast bestand op de website. Een product- of ca
 - [Productgebonden verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5287232121116-Product-specific-shipping-methods)
 - [Betalingen beperken tot verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5325525829660-Restricting-payments-by-specific-shipping-methods)
 - [Conditionele productopties](https://support.ecwid.com/hc/en-us/articles/7286612490140-Creating-advanced-product-options)
-
-
-## Laatste technische controle, 20 november 2026
-
-De openbare storefront gebruikt winkel 145090752. De winkel-ID geeft geen toegang om producten, verzending of betaalmethoden te wijzigen. Er is geen lokale Ecwid-beheersleutel aangetroffen; de beheertab toont het inlogscherm. De precieze oorzaak van de ontbrekende sessie is niet zichtbaar.
-
-Voor de gratis Paracord-oplossing moet het Ecwid-product eerst één verplicht tekstveld voor alle letters krijgen. De uitvoering blijft het aantal letters en de prijs bepalen. Standaard Ecwid-opties controleren niet automatisch of de tekstlengte overeenkomt met een andere keuze. Alleen een controle in de browser kan worden omzeild en biedt geen volledige controle bij andere verkoopkanalen of checkout. Daarom zijn de bestaande lettervelden behouden. Een alternatief binnen Ecwid is vijf afzonderlijke producten met elk het juiste aantal verplichte letterkeuzes en een vaste prijs; dat vraagt een wijziging van de catalogusinrichting.
-
-De huidige fotoformaten, mobiele fotostrip en productinformatie gelden centraal voor nieuwe producten. De gewone omschrijving blijft zichtbaar. Alleen gevulde secties met de hierboven genoemde koppen worden uitgeklapt. Een verwerkingstijd in de verzendinstellingen verschijnt niet automatisch als tekst in een uitklapvak; vul die uitleg in de omschrijving in.
-
-Borduren en Vilten kroon leverden bij de storefrontcontrole geen zichtbare producten. Controleer bij **Catalogus → Producten** of de betreffende artikelen ingeschakeld zijn en aan de juiste categorie zijn toegewezen.
-
-Voor brievenbuspost laat je pakketverzending óók beschikbaar voor geschikte kleine producten. Sluit uitsluitend brievenbuspost uit voor ongeschikte producten. Zo houden gemengde mandjes een gezamenlijke pakketmethode. Test ook meerdere kleine artikelen samen; productgeschiktheid alleen bewijst niet dat ieder aantal samen door de brievenbus past. Gebruik daarvoor bevestigde gewichten, capaciteitsgrenzen of een aparte pakketregel.
-
-De betaalmelding wordt door de website bepaald, niet door Mollie. De bestaande beoordelingsbuild houdt deze aan totdat de betaalwerking is bevestigd. Laat een bevoegde persoon een volledige proefbestelling uitvoeren en controleer daarna de betaalstatus in **Mijn verkopen → Bestellingen** en bij Mollie.

@@ -27,12 +27,16 @@
 /* Ecwid reserves the grid space and manages carousel navigation and zoom. */
 .store :global(.ec-size .ec-store .grid-product__image){
   aspect-ratio:1;
+  overflow:hidden;
 }
 .store :global(.ec-size .ec-store .grid-product__image .grid-product__bg){
   background-color:transparent!important;
 }
 .store :global(.ec-size .ec-store .grid-product__image .grid-product__picture){
-  object-fit:contain;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover;
+  object-position:center;
 }
 .store :global(.ec-size .ec-store .grid-product__title){
   color:var(--wine);
