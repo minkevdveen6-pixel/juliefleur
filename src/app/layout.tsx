@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: "Julie Fleur", template: "%s | Julie Fleur" },
   description: site.description,
-  robots: { index: site.launched, follow: site.launched },
+  robots: { index: site.indexable, follow: site.indexable },
   icons: {
     icon: [
       { url: "/favicon.ico?v=20261102jf", type: "image/x-icon", sizes: "16x16 32x32 48x48" },

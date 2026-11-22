@@ -13,6 +13,7 @@ const preview = reviewEnvironment({ ...supplied, VERCEL_ENV: "preview" });
 assert.equal(preview.NEXT_PUBLIC_ECWID_STORE_ID, "145090752");
 assert.equal(preview.NEXT_PUBLIC_ECWID_PREVIEW, "true");
 assert.equal(preview.NEXT_PUBLIC_SITE_LAUNCHED, "false");
+assert.equal(preview.NEXT_PUBLIC_SITE_INDEXABLE, "false");
 assert.equal(reviewEnvironment({ ...supplied, ECWID_CATALOG_READY: "false", VERCEL_ENV: "preview" }).NEXT_PUBLIC_ECWID_CATALOG_READY, "false");
 for (const VERCEL_ENV of ["production", "development"]) {
   const result = reviewEnvironment({ ...supplied, VERCEL_ENV });
@@ -21,6 +22,7 @@ for (const VERCEL_ENV of ["production", "development"]) {
   assert.equal(result.NEXT_PUBLIC_ECWID_CATALOG_READY, "false");
   assert.equal(result.NEXT_PUBLIC_ECWID_ENABLED, "false");
   assert.equal(result.NEXT_PUBLIC_SITE_LAUNCHED, "false");
+  assert.equal(result.NEXT_PUBLIC_SITE_INDEXABLE, "false");
 }
 assert.equal(reviewEnvironment({}).NEXT_PUBLIC_ECWID_PREVIEW, "false");
 assert.throws(() => reviewEnvironment({ VERCEL_ENV: "preview", ECWID_PREVIEW_ENABLED: "true", NEXT_PUBLIC_ECWID_STORE_ID: "not-an-id" }));
@@ -33,9 +35,10 @@ assert.equal(published.NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED, "true");
 assert.equal(published.NEXT_PUBLIC_ECWID_CATALOG_READY, "true");
 assert.equal(published.NEXT_PUBLIC_ECWID_PAYMENTS_AVAILABLE, "false");
 assert.equal(published.NEXT_PUBLIC_SITE_LAUNCHED, "false");
+assert.equal(published.NEXT_PUBLIC_SITE_INDEXABLE, "true");
 assert.equal(reviewEnvironment({ ...supplied, ECWID_CATALOG_PUBLISHED: "true", VERCEL_ENV: "development" }).NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED, "false");
 assert.throws(() => reviewEnvironment({ VERCEL_ENV: "production", ECWID_CATALOG_PUBLISHED: "true", NEXT_PUBLIC_ECWID_STORE_ID: "123" }));
-console.log("Ecwid-omgeving geslaagd: expliciete productievrijgave voor winkel 145090752; Preview-lekkage, andere winkels en onbedoelde betaalmelding geblokkeerd; noindex behouden.");
+console.log("Ecwid-omgeving geslaagd: expliciete productievrijgave voor winkel 145090752; Preview-lekkage, andere winkels en onbedoelde betaalmelding geblokkeerd; alleen de vrijgegeven productiecatalogus is indexeerbaar.");
 
 // Presentatiebeleid: echte categorieën kunnen automatisch doorlopen; demoproducten nooit.
 assert.equal(canShowEcwidPage({ type: "CATEGORY", categoryId: 123 }, [123], false), true);

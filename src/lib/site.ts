@@ -5,6 +5,7 @@ export const site = {
   name: "Julie Fleur",
   description: "Sieraden, bagcharms, punnikwerk en andere persoonlijke producten van Julie Fleur.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://juliefleur.nl",
+  indexable: process.env.NEXT_PUBLIC_SITE_INDEXABLE === "true",
   launched: process.env.NEXT_PUBLIC_SITE_LAUNCHED === "true",
   instagram: "https://www.instagram.com/juliefleur.nl/",
   // Aangeleverde PNG ongewijzigd bewaard. De ruime buitenmarges worden alleen met CSS gemaskeerd.

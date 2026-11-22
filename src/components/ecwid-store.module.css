@@ -35,6 +35,8 @@
 .store :global(.ec-size .ec-store .grid-product__image .grid-product__picture){
   width:100%!important;
   height:100%!important;
+  inset:0;
+  margin:0!important;
   object-fit:cover;
   object-position:center;
 }
@@ -107,10 +109,6 @@
 }
 .store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__wrap){
   padding:0;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__picture){
-  inset:0;
-  margin:0!important;
 }
 .store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__price){
   padding-bottom:0;

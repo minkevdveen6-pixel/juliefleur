@@ -8,7 +8,7 @@ import {ecwid,pageMetadata} from "@/lib/site";
 import {photoAt} from "@/lib/photography";
 export const dynamicParams=false;
 export function generateStaticParams(){return products.map(p=>({slug:p.slug}));}
-export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=products.find(p=>p.slug===slug);return pageMetadata(ecwid.enabled ? "Product" : p?.name||"Product",`/producten/${slug}/`,ecwid.enabled ? undefined : p?.description);}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=products.find(p=>p.slug===slug);const metadata=pageMetadata(ecwid.enabled ? "Product" : p?.name||"Product",`/producten/${slug}/`,ecwid.enabled ? undefined : p?.description);return ecwid.enabled ? {...metadata,robots:{index:false,follow:true}} : metadata;}
 export default async function ProductPage({params}:{params:Promise<{slug:string}>}){
  if(ecwid.enabled) return <div className="shell section-page"><Breadcrumb items={[{label:"Collecties",href:"/collecties"},{label:"Product"}]} /><header className="page-heading"><h1>Producten van Julie Fleur</h1></header><p>Het actuele assortiment vind je in de winkel.</p><Link className="text-link" href="/winkel/">Bekijk de producten <Icon name="arrow" width="18" /></Link></div>;
  const {slug}=await params;const p=products.find(p=>p.slug===slug);if(!p)notFound();const c=categories.find(c=>c.slug===p.category)!;const photo=photoAt(`product:${p.slug}`);const extraPhoto=photoAt(`gallery:${p.slug}`);

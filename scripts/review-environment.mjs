@@ -8,6 +8,7 @@ export function reviewEnvironment(environment) {
   if (active && storeId !== "145090752") throw new Error("Alleen Ecwid-winkel 145090752 is vrijgegeven voor Julie Fleur.");
   return {
     NEXT_PUBLIC_SITE_URL: "https://juliefleur.nl",
+    NEXT_PUBLIC_SITE_INDEXABLE: String(published),
     NEXT_PUBLIC_SITE_LAUNCHED: "false",
     NEXT_PUBLIC_ECWID_STORE_ID: active ? storeId : "",
     NEXT_PUBLIC_ECWID_PREVIEW: String(preview),
