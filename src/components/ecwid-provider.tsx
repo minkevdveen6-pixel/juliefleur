@@ -149,7 +149,7 @@ export function EcwidProvider({ children }: { children: React.ReactNode }) {
       shopping_cart_show_qty_inputs: true, shopping_cart_show_sku: false, shopping_cart_show_weight: false,
     };
     window._xnext_initialization_scripts = browser ? [{ widgetType: "ProductBrowser", id: browser.id,
-      arg: [`id=${browser.id}`, `views=grid(1,${browser.dataset.featured ? 4 : 16})`, "categoryView=grid", "searchView=grid",
+      arg: [`id=${browser.id}`, "views=grid(1,16)", "categoryView=grid", "searchView=grid",
         ...(browser.dataset.categoryId ? [`defaultCategoryId=${browser.dataset.categoryId}`] : [])] }] : [];
     try { api.init(); } catch { setError(true); }
   }, []);

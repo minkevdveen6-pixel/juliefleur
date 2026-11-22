@@ -1,12 +1,7 @@
 import { SiteLink as Link } from "@/components/site-link";
-import { products } from "@/data/catalog";
-import { ProductCard } from "@/components/catalog";
 import { PhotoSpace } from "@/components/placeholder";
 import { pages } from "@/data/pages";
-import { photoAt } from "@/lib/photography";
 import styles from "./home.module.css";
-import { ecwid } from "@/lib/site";
-import { EcwidStore } from "@/components/ecwid-store";
 
 export const metadata = { alternates: { canonical: "/" } };
 const collections = [
@@ -16,23 +11,19 @@ const collections = [
   { slot: "category:borduren", href: "/collecties/borduren", label: "Borduren" },
   { slot: "category:vilten-kroon", href: "/collecties/vilten-kroon", label: "Vilten kroon" },
 ];
-const bestsellerSlugs = ["bar-bracelet-engraved", "persoonlijke-bagcharm", "poppy-necklace", "punniknaam-rieten-tasje"];
 
 export default function Home() {
-  const braceletPhoto = photoAt("gallery:bar-bracelet-engraved");
-  const braceletImage = braceletPhoto?.variants.find(variant => variant.width === 960)?.src || braceletPhoto?.src;
-  const bestsellers = bestsellerSlugs.flatMap(slug => products.filter(product => product.slug === slug)).map(product => product.slug === "bar-bracelet-engraved" && braceletImage ? { ...product, image: braceletImage } : product);
   return <div className={styles.home}>
     <section className={styles.hero} aria-labelledby="home-heading">
       <div className={styles.heroInner}>
         <div className={styles.heroCopy}>
-          <h1 id="home-heading">Persoonlijk &amp; handgemaakt.</h1>
+          <h1 id="home-heading">Persoonlijk &amp;<br /><span>handgemaakt.</span></h1>
           <p>Gepersonaliseerde sieraden, bagcharms, punnik- &amp; borduurwerk</p>
           <Link className="button" href="#collections-heading">Ontdek de collecties</Link>
         </div>
         <Link className={styles.heroImage} href="/collecties/bagcharms/" aria-label="Bekijk de bagcharms">
           <picture>
-            <source type="image/webp" srcSet="/images/hero/pantertas-bagcharm-480.webp 480w, /images/hero/pantertas-bagcharm-768.webp 768w, /images/hero/pantertas-bagcharm-1200.webp 1200w" sizes="(max-width: 600px) min(100vw - 36px, 320px), (max-width: 824px) calc(50vw - 32px), 380px" />
+            <source type="image/webp" srcSet="/images/hero/pantertas-bagcharm-480.webp 480w, /images/hero/pantertas-bagcharm-768.webp 768w, /images/hero/pantertas-bagcharm-1200.webp 1200w" sizes="(max-width: 600px) calc(100vw - 36px), (max-width: 1100px) 50vw, 560px" />
             <img src="/images/hero/pantertas-bagcharm-1200.webp" width="1200" height="1600" alt="Tas met panterprint en een gepersonaliseerde groen-blauwe bagcharm" fetchPriority="high" decoding="async" />
           </picture>
         </Link>
@@ -51,15 +42,8 @@ export default function Home() {
       </div>
     </section>
 
-    {(!ecwid.enabled || ecwid.categoryIds.bestsellers) && <section className={styles.bestsellers} aria-labelledby="bestsellers-heading">
-      <div className={styles.container}>
-        <div className={styles.sectionHeader}><h2 id="bestsellers-heading" className={styles.sectionTitle}>Julie Fleur Favourites</h2><Link className={styles.editorialLink} href={ecwid.enabled ? "/bestsellers/" : "/collecties/"}>{ecwid.enabled ? "Bekijk alle bestsellers" : "Bekijk alle producten"}</Link></div>
-        <div className={styles.bestsellerGrid}>{ecwid.enabled ? <div style={{gridColumn:"1 / -1"}}><EcwidStore categoryId={ecwid.categoryIds.bestsellers} featured /></div> : bestsellers.map(product => <ProductCard key={product.slug} product={product} />)}</div>
-      </div>
-    </section>}
-
-    <section className={styles.combine} aria-labelledby="combine-heading"><PhotoSpace slot="jewelry:initial" fit="contain" /><div><h2 id="combine-heading">Leuk om te combineren</h2><p>Een persoonlijk detail, op jouw manier.</p><Link className={styles.editorialLink} href="/collecties/sieraden-graveren/">Ontdek de sieraden</Link></div></section>
-    <section className={styles.reviews} aria-labelledby="reviews-heading"><div><h2 id="reviews-heading">Lieve woorden</h2><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p></div><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></section>
+    <div className={styles.brandMoment}><p>Kleine dingen, <span>groot gebaar.</span></p></div>
+    <section className={`${styles.container} ${styles.reviews}`} aria-labelledby="reviews-heading"><h2 id="reviews-heading">Lieve woorden</h2><div><p>Heb je iets van Julie Fleur in huis? Fleur hoort graag hoe het bevalt.</p><Link className={styles.editorialLink} href="/reviews/">Deel je ervaring</Link></div></section>
     <section className={styles.about} aria-labelledby="home-fleur-heading">
       <div className={styles.aboutInner}>
         <div className={styles.portrait}>

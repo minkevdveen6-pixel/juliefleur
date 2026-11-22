@@ -6,7 +6,7 @@ import {photoAt} from "@/lib/photography";
 import {ProductCard} from "./catalog";
 import {PhotoSpace} from "./placeholder";
 
-function priceLabel(product:Product){return product.price===null?"In voorbereiding":`${product.fromPrice?"Vanaf ":""}${formatPrice(product.price)}`;}
+function priceLabel(product:Product){return product.price===null?"Prijs op aanvraag":`${product.fromPrice?"Vanaf ":""}${formatPrice(product.price)}`;}
 
 export function ProductBrowser({products}:{products:Product[]}){
   const [sort,setSort]=useState("collection");

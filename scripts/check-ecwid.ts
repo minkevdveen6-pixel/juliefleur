@@ -33,12 +33,11 @@ assert.equal(published.NEXT_PUBLIC_ECWID_STORE_ID, "145090752");
 assert.equal(published.NEXT_PUBLIC_ECWID_PREVIEW, "false");
 assert.equal(published.NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED, "true");
 assert.equal(published.NEXT_PUBLIC_ECWID_CATALOG_READY, "true");
-assert.equal(published.NEXT_PUBLIC_ECWID_PAYMENTS_AVAILABLE, "false");
 assert.equal(published.NEXT_PUBLIC_SITE_LAUNCHED, "false");
 assert.equal(published.NEXT_PUBLIC_SITE_INDEXABLE, "true");
 assert.equal(reviewEnvironment({ ...supplied, ECWID_CATALOG_PUBLISHED: "true", VERCEL_ENV: "development" }).NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED, "false");
 assert.throws(() => reviewEnvironment({ VERCEL_ENV: "production", ECWID_CATALOG_PUBLISHED: "true", NEXT_PUBLIC_ECWID_STORE_ID: "123" }));
-console.log("Ecwid-omgeving geslaagd: expliciete productievrijgave voor winkel 145090752; Preview-lekkage, andere winkels en onbedoelde betaalmelding geblokkeerd; alleen de vrijgegeven productiecatalogus is indexeerbaar.");
+console.log("Ecwid-omgeving geslaagd: expliciete productievrijgave voor winkel 145090752; Preview-lekkage, andere winkels geblokkeerd; alleen de vrijgegeven productiecatalogus is indexeerbaar.");
 
 // Presentatiebeleid: echte categorieën kunnen automatisch doorlopen; demoproducten nooit.
 assert.equal(canShowEcwidPage({ type: "CATEGORY", categoryId: 123 }, [123], false), true);

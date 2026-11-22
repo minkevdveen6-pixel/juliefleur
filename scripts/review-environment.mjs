@@ -13,7 +13,6 @@ export function reviewEnvironment(environment) {
     NEXT_PUBLIC_ECWID_STORE_ID: active ? storeId : "",
     NEXT_PUBLIC_ECWID_PREVIEW: String(preview),
     NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED: String(published),
-    NEXT_PUBLIC_ECWID_PAYMENTS_AVAILABLE: "false",
     NEXT_PUBLIC_ECWID_CATALOG_READY: String(active && environment.ECWID_CATALOG_READY === "true"),
     NEXT_PUBLIC_ECWID_CATEGORY_IDS: active ? environment.NEXT_PUBLIC_ECWID_CATEGORY_IDS || "{}" : "{}",
     NEXT_PUBLIC_ECWID_ENABLED: "false",

@@ -85,44 +85,10 @@
 }
 
 
-/* De homepage toont een selectie. Sorteren blijft beschikbaar in de winkel. */
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ecwid-productBrowser){
-  background:transparent!important;
-  padding:0;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store :is(.grid__sort,.ec-pagination)){
-  display:none!important;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .ec-grid){
-  padding-block-end:0;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid__products){
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:24px;
-  margin:0;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product){
-  width:auto;
-  min-width:0;
-  max-width:none;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__wrap){
-  padding:0;
-}
-.store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid-product__price){
-  padding-bottom:0;
-}
-@media(max-width:600px){
-  .store[data-ecwid-page="CATEGORY"] [data-featured] :global(.ec-size .ec-store .grid__products){
-    grid-template-columns:1fr;
-  }
-}
-
 /* Native Ecwid-mand en checkout, uitsluitend binnen de bestaande winkel. */
-.paymentNotice{margin:0 0 28px;padding:18px 22px;background:var(--pink);border-left:3px solid var(--olive);font-size:15px;line-height:1.6}
-.paymentNotice strong{font-weight:600}
-.paymentNotice p{margin:4px 0 0}
+
+
+
 .store :global(.ec-cart){gap:36px;align-items:flex-start}
 .store :global(.ec-cart__sidebar){width:56%!important;padding:0!important;min-width:0}
 .store :global(.ec-cart__body){width:44%!important;padding:26px!important;border:1px solid var(--line);background:#fff;min-width:0}
@@ -163,7 +129,7 @@
  .store :global(.ec-cart__body){padding:22px!important}
 }
 @media(max-width:600px){
- .paymentNotice{padding:15px 16px;font-size:14px;margin-bottom:24px}
+
  .store :global(.ec-cart .ec-header-h1){font-size:25px!important;margin-bottom:22px}
  .store :global(.ec-cart-item__image){width:86px;flex:0 0 86px;padding-right:14px}
  .store :global(.ec-cart-item__title){font-size:16px!important}

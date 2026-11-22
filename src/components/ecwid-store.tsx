@@ -8,7 +8,7 @@ import { observeOptionHelp } from "./ecwid-option-help";
 import { SiteLink } from "./site-link";
 import styles from "./ecwid-store.module.css";
 
-export function EcwidStore({ categoryId, featured = false, main = false, allProducts = false }: { categoryId?: number; featured?: boolean; main?: boolean; allProducts?: boolean }) {
+export function EcwidStore({ categoryId, main = false, allProducts = false }: { categoryId?: number; main?: boolean; allProducts?: boolean }) {
   const { ready, error: apiError, page, quantity, containsSamples } = useEcwid();
   const [timedOut, setTimedOut] = useState(false);
   const [emptyCollection, setEmptyCollection] = useState(false);
@@ -50,10 +50,10 @@ export function EcwidStore({ categoryId, featured = false, main = false, allProd
       : emptyCart ? <div className={styles.emptyCart}><p>Je winkelmandje is nog leeg.</p><SiteLink href="/collecties/" className="button button-small">Bekijk alle producten</SiteLink></div>
       : cartSamples ? <div className={styles.empty}><p>Een artikel in dit winkelmandje is nog niet beschikbaar.</p><SiteLink href="/collecties/" className="text-link">Bekijk alle producten</SiteLink></div>
       : !loaded ? <p className={styles.status} role="status">De winkel wordt geladen…</p>
-      : !showNative ? <div className={styles.empty}><p>De collectie wordt binnenkort toegevoegd.</p>{!featured && <SiteLink className="text-link" href="/collecties/">Bekijk alle producten</SiteLink>}</div> : null}
+      : !showNative ? <div className={styles.empty}><p>Er zijn hier geen producten beschikbaar.</p><SiteLink className="text-link" href="/collecties/">Bekijk alle producten</SiteLink></div> : null}
     {showNative && page.type === "CATEGORY" && emptyCollection && <p className={styles.empty} role="status">Er zijn op dit moment geen producten beschikbaar in deze collectie.</p>}
     <div className={showNative ? undefined : styles.unavailable} inert={!showNative} aria-hidden={!showNative}>
-      <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} data-featured={featured ? "true" : undefined} />
+      <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} />
     </div>
     {main && loaded && !error && <nav className={styles.serviceLinks} aria-label="Je bestelling"><SiteLink href="/winkel/#!/~/account">Mijn account &amp; bestellingen</SiteLink><SiteLink href="/contact/">Hulp nodig?</SiteLink></nav>}
     <noscript>Voor de winkel is JavaScript nodig. Je kunt Fleur bereiken via de contactpagina.</noscript>

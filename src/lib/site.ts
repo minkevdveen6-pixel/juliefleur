@@ -16,7 +16,6 @@ export const ecwid = {
   storeId: process.env.NEXT_PUBLIC_ECWID_STORE_ID || "",
   preview: process.env.NEXT_PUBLIC_ECWID_PREVIEW === "true",
   published: process.env.NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED === "true",
-  paymentsAvailable: process.env.NEXT_PUBLIC_ECWID_PAYMENTS_AVAILABLE === "true",
   catalogReady: process.env.NEXT_PUBLIC_ECWID_CATALOG_READY === "true",
   enabled: /^\d+$/.test(process.env.NEXT_PUBLIC_ECWID_STORE_ID || "") &&
     (process.env.NEXT_PUBLIC_ECWID_PREVIEW === "true" || process.env.NEXT_PUBLIC_ECWID_CATALOG_PUBLISHED === "true" || (site.launched &&

@@ -10,7 +10,7 @@ export default function Bestsellers() {
     {ecwid.enabled && ecwid.categoryIds.bestsellers
       ? <EcwidStore categoryId={ecwid.categoryIds.bestsellers} />
       : <div className="empty-collection">
-          <p>De selectie volgt binnenkort.</p>
+          <p>Er zijn op dit moment geen bestsellers in deze selectie.</p>
           <SiteLink href="/collecties/" className="text-link">Bekijk alle producten</SiteLink>
         </div>}
   </div>;
