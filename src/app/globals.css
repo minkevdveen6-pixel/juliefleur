@@ -208,7 +208,7 @@ details[open]>summary svg{transform:rotate(45deg)}
 .site-footer :focus-visible{outline-color:var(--pink)}
 .footer-bottom nav>a,.cookie-preferences-button{display:inline-flex;align-items:center;min-height:36px;padding:5px 0;background:none;font:inherit;text-align:left}
 .footer-bottom a:hover,.cookie-preferences-button:hover{text-decoration:underline;text-underline-offset:3px}
-.cookie-trigger{position:fixed;bottom:14px;left:14px;z-index:20;background:var(--pink);color:var(--wine);padding:8px 14px;min-height:40px;border:1px solid var(--wine);border-radius:4px;font-size:13px;font-weight:500}
+.cookie-trigger{position:fixed;bottom:max(14px,env(safe-area-inset-bottom));left:max(14px,env(safe-area-inset-left));z-index:20;background:var(--pink);color:var(--wine);padding:8px 14px;min-height:40px;border:1px solid var(--wine);border-radius:4px;font-size:13px;font-weight:500}
 
 dialog{color:var(--wine);background:var(--ivory);border:1px solid var(--line);padding:24px;width:min(440px,calc(100% - 32px));height:fit-content;max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain;margin:auto}
 dialog::backdrop{background:rgb(35 24 27 / .3)}
@@ -352,3 +352,6 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 }
 
 .about-page .content-container{max-width:1080px}.about-story .photo-portrait{background:var(--cream)}
+
+/* De footerknop blijft bereikbaar zonder over de Ecwid-checkout heen te vallen. */
+body:has([data-ecwid-page="CART"], [data-ecwid-page^="CHECKOUT_"], [data-ecwid-page="ORDER_CONFIRMATION"]) .cookie-trigger{display:none}
