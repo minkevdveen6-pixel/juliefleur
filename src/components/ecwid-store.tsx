@@ -43,6 +43,10 @@ export function EcwidStore({ categoryId, main = false, allProducts = false }: { 
   const wrongCategory = !!categoryId && (page.type !== "CATEGORY" || page.categoryId !== categoryId);
   const showNative = !wrongCategory && ready && !error && !emptyCart && !cartSamples &&
     canShowEcwidPage(page, Object.values(ecwid.categoryIds), ecwid.catalogReady);
+  const progressSteps = ["Contact", "Verzending", "Betaling", "Bevestiging"];
+  const progress = page.type === "CHECKOUT_PAYMENT_DETAILS" ? 2
+    : ["CHECKOUT_ADDRESS", "CHECKOUT_ADDRESS_BOOK", "CHECKOUT_DELIVERY"].includes(page.type) ? 1
+    : page.type === "ORDER_CONFIRMATION" ? 3 : -1;
   const loaded = ready && page.type !== "LOADING";
   return <div className={`${styles.store} ${main ? styles.mainStore : ""}`} data-ecwid-status={error ? "error" : loaded ? "ready" : "loading"} data-ecwid-api={ready ? "ready" : "loading"} data-ecwid-page={page.type} data-ecwid-store={ecwid.storeId}>
     {main && !showNative && <h1>{cart || !loaded ? "Winkelmandje" : "Alle producten"}</h1>}
@@ -52,6 +56,9 @@ export function EcwidStore({ categoryId, main = false, allProducts = false }: { 
       : !loaded ? <p className={styles.status} role="status">De winkel wordt geladen…</p>
       : !showNative ? <div className={styles.empty}><p>Er zijn hier geen producten beschikbaar.</p><SiteLink className="text-link" href="/collecties/">Bekijk alle producten</SiteLink></div> : null}
     {showNative && page.type === "CATEGORY" && emptyCollection && <p className={styles.empty} role="status">Er zijn op dit moment geen producten beschikbaar in deze collectie.</p>}
+    {showNative && progress >= 0 && <nav className={styles.checkoutProgress} aria-label="Voortgang van je bestelling">
+      <ol>{progressSteps.map((label, index) => <li key={label} aria-current={index === progress ? "step" : undefined}>{label}</li>)}</ol>
+    </nav>}
     <div className={showNative ? undefined : styles.unavailable} inert={!showNative} aria-hidden={!showNative}>
       <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} />
     </div>

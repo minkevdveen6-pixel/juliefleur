@@ -20,6 +20,7 @@ export function Header() {
         <button className="icon-button mobile-menu" aria-label="Menu openen" onClick={() => menu.current?.showModal()}><Icon name="menu" /></button>
         <span className="header-caption" aria-hidden="true" />
         <BrandLogo preload />
+        <Link className="checkout-return" href="/collecties/">Verder winkelen</Link>
         <div className="header-actions"><Link href="/zoeken" className="icon-button" aria-label="Zoeken"><Icon name="search" /></Link>{ecwid.enabled ? <EcwidCartIcon /> : <button className="icon-button" aria-label="Winkelmandje" onClick={() => cart.current?.showModal()}><Icon name="bag" /></button>}</div>
       </div>
       <nav className="desktop-nav" aria-label="Hoofdnavigatie"><Link href="/collecties" aria-current={path === "/collecties/" ? "page" : undefined}>Alle producten</Link>{ecwid.enabled && <Link href="/bestsellers/" aria-current={path === "/bestsellers/" ? "page" : undefined}>Bestsellers</Link>}{categories.map(c => <Link key={c.slug} href={`/collecties/${c.slug}`} aria-current={path.includes(c.slug) ? "page" : undefined}>{c.name}</Link>)}<span className="nav-separator" /><Link href="/over-fleur">Over Fleur</Link><Link href="/contact">Contact</Link></nav>

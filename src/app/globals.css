@@ -356,14 +356,35 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 /* De footerknop blijft bereikbaar zonder over de Ecwid-checkout heen te vallen. */
 body:has([data-ecwid-page="CART"], [data-ecwid-page^="CHECKOUT_"], [data-ecwid-page="ORDER_CONFIRMATION"]) .cookie-trigger{display:none}
 
-/* In de checkout blijft het logo de link terug naar de winkelwebsite. */
+/* Compacte roze masthead met ruimte rond het volledige woordmerk. */
+.checkout-return{display:none}
 body:has([data-ecwid-page^="CHECKOUT_"]) .site-header{
-  background:var(--ivory);
-  border-bottom:1px solid #dedbd1;
+  background:var(--pink);
+  border-bottom:1px solid var(--line);
 }
 body:has([data-ecwid-page^="CHECKOUT_"]) .header-top{
-  grid-template-columns:1fr;
-  min-height:68px;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  min-height:76px;
 }
-body:has([data-ecwid-page^="CHECKOUT_"]) .brand-logo{width:100px}
+body:has([data-ecwid-page^="CHECKOUT_"]) .brand-logo{grid-column:2;width:132px}
+body:has([data-ecwid-page^="CHECKOUT_"]) .brand-image{aspect-ratio:2;overflow:hidden}
+body:has([data-ecwid-page^="CHECKOUT_"]) .brand-image img{
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+body:has([data-ecwid-page^="CHECKOUT_"]) .checkout-return{
+  display:inline-flex;
+  align-items:center;
+  grid-column:1;
+  grid-row:1;
+  justify-self:start;
+  min-height:44px;
+  font-size:13px;
+  line-height:1.3;
+  text-decoration:underline;
+  text-underline-offset:4px;
+}
 body:has([data-ecwid-page^="CHECKOUT_"]) :is(.desktop-nav,.mobile-menu,.header-actions,.header-caption){display:none}
