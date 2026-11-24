@@ -158,7 +158,7 @@
 }
 .store :global(.ec-cart .ec-price-item){white-space:nowrap!important;overflow-wrap:normal;word-break:normal}
 
-.store :global(.ec-cart-summary__row--total .ec-cart-summary__cell){padding:14px 12px!important;border-top:1px solid var(--checkout-line);background:#edf0e6;font-size:19px!important;font-weight:650}
+.store :global(.ec-cart-summary__row--total .ec-cart-summary__cell){padding:14px 12px!important;border-top:1px solid var(--checkout-line);background:transparent;font-size:19px!important;font-weight:650}
 .store :global(.ec-cart-summary__note){color:var(--checkout-muted)!important;font-size:13px!important}
 .store :global(.ec-cart__products){border-bottom:0!important}
 .store :global(.ec-cart__checkout){display:flex!important;flex-direction:column;align-items:stretch;gap:12px;margin-top:20px!important}
@@ -168,6 +168,29 @@
 .store :global(.ec-cart .form-control__button:hover){filter:brightness(.94)}
 .store :global(.ec-cart-email__text),.store :global(.ec-cart-step__body){font-size:15px!important;line-height:1.65!important}
 .store :global(.ec-cart-next__header){margin-top:18px;font-size:19px!important;font-weight:500!important}
+.summaryToggle{display:none}
+.store[data-ecwid-page^="CHECKOUT_"] :global(.julie-checkout-optional-row){display:none}
+@media(max-width:850px){
+  .summaryToggle{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto auto;
+    align-items:center;
+    gap:12px;
+    width:100%;
+    padding:12px 0;
+    margin-bottom:16px;
+    background:transparent;
+    border-block:1px solid #dedbd1;
+    color:#292924;
+    text-align:left;
+    font:500 15px/1.4 var(--sans);
+  }
+  .summaryToggle small{display:block;color:#57584f;font-weight:400}
+  .summaryToggle strong{white-space:nowrap}
+  .summaryToggle > span:last-child{font-size:22px;color:var(--olive)}
+  .summaryToggle[aria-expanded="false"] + div :global(.ec-cart__sidebar){display:none}
+  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart){gap:16px}
+}
 .checkoutProgress{margin-block:0 22px;border-bottom:1px solid #dedbd1;color:#57584f}
 .checkoutProgress ol{display:flex;justify-content:center;gap:clamp(10px,4vw,44px);list-style:none;margin:0;padding:0;font-size:13px}
 .checkoutProgress li{padding-block:8px 11px}

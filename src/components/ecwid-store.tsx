@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { ecwid } from "@/lib/site";
 import { canShowEcwidPage } from "@/lib/ecwid-integration";
 import { useEcwid } from "./ecwid-provider";
+import { observeCheckoutSummary } from "./ecwid-checkout-summary";
 import { observeProductGallery } from "./ecwid-gallery";
 import { observeOptionHelp } from "./ecwid-option-help";
 import { SiteLink } from "./site-link";
@@ -13,6 +14,15 @@ export function EcwidStore({ categoryId, main = false, allProducts = false }: { 
   const [timedOut, setTimedOut] = useState(false);
   const [emptyCollection, setEmptyCollection] = useState(false);
   const nativeStore = useRef<HTMLDivElement>(null);
+  const [summaryTotal, setSummaryTotal] = useState("");
+  const [summaryOpen, setSummaryOpen] = useState(false);
+  const checkoutStep = page.type.startsWith("CHECKOUT_");
+  useEffect(() => {
+    const store = nativeStore.current;
+    if (!checkoutStep || !store) return;
+    return observeCheckoutSummary(store, setSummaryTotal);
+  }, [checkoutStep]);
+
   useEffect(() => {
     if (page.type === "PRODUCT" && nativeStore.current) {
       const restoreHelp = observeOptionHelp(nativeStore.current, page.productId);
@@ -59,6 +69,16 @@ export function EcwidStore({ categoryId, main = false, allProducts = false }: { 
     {showNative && progress >= 0 && <nav className={styles.checkoutProgress} aria-label="Voortgang van je bestelling">
       <ol>{progressSteps.map((label, index) => <li key={label} aria-current={index === progress ? "step" : undefined}>{label}</li>)}</ol>
     </nav>}
+    {showNative && checkoutStep && summaryTotal && <button
+      type="button"
+      className={styles.summaryToggle}
+      aria-expanded={summaryOpen}
+      onClick={() => setSummaryOpen(open => !open)}
+    >
+      <span>Besteloverzicht{quantity ? <small>{quantity} {quantity === 1 ? "artikel" : "artikelen"}</small> : null}</span>
+      <strong>{summaryTotal}</strong>
+      <span aria-hidden="true">{summaryOpen ? "−" : "+"}</span>
+    </button>}
     <div className={showNative ? undefined : styles.unavailable} inert={!showNative} aria-hidden={!showNative}>
       <div ref={nativeStore} id={`my-store-${ecwid.storeId}`} data-julie-ecwid-browser="true" data-category-id={categoryId} data-all-products={allProducts ? "true" : undefined} />
     </div>
