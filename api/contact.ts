@@ -2,6 +2,11 @@ import type { IncomingMessage, ServerResponse } from "node:http";
 import { validateContact } from "../src/lib/contact-validation.ts";
 
 const recipient = "info@juliefleur.nl";
+const htmlEntities: Record<string, string> = {
+  "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+};
+const escapeHtml = (value: string) => value.replace(/[&<>"']/g, char => htmlEntities[char]);
+
 const origins = new Set(["https://juliefleur.nl", "https://www.juliefleur.nl"]);
 const maxBodyBytes = 32_768;
 const windowMs = 10 * 60 * 1000;
@@ -70,6 +75,17 @@ async function handleContact(request: Request) {
         to: [recipient],
         reply_to: fields.email,
         subject: fields.subject,
+        html: `<div lang="nl" style="background:#FCF7F3;padding:24px 12px;color:#873B50;font-family:Arial,sans-serif;line-height:1.6">
+          <div style="max-width:560px;margin:auto">
+            <p style="margin:0;padding:12px 20px;background:#F3CDD3;color:#56692C;font-weight:bold">Julie Fleur</p>
+            <div style="background:#fff;padding:20px;overflow-wrap:anywhere">
+              <h1 style="font-size:22px;margin:0 0 16px">${escapeHtml(fields.subject)}</h1>
+              <p><strong>Naam</strong><br>${escapeHtml(fields.name)}</p>
+              <p><strong>E-mailadres</strong><br>${escapeHtml(fields.email)}</p>
+              <p><strong>Bericht</strong><br>${escapeHtml(fields.message).replace(/\r\n|\r|\n/g, "<br>")}</p>
+            </div>
+          </div>
+        </div>`,
         text: `Naam: ${fields.name}\nE-mailadres: ${fields.email}\n\n${fields.message}`,
       }),
     });

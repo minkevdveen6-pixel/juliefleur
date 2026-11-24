@@ -2,7 +2,7 @@
 
 1. Open [Ecwid-beheer](https://my.ecwid.com/store/145090752). Ga naar **Catalogus → Producten**. Kies **Nieuw product toevoegen** of open een bestaand artikel.
 2. Vul onder **Algemeen** de naam, prijs, voorraad en **Omschrijving** in. Upload de foto's bovenaan. Sleep ze in de gewenste volgorde en zet je beste overzichtsfoto eerst. In het overzicht wordt de foto vierkant en gecentreerd weergegeven. Laat daarom wat ruimte rond het product. Op de productpagina blijft de hoofdafbeelding volledig zichtbaar.
-3. Vink bij **Categorieën** de juiste collectie aan. Kies uit **Bagcharms**, **Sieraden & graveren**, **Punniken**, **Borduren** en **Vilten kroon**. Zet het product op **Ingeschakeld** wanneer het klaar is. Voor **Bestsellers** gebruik je de aparte Ecwid-categorie **Bestsellers**. Voeg een product aan die categorie toe naast de gewone collectie. Verwijder de toewijzing wanneer het uit de selectie mag. De homepage toont maximaal vier artikelen uit deze selectie. [Ecwid-handleiding voor productgegevens](https://support.ecwid.com/hc/nl/articles/360000009240)
+3. Vink bij **Categorieën** de juiste collectie aan. Kies uit **Bagcharms**, **Sieraden & graveren**, **Punniken**, **Borduren** en **Vilten kroon**. Zet het product op **Ingeschakeld** wanneer het klaar is. Voor **Bestsellers** gebruik je de aparte Ecwid-categorie **Bestsellers**. Voeg een product aan die categorie toe naast de gewone collectie. Verwijder de toewijzing wanneer het uit de selectie mag. [Ecwid-handleiding voor productgegevens](https://support.ecwid.com/hc/nl/articles/360000009240)
 4. Ga naar **Opties** om keuzes of invoervelden toe te voegen, bijvoorbeeld voor kleur of een naam. Maak een veld verplicht als je die invoer altijd nodig hebt. Bij een keuzewaarde kun je een prijswijziging toevoegen. Vul daar alleen de toeslag of korting in. [Ecwid-handleiding voor productopties](https://support.ecwid.com/hc/nl/articles/207099959)
 
 ## Omschrijving en uitklapbare informatie
@@ -29,7 +29,7 @@ Klik op **Opslaan** en open de gekozen collectie op [juliefleur.nl](https://www.
 
 ## Verzending en afhalen
 
-Open **Verzending en ophalen** voor de winkelbrede tarieven. Het afgesproken pakkettarief is € 6,95 onder € 150 en gratis vanaf € 150. Controleer altijd ook een gemengde winkelwagen en het subtotaal na korting voordat je een regel activeert.
+Open **Verzending en ophalen** voor de winkelbrede tarieven. Open de relevante methode en pas het door Fleur bevestigde tarief of de gratis-verzendgrens aan. De checkout haalt de tarieven rechtstreeks uit Ecwid. Controleer altijd ook een gemengde winkelwagen en het subtotaal na korting voordat je een regel activeert.
 
 Voor brievenbuspost maak je eerst een aparte verzendmethode met het bevestigde tarief. Open daarna **Catalogus → Producten → [product] → Verzending en ophalen**. Kies bij de productgebonden verzendmethoden welke methoden voor dit product beschikbaar zijn. Sluit brievenbuspost uit voor ieder ongeschikt product. Een combinatie van geschikte en ongeschikte artikelen moet pakketverzending opleveren. Het definitieve brievenbustarief is nog niet bevestigd. Vul het bedrag pas in na bevestiging door Fleur.
 
@@ -59,3 +59,8 @@ De bannerfoto staat momenteel als vast bestand op de website. Een product- of ca
 - [Productgebonden verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5287232121116-Product-specific-shipping-methods)
 - [Betalingen beperken tot verzendmethoden](https://support.ecwid.com/hc/en-us/articles/5325525829660-Restricting-payments-by-specific-shipping-methods)
 - [Conditionele productopties](https://support.ecwid.com/hc/en-us/articles/7286612490140-Creating-advanced-product-options)
+
+## Kortingsacties en websitebeheer
+
+- Open **Marketing → Kortingsbonnen** om een code te maken en de voorwaarden, looptijd en eventuele minimale bestelwaarde in te stellen. Controleer de code in de checkout voordat je deze deelt.
+- De homepagefoto, tijdelijke mededelingen en vormgeving blijven bij Studio FROU. Geef de gewenste tekst, foto en eventuele begin- en einddatum door. In de websitecode staat de homepagecompositie in `src/app/page.tsx` en de bijbehorende stijl in `src/app/home.module.css`.
