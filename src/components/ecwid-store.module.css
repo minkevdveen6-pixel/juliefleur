@@ -172,7 +172,8 @@
 .checkoutProgress ol{display:flex;justify-content:center;gap:clamp(10px,4vw,44px);list-style:none;margin:0;padding:0;font-size:13px}
 .checkoutProgress li{padding-block:8px 11px}
 .checkoutProgress [aria-current="step"]{color:var(--olive);font-weight:650;border-bottom:2px solid var(--olive)}
-.store:has(.checkoutProgress) :global(.ec-cart-next){display:none}
+.store:has(.checkoutProgress) :global(.ec-cart__steps > .ec-cart-next__header),
+.store:has(.checkoutProgress) :global(.ec-cart__steps > .ec-cart-next__header ~ .ec-cart-step){display:none}
 .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__body){
   padding:0!important;
   border:0;
@@ -183,8 +184,10 @@
   background:var(--ivory);
   border-radius:6px;
 }
-.store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__body :is(.form-control--primary,.form-control--primary .form-control__button)){
+.store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__body :is(.ec-form__cell:has(> .form-control--button.form-control--primary),.form-control--button.form-control--primary,.form-control--primary .form-control__button)){
+  flex-basis:100%;
   width:100%;
+  max-width:100%;
 }
 /* Ecwid houdt het formulier en besteloverzicht zelf in dezelfde checkout. */
 @media(min-width:851px){
