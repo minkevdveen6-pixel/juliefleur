@@ -123,7 +123,7 @@
 .store :global(.ec-cart details[open] > summary::after){content:"−"}
 
 .store :global(.ec-cart__sidebar){width:56%!important;flex-shrink:1;padding:0!important;min-width:0}
-.store :global(.ec-cart__body){width:44%!important;flex-shrink:1;padding:26px!important;border:1px solid var(--checkout-line);background:var(--ivory);min-width:0}
+.store :global(.ec-cart__body){width:44%!important;flex-shrink:1;padding:22px!important;border:1px solid var(--checkout-line);border-radius:6px;background:var(--ivory);min-width:0}
 .store :global(.ec-cart__sidebar-inner),.store :global(.ec-cart__body-inner){min-width:0;max-width:100%}
 .store :global(.ec-cart .ec-header-h1){font:500 28px/1.25 var(--sans)!important;margin-bottom:26px}
 .store :global(.ec-cart .ec-header-h2){font:500 23px/1.3 var(--sans)!important}
@@ -131,8 +131,8 @@
 .store :global(.ec-cart-item__image){width:92px;flex:0 0 92px;padding-right:14px}
 .store :global(.ec-cart-item__wrap),.store :global(.ec-cart-item__wrap-primary){min-width:0}
 .store :global(.ec-cart-item__title){display:block;font-size:17px!important;font-weight:500;line-height:1.4!important;padding-right:28px;overflow-wrap:anywhere}
-.store :global(.ec-cart-item__options){margin-top:14px!important;line-height:1.55!important}
-.store :global(.ec-cart-item__option){display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(85px,1fr);gap:2px 14px;margin:0 0 9px!important}
+.store :global(.ec-cart-item__options){margin-top:9px!important;line-height:1.45!important}
+.store :global(.ec-cart-item__option){display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(85px,1fr);gap:2px 12px;margin:0 0 5px!important}
 .store :global(.ec-cart-option){display:block!important;min-width:0;white-space:normal!important;overflow-wrap:anywhere;word-break:normal!important}
 .store :global(.ec-cart-option--key){font-size:13px!important;color:var(--checkout-muted)!important}
 .store :global(.ec-cart-option--value){font-size:14px!important;font-weight:500;color:var(--checkout-ink)!important}
@@ -140,7 +140,7 @@
 .store :global(.ec-cart-item__price){font-size:17px!important;font-weight:500;white-space:nowrap}
 .store :global(.ec-cart-item__control-inner){display:flex;align-items:center;justify-content:center;min-width:36px;min-height:36px;margin-top:-8px;color:var(--checkout-ink)!important}
 .store :global(.ec-cart .form-control:not(.form-control--button)){background:var(--ivory)}
-.store :global(.ec-cart .form-control__text){min-height:46px!important;font:400 16px/1.5 var(--sans)!important;border-radius:0!important;background:#fffdf9!important;border-color:var(--checkout-line)!important;color:var(--checkout-ink)!important}
+.store :global(.ec-cart .form-control__text){min-height:46px!important;font:400 16px/1.5 var(--sans)!important;border-radius:4px!important;background:#fffdf9!important;border-color:var(--checkout-line)!important;color:var(--checkout-ink)!important}
 .store :global(.ec-cart .form-control__placeholder),.store :global(.ec-cart .form-control__placeholder-inner){color:var(--checkout-muted)!important}
 .store :global(.ec-cart .form-control__text:focus){border-color:var(--olive)!important;outline:2px solid color-mix(in srgb,var(--olive) 19%,transparent);outline-offset:2px}
 .store :global(.ec-cart-item__count-inner){min-width:62px}
@@ -164,10 +164,25 @@
 .store :global(.ec-cart__checkout){display:flex!important;flex-direction:column;align-items:stretch;gap:12px;margin-top:20px!important}
 .store :global(.ec-cart__buttons),.store :global(.ec-cart__button--checkout){width:100%!important;max-width:none!important;order:1}
 .store :global(.ec-cart__cert){width:100%!important;max-width:none!important;margin:0!important;font-size:12px!important;line-height:1.5!important;order:2}
-.store :global(.ec-cart .form-control__button){min-height:48px!important;border-radius:0!important;font:500 16px/1.3 var(--sans)!important;background:var(--olive)!important;color:var(--ivory)!important}
+.store :global(.ec-cart .form-control__button){min-height:48px!important;border-radius:4px!important;font:500 16px/1.3 var(--sans)!important;background:var(--olive)!important;color:var(--ivory)!important}
 .store :global(.ec-cart .form-control__button:hover){filter:brightness(.94)}
 .store :global(.ec-cart-email__text),.store :global(.ec-cart-step__body){font-size:15px!important;line-height:1.65!important}
 .store :global(.ec-cart-next__header){margin-top:18px;font-size:19px!important;font-weight:500!important}
+/* Ecwid houdt het formulier en besteloverzicht zelf in dezelfde checkout. */
+@media(min-width:851px){
+  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart){
+    display:grid;
+    grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
+  }
+  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__body){
+    grid-area:1/1;
+    width:100%!important;
+  }
+  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__sidebar){
+    grid-area:1/2;
+    width:100%!important;
+  }
+}
 @media(max-width:850px){
  .store :global(.ec-cart){flex-direction:column;gap:24px}
  .store :global(.ec-cart__sidebar),.store :global(.ec-cart__body){width:100%!important}

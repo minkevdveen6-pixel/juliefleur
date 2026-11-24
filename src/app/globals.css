@@ -355,3 +355,15 @@ dialog::backdrop{background:rgb(35 24 27 / .3)}
 
 /* De footerknop blijft bereikbaar zonder over de Ecwid-checkout heen te vallen. */
 body:has([data-ecwid-page="CART"], [data-ecwid-page^="CHECKOUT_"], [data-ecwid-page="ORDER_CONFIRMATION"]) .cookie-trigger{display:none}
+
+/* In de checkout blijft het logo de link terug naar de winkelwebsite. */
+body:has([data-ecwid-page^="CHECKOUT_"]) .site-header{
+  background:var(--ivory);
+  border-bottom:1px solid #dedbd1;
+}
+body:has([data-ecwid-page^="CHECKOUT_"]) .header-top{
+  grid-template-columns:1fr;
+  min-height:68px;
+}
+body:has([data-ecwid-page^="CHECKOUT_"]) .brand-logo{width:100px}
+body:has([data-ecwid-page^="CHECKOUT_"]) :is(.desktop-nav,.mobile-menu,.header-actions,.header-caption){display:none}
