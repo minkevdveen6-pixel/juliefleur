@@ -170,8 +170,8 @@
 .store :global(.ec-cart-next__header){margin-top:18px;font-size:19px!important;font-weight:500!important}
 /* Ecwid houdt het formulier en besteloverzicht zelf in dezelfde checkout. */
 @media(min-width:851px){
-  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart){
-    display:grid;
+  .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-size .ec-store .ec-cart){
+    display:grid!important;
     grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);
   }
   .store[data-ecwid-page^="CHECKOUT_"] :global(.ec-cart__body){
