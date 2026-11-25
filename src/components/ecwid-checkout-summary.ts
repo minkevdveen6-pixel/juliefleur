@@ -10,7 +10,7 @@ export function observeCheckoutSummary(store: HTMLElement, onTotal: (total: stri
     const vatIncluded = /incl\.?\s*btw/i.test(vatNote?.textContent ?? "");
     sidebar?.querySelectorAll(".ec-cart-summary__row").forEach(row => {
       const label = row.querySelector(".ec-cart-summary__cell:first-child")?.textContent?.trim() ?? "";
-      const value = row.querySelector(".ec-cart-summary__cell:last-child")?.textContent?.trim() ?? "";
+      const value = row.querySelector(".ec-cart-summary__cell:last-child")?.textContent?.match(/€\s*\d[\d.]*,\d{2}/)?.[0] ?? "";
       const zeroRush = /^Spoedbestelling\b/i.test(label) && /^€\s*0,00$/.test(value);
       const duplicateTax = vatIncluded && /^BTW\s*\(/i.test(label) && !!value && !!vatNote?.textContent?.includes(value);
       row.classList.toggle("julie-checkout-optional-row", zeroRush || duplicateTax);
