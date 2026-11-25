@@ -169,7 +169,7 @@
 .store :global(.ec-cart-email__text),.store :global(.ec-cart-step__body){font-size:15px!important;line-height:1.65!important}
 .store :global(.ec-cart-next__header){margin-top:18px;font-size:19px!important;font-weight:500!important}
 .summaryToggle{display:none}
-.store[data-ecwid-page^="CHECKOUT_"] :global(.julie-checkout-optional-row){display:none}
+.store[data-ecwid-page^="CHECKOUT_"] :global(.ec-size .ec-store .julie-checkout-optional-row){display:none!important}
 @media(max-width:850px){
   .summaryToggle{
     display:grid;
