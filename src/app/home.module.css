@@ -45,7 +45,7 @@
 .collections .sectionTitle{margin-bottom:24px}
 .collectionGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 24px}
 .category{display:block;min-width:0}
-.collectionImage :global(.photo-space){aspect-ratio:1;background:var(--cream)}
+.collectionImage,.collectionImage :global(.photo-space){aspect-ratio:1;background:var(--cream)}
 .categoryCaption{border-bottom:1px solid var(--line);padding-block:12px}
 .categoryCaption h3{font-size:clamp(14px,1.6vw,18px);font-weight:500;line-height:1.35}
 .category:hover h3{text-decoration:underline;text-underline-offset:4px}

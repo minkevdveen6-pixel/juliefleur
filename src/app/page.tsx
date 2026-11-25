@@ -1,17 +1,9 @@
 import { SiteLink as Link } from "@/components/site-link";
-import { PhotoSpace } from "@/components/placeholder";
+import { HomeCollections } from "@/components/home-collections";
 import { pages } from "@/data/pages";
 import styles from "./home.module.css";
 
 export const metadata = { alternates: { canonical: "/" } };
-const collections = [
-  { slot: "category:sieraden-graveren", href: "/collecties/sieraden-graveren", label: "Sieraden & graveren" },
-  { slot: "category:bagcharms", href: "/collecties/bagcharms", label: "Bagcharms" },
-  { slot: "category:punniken", href: "/collecties/punniken", label: "Punniken" },
-  { slot: "category:borduren", href: "/collecties/borduren", label: "Borduren" },
-  { slot: "category:vilten-kroon", href: "/collecties/vilten-kroon", label: "Vilten kroon" },
-];
-
 export default function Home() {
   return <div className={styles.home}>
     <section className={styles.hero} aria-labelledby="home-heading">
@@ -33,12 +25,7 @@ export default function Home() {
     <section className={styles.collections} aria-labelledby="collections-heading">
       <div className={styles.container}>
         <h2 id="collections-heading" className={styles.sectionTitle}>De collecties</h2>
-        <div className={styles.collectionGrid}>
-          {collections.map(collection => <Link className={styles.category} href={collection.href} key={collection.slot}>
-            <div className={styles.collectionImage}><PhotoSpace slot={collection.slot} kind="home-category" fit="cover" /></div>
-            <div className={styles.categoryCaption}><h3>{collection.label}</h3></div>
-          </Link>)}
-        </div>
+        <HomeCollections />
       </div>
     </section>
 
