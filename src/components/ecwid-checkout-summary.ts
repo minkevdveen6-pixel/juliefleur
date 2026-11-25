@@ -3,9 +3,8 @@ export function observeCheckoutSummary(store: HTMLElement, onTotal: (total: stri
   function update() {
     const sidebar = store.querySelector(".ec-cart__sidebar");
     const total = sidebar?.querySelector(".ec-cart-summary__row--total .ec-cart-summary__cell:last-child");
-    const alert = sidebar?.querySelector('[role="alert"]:not([hidden])');
-    const text = total?.textContent?.trim() ?? "";
-    onTotal(!alert && /^€\s*\d[\d.]*,\d{2}$/.test(text) ? text : "");
+    const text = total?.textContent?.match(/€\s*\d[\d.]*,\d{2}/)?.[0] ?? "";
+    onTotal(text);
 
     const vatNote = sidebar?.querySelector(".ec-cart-summary__note");
     const vatIncluded = /incl\.?\s*btw/i.test(vatNote?.textContent ?? "");
@@ -16,8 +15,6 @@ export function observeCheckoutSummary(store: HTMLElement, onTotal: (total: stri
       const duplicateTax = vatIncluded && /^BTW\s*\(/i.test(label) && !!value && !!vatNote?.textContent?.includes(value);
       row.classList.toggle("julie-checkout-optional-row", zeroRush || duplicateTax);
     });
-    const heading = store.querySelector(".ec-cart__body .ec-header-h1");
-    if (heading?.textContent?.trim() === "Checkout" && !heading.children.length) heading.textContent = "Afrekenen";
   }
 
   const observer = new MutationObserver(update);
